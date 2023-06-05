@@ -1,0 +1,1444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18001FD12953449100D7C884 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD02953449100D7C884 /* Reachability.swift */; };
+		18001FD32954441300D7C884 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD22954441300D7C884 /* Constants.swift */; };
+		18001FD52954611500D7C884 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 18001FD42954611500D7C884 /* L10n-swift */; };
+		18001FD729546C1600D7C884 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD629546C1600D7C884 /* Global.swift */; };
+		1802EE672951C7AD00A37190 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE662951C7AD00A37190 /* CartVC.swift */; };
+		1802EE692951CEA100A37190 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE682951CEA100A37190 /* CartTVCell.swift */; };
+		1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */; };
+		180B4B022A13B7840026E2B0 /* TakafulProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */; };
+		180E361C294C476E00349A89 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361B294C476E00349A89 /* DashboardVC.swift */; };
+		180E361E294C49DF00349A89 /* DashboardTopCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */; };
+		180E3620294C587F00349A89 /* DashboardSliderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361F294C587F00349A89 /* DashboardSliderCVCell.swift */; };
+		180E3623294C7C9600349A89 /* CharityPaysCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E3622294C7C9600349A89 /* CharityPaysCVCell.swift */; };
+		1871EB3A2952EA9B00884829 /* ContributeProjectCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB392952EA9B00884829 /* ContributeProjectCVCell.swift */; };
+		1871EB3C2952ED3D00884829 /* InitiativeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB3B2952ED3D00884829 /* InitiativeCVCell.swift */; };
+		1871EB3E2952F2DF00884829 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB3D2952F2DF00884829 /* NewsVC.swift */; };
+		1871EB402952F43600884829 /* NewsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB3F2952F43600884829 /* NewsTVCell.swift */; };
+		1871EB422952FA0100884829 /* RapidDonationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB412952FA0100884829 /* RapidDonationVC.swift */; };
+		1871EB442952FA3B00884829 /* RapidDonationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB432952FA3B00884829 /* RapidDonationTVCell.swift */; };
+		1871EB462953050D00884829 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EB452953050D00884829 /* NewsDetailsVC.swift */; };
+		187C636C295DA4F20032ACD6 /* load-loading (1).gif in Resources */ = {isa = PBXBuildFile; fileRef = 187C636B295DA4F20032ACD6 /* load-loading (1).gif */; };
+		187C636E295DA5210032ACD6 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C636D295DA5210032ACD6 /* iOSDevCenters+GIF.swift */; };
+		18843DE72A1E03CC003A81F5 /* GiftDonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18843DE62A1E03CC003A81F5 /* GiftDonateViewController.swift */; };
+		18843DE92A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18843DE82A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift */; };
+		18843DEB2A208F9E003A81F5 /* SearchCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18843DEA2A208F9E003A81F5 /* SearchCharityViewController.swift */; };
+		188892BF2959AB0E0080C768 /* DonateFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188892BE2959AB0E0080C768 /* DonateFieldsViewController.swift */; };
+		188892C12959B7B80080C768 /* GiftDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188892C02959B7B80080C768 /* GiftDonateTableViewCell.swift */; };
+		1888BA44296EF84F00AC00DA /* Search.json in Sources */ = {isa = PBXBuildFile; fileRef = 1888BA43296EF84F00AC00DA /* Search.json */; };
+		1888BA482970062600AC00DA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888BA472970062600AC00DA /* Model.swift */; };
+		1889DD512982C2CC00880415 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889DD502982C2CC00880415 /* SearchList.swift */; };
+		188AE13429796EBB002D677A /* AllDonationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AE13329796EBB002D677A /* AllDonationDetailsViewController.swift */; };
+		188AE13629797829002D677A /* CartDonationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AE13529797829002D677A /* CartDonationTableViewCell.swift */; };
+		188F0F2F296461EA00A93873 /* DashboardFoodBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F0F2E296461EA00A93873 /* DashboardFoodBasketViewController.swift */; };
+		18AA66642A14E8440012F69F /* CharityPayMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA66632A14E8440012F69F /* CharityPayMoreViewController.swift */; };
+		18AA66662A14E8920012F69F /* CharityPayMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA66652A14E8920012F69F /* CharityPayMoreCollectionViewCell.swift */; };
+		18AA66682A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA66672A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png */; };
+		18AA666B2A154C680012F69F /* login_bg_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA666A2A154C680012F69F /* login_bg_img.png */; };
+		18AA666D2A154C770012F69F /* back_login_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA666C2A154C770012F69F /* back_login_img.png */; };
+		18AA666F2A154C980012F69F /* imgpsh_fullsize_anim-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA666E2A154C980012F69F /* imgpsh_fullsize_anim-4.png */; };
+		18AA66712A154CA50012F69F /* login_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA66702A154CA50012F69F /* login_img.png */; };
+		18AA66732A154CB60012F69F /* register_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA66722A154CB60012F69F /* register_btn.png */; };
+		18AA66762A176B960012F69F /* Fasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA66742A176B950012F69F /* Fasting.png */; };
+		18AA66792A176C0D0012F69F /* donation_1.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AA66782A176C0D0012F69F /* donation_1.5.png */; };
+		18C7A5702953362C00F617F5 /* TakafulProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A56F2953362C00F617F5 /* TakafulProfileViewController.swift */; };
+		18C7A5722953386700F617F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7A5712953386700F617F5 /* HomeViewController.swift */; };
+		18C807F8296EA2EA00417E2B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C807F7296EA2EA00417E2B /* SearchViewController.swift */; };
+		18C807FA296EB0A700417E2B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C807F9296EB0A700417E2B /* SearchTableViewCell.swift */; };
+		18E16D5C295490A500A43535 /* DailySadaqaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D5B295490A500A43535 /* DailySadaqaVC.swift */; };
+		18E16D5E295490C900A43535 /* GiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D5D295490C900A43535 /* GiftVC.swift */; };
+		18E16D62295490F300A43535 /* ContributeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D5F295490F300A43535 /* ContributeVC.swift */; };
+		18E16D63295490F300A43535 /* InitiativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D60295490F300A43535 /* InitiativeVC.swift */; };
+		18E16D64295490F300A43535 /* SponserShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D61295490F300A43535 /* SponserShipVC.swift */; };
+		18E16D66295594AA00A43535 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D65295594AA00A43535 /* DonateViewController.swift */; };
+		18E16D6829559E4000A43535 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D6729559E4000A43535 /* WebViewController.swift */; };
+		3D8B3F2D40C8B1ECC3E39B77 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */; };
+		74A1A1053E93D53B1F75892C /* Pods_Tafakul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C4523C085824A63BB696EA /* Pods_Tafakul.framework */; };
+		7F6CCB57FAF0E7545E756202 /* Pods_TafakulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */; };
+		88242EFE2812E0BE00344050 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88242EFD2812E0BE00344050 /* MenuCollectionViewCell.swift */; };
+		88242F00281302FA00344050 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88242EFF281302F900344050 /* SideViewController.swift */; };
+		883FD5C22811543B00DB2B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5C12811543B00DB2B61 /* AppDelegate.swift */; };
+		883FD5C42811543B00DB2B61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5C32811543B00DB2B61 /* SceneDelegate.swift */; };
+		883FD5C62811543B00DB2B61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5C52811543B00DB2B61 /* ViewController.swift */; };
+		883FD5C92811543B00DB2B61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883FD5C72811543B00DB2B61 /* Main.storyboard */; };
+		883FD5CB2811543E00DB2B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883FD5CA2811543E00DB2B61 /* Assets.xcassets */; };
+		883FD5CE2811543E00DB2B61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883FD5CC2811543E00DB2B61 /* LaunchScreen.storyboard */; };
+		883FD5D92811543E00DB2B61 /* TafakulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5D82811543E00DB2B61 /* TafakulTests.swift */; };
+		883FD5E32811543E00DB2B61 /* TafakulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5E22811543E00DB2B61 /* TafakulUITests.swift */; };
+		883FD5E52811543E00DB2B61 /* TafakulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5E42811543E00DB2B61 /* TafakulUITestsLaunchTests.swift */; };
+		883FD5F428115B1100DB2B61 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5F328115B1100DB2B61 /* SignUpViewController.swift */; };
+		883FD5F628115BFB00DB2B61 /* ReuseFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5F528115BFB00DB2B61 /* ReuseFile.swift */; };
+		883FD5F8281173C700DB2B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5F7281173C700DB2B61 /* LoginViewController.swift */; };
+		883FD5FA28117B2200DB2B61 /* QuickLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5F928117B2200DB2B61 /* QuickLoginViewController.swift */; };
+		885DEBF52812986500F071B9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885DEBF42812986500F071B9 /* DashboardViewController.swift */; };
+		885DEBF92812997900F071B9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885DEBF82812997900F071B9 /* SWRevealViewController.m */; };
+		8869AC982862224900C08CCA /* PublicSadaqatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869AC972862224900C08CCA /* PublicSadaqatViewController.swift */; };
+		8869AC9A2862225900C08CCA /* FoodBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869AC992862225900C08CCA /* FoodBasketViewController.swift */; };
+		8869AC9C2862226A00C08CCA /* ClothingAPoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869AC9B2862226A00C08CCA /* ClothingAPoorViewController.swift */; };
+		8869AC9E2862228500C08CCA /* ExpiationforOathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869AC9D2862228500C08CCA /* ExpiationforOathViewController.swift */; };
+		886FB8E828253668006FA2F1 /* DailySadaqaValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FB8E728253668006FA2F1 /* DailySadaqaValueViewController.swift */; };
+		88D054B8282A3D3900135D28 /* JsonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D054B7282A3D3900135D28 /* JsonLogin.swift */; };
+		88D054BC282A428B00135D28 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D054BB282A428B00135D28 /* ApiURL.swift */; };
+		88D054BE282B81A400135D28 /* jsonSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D054BD282B81A300135D28 /* jsonSignUp.swift */; };
+		88D054C0282BDF9C00135D28 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D054BF282BDF9C00135D28 /* MoreViewController.swift */; };
+		88DA35E3282574DB005A14CA /* FridaySadaqaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35E2282574DB005A14CA /* FridaySadaqaViewController.swift */; };
+		88DA35E528257747005A14CA /* NeighboursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35E428257747005A14CA /* NeighboursViewController.swift */; };
+		88DA35E728257846005A14CA /* DetressReliefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35E628257846005A14CA /* DetressReliefViewController.swift */; };
+		88DA35E928257DDA005A14CA /* SponsershipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35E828257DDA005A14CA /* SponsershipsViewController.swift */; };
+		88DA35EB28257DEE005A14CA /* InitiativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35EA28257DEE005A14CA /* InitiativeViewController.swift */; };
+		88DA35ED28257E00005A14CA /* AboutTakafulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA35EC28257E00005A14CA /* AboutTakafulViewController.swift */; };
+		88FB385E2862C28A00289779 /* HousingProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB385D2862C28A00289779 /* HousingProjectsViewController.swift */; };
+		88FB38602862C2AE00289779 /* ConditionsElectonicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB385F2862C2AE00289779 /* ConditionsElectonicsViewController.swift */; };
+		88FB38622862CF0100289779 /* CompletionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB38612862CF0100289779 /* CompletionDetailsViewController.swift */; };
+		88FFFE9D2862A9510019C809 /* SponserAnOrphanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFE9C2862A9510019C809 /* SponserAnOrphanViewController.swift */; };
+		88FFFE9F2862AA160019C809 /* SponsershipFamilyNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFE9E2862AA160019C809 /* SponsershipFamilyNeedViewController.swift */; };
+		88FFFEA12862AA570019C809 /* SpecialNeedsSponsershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFEA02862AA570019C809 /* SpecialNeedsSponsershipViewController.swift */; };
+		88FFFEA32862AB300019C809 /* StudentSponsershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFEA22862AB300019C809 /* StudentSponsershipViewController.swift */; };
+		88FFFEA52862B4760019C809 /* GiveGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFFEA42862B4760019C809 /* GiveGiftViewController.swift */; };
+		B80D46A3286AC9D5000AED68 /* PaymentWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80D46A2286AC9D5000AED68 /* PaymentWebView.swift */; };
+		B82095B428E21F050092D4C1 /* SliderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82095B328E21F050092D4C1 /* SliderModel.swift */; };
+		B82095B728E221390092D4C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82095B628E221390092D4C1 /* NetworkManager.swift */; };
+		B82095B928E223E00092D4C1 /* DashBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82095B828E223E00092D4C1 /* DashBoardController.swift */; };
+		B82095BD28E22AF40092D4C1 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82095BC28E22AF40092D4C1 /* SliderCollectionViewCell.swift */; };
+		B82DF69828FAE8F600FBE8E4 /* DonationDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DF69728FAE8F600FBE8E4 /* DonationDetailsCell.swift */; };
+		B82DF69B28FAEC6E00FBE8E4 /* DonationDetailsC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DF69A28FAEC6E00FBE8E4 /* DonationDetailsC.swift */; };
+		B82EED062872C08800D423CE /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82EED052872C08800D423CE /* LocalStorage.swift */; };
+		B8316C0A28E9EF1D00B59B90 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8316C0928E9EF1D00B59B90 /* UIViewController+Extention.swift */; };
+		B8475C4328F4920D00431EB3 /* PhoneSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8475C4228F4920D00431EB3 /* PhoneSignUpViewController.swift */; };
+		B85382CC28E0B7D700A83BFB /* Colors+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85382CB28E0B7D700A83BFB /* Colors+extension.swift */; };
+		B854EC6F28E0679C00FA632A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B854EC7128E0679C00FA632A /* Localizable.strings */; };
+		B854EC7428E06B8C00FA632A /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B854EC7328E06B8C00FA632A /* LocalizationSystem.swift */; };
+		B882137528EDCD95007B64B1 /* UserProfileUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882137428EDCD94007B64B1 /* UserProfileUpdateModel.swift */; };
+		B89B60C528FA3FC600F912BB /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B60C428FA3FC600F912BB /* AlertView.swift */; };
+		B8BA08CC28FBCF4C00E13DA4 /* DonationDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BA08CB28FBCF4C00E13DA4 /* DonationDetailsModel.swift */; };
+		B8CE0BFB28E888CB003633DB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE0BFA28E888CB003633DB /* Constant.swift */; };
+		B8CE0BFD28E88BAE003633DB /* UserDefaults+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE0BFC28E88BAE003633DB /* UserDefaults+extension.swift */; };
+		B8CE11BA2902F0BC008EAC43 /* ProfileUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE11B92902F0BC008EAC43 /* ProfileUpdateViewController.swift */; };
+		B8CE11BC2902F0F7008EAC43 /* ProfileUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE11BB2902F0F7008EAC43 /* ProfileUpdateController.swift */; };
+		B8CE11BE2902F84B008EAC43 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CE11BD2902F84B008EAC43 /* DesignableUITextField.swift */; };
+		B8D246E3290D36DD007EE945 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D246E2290D36DD007EE945 /* UITextField+Extention.swift */; };
+		B8D4260628ED888F004A44FB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4260528ED888F004A44FB /* ProfileViewController.swift */; };
+		B8D4260828EDA233004A44FB /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4260728EDA233004A44FB /* UserProfileModel.swift */; };
+		B8D4260A28EDA29D004A44FB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4260928EDA29D004A44FB /* ProfileController.swift */; };
+		B8E201C128E4A1B30031F2F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8E201C028E4A1B30031F2F6 /* Alamofire */; };
+		B8F48CB428F612CF0040CCAA /* DonationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F48CB328F612CF0040CCAA /* DonationDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		883FD5D52811543E00DB2B61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883FD5B62811543B00DB2B61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883FD5BD2811543B00DB2B61;
+			remoteInfo = Tafakul;
+		};
+		883FD5DF2811543E00DB2B61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883FD5B62811543B00DB2B61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883FD5BD2811543B00DB2B61;
+			remoteInfo = Tafakul;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18001FD02953449100D7C884 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		18001FD22954441300D7C884 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18001FD629546C1600D7C884 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		1802EE662951C7AD00A37190 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		1802EE682951CEA100A37190 /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
+		1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsershipsCVCell.swift; sourceTree = "<group>"; };
+		180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakafulProfileTableViewCell.swift; sourceTree = "<group>"; };
+		180E361B294C476E00349A89 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTopCVCell.swift; sourceTree = "<group>"; };
+		180E361F294C587F00349A89 /* DashboardSliderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSliderCVCell.swift; sourceTree = "<group>"; };
+		180E3622294C7C9600349A89 /* CharityPaysCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPaysCVCell.swift; sourceTree = "<group>"; };
+		1871EB392952EA9B00884829 /* ContributeProjectCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeProjectCVCell.swift; sourceTree = "<group>"; };
+		1871EB3B2952ED3D00884829 /* InitiativeCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeCVCell.swift; sourceTree = "<group>"; };
+		1871EB3D2952F2DF00884829 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		1871EB3F2952F43600884829 /* NewsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVCell.swift; sourceTree = "<group>"; };
+		1871EB412952FA0100884829 /* RapidDonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDonationVC.swift; sourceTree = "<group>"; };
+		1871EB432952FA3B00884829 /* RapidDonationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDonationTVCell.swift; sourceTree = "<group>"; };
+		1871EB452953050D00884829 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
+		187C636B295DA4F20032ACD6 /* load-loading (1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "load-loading (1).gif"; sourceTree = "<group>"; };
+		187C636D295DA5210032ACD6 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		18843DE62A1E03CC003A81F5 /* GiftDonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDonateViewController.swift; sourceTree = "<group>"; };
+		18843DE82A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateGiftDetailsViewController.swift; sourceTree = "<group>"; };
+		18843DEA2A208F9E003A81F5 /* SearchCharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharityViewController.swift; sourceTree = "<group>"; };
+		188892BE2959AB0E0080C768 /* DonateFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateFieldsViewController.swift; sourceTree = "<group>"; };
+		188892C02959B7B80080C768 /* GiftDonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDonateTableViewCell.swift; sourceTree = "<group>"; };
+		1888BA43296EF84F00AC00DA /* Search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Search.json; sourceTree = "<group>"; };
+		1888BA472970062600AC00DA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1889DD502982C2CC00880415 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
+		188AE13329796EBB002D677A /* AllDonationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDonationDetailsViewController.swift; sourceTree = "<group>"; };
+		188AE13529797829002D677A /* CartDonationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDonationTableViewCell.swift; sourceTree = "<group>"; };
+		188F0F2E296461EA00A93873 /* DashboardFoodBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFoodBasketViewController.swift; sourceTree = "<group>"; };
+		18AA66632A14E8440012F69F /* CharityPayMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPayMoreViewController.swift; sourceTree = "<group>"; };
+		18AA66652A14E8920012F69F /* CharityPayMoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPayMoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		18AA66672A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-17 at 7.33.27 PM.png"; sourceTree = "<group>"; };
+		18AA666A2A154C680012F69F /* login_bg_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg_img.png; sourceTree = "<group>"; };
+		18AA666C2A154C770012F69F /* back_login_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_login_img.png; sourceTree = "<group>"; };
+		18AA666E2A154C980012F69F /* imgpsh_fullsize_anim-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgpsh_fullsize_anim-4.png"; sourceTree = "<group>"; };
+		18AA66702A154CA50012F69F /* login_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_img.png; sourceTree = "<group>"; };
+		18AA66722A154CB60012F69F /* register_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register_btn.png; sourceTree = "<group>"; };
+		18AA66742A176B950012F69F /* Fasting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fasting.png; sourceTree = "<group>"; };
+		18AA66782A176C0D0012F69F /* donation_1.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = donation_1.5.png; path = ../../../donation_1.5.png; sourceTree = "<group>"; };
+		18C7A56F2953362C00F617F5 /* TakafulProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakafulProfileViewController.swift; sourceTree = "<group>"; };
+		18C7A5712953386700F617F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18C807F7296EA2EA00417E2B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		18C807F9296EB0A700417E2B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		18E16D5B295490A500A43535 /* DailySadaqaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySadaqaVC.swift; sourceTree = "<group>"; };
+		18E16D5D295490C900A43535 /* GiftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftVC.swift; sourceTree = "<group>"; };
+		18E16D5F295490F300A43535 /* ContributeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributeVC.swift; sourceTree = "<group>"; };
+		18E16D60295490F300A43535 /* InitiativeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeVC.swift; sourceTree = "<group>"; };
+		18E16D61295490F300A43535 /* SponserShipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponserShipVC.swift; sourceTree = "<group>"; };
+		18E16D65295594AA00A43535 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		18E16D6729559E4000A43535 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.debug.xcconfig"; sourceTree = "<group>"; };
+		43C4523C085824A63BB696EA /* Pods_Tafakul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.debug.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.release.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.release.xcconfig"; sourceTree = "<group>"; };
+		83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		88242EFD2812E0BE00344050 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		88242EFF281302F900344050 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		883FD5BE2811543B00DB2B61 /* Tafakul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tafakul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883FD5C12811543B00DB2B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		883FD5C32811543B00DB2B61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		883FD5C52811543B00DB2B61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		883FD5C82811543B00DB2B61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		883FD5CA2811543E00DB2B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		883FD5CD2811543E00DB2B61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		883FD5CF2811543E00DB2B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883FD5D42811543E00DB2B61 /* TafakulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TafakulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		883FD5D82811543E00DB2B61 /* TafakulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TafakulTests.swift; sourceTree = "<group>"; };
+		883FD5DE2811543E00DB2B61 /* TafakulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TafakulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		883FD5E22811543E00DB2B61 /* TafakulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TafakulUITests.swift; sourceTree = "<group>"; };
+		883FD5E42811543E00DB2B61 /* TafakulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TafakulUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		883FD5F328115B1100DB2B61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		883FD5F528115BFB00DB2B61 /* ReuseFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseFile.swift; sourceTree = "<group>"; };
+		883FD5F7281173C700DB2B61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		883FD5F928117B2200DB2B61 /* QuickLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLoginViewController.swift; sourceTree = "<group>"; };
+		885DEBF42812986500F071B9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		885DEBF62812997800F071B9 /* Tafakul-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tafakul-Bridging-Header.h"; sourceTree = "<group>"; };
+		885DEBF72812997900F071B9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		885DEBF82812997900F071B9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8869AC972862224900C08CCA /* PublicSadaqatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSadaqatViewController.swift; sourceTree = "<group>"; };
+		8869AC992862225900C08CCA /* FoodBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBasketViewController.swift; sourceTree = "<group>"; };
+		8869AC9B2862226A00C08CCA /* ClothingAPoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAPoorViewController.swift; sourceTree = "<group>"; };
+		8869AC9D2862228500C08CCA /* ExpiationforOathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiationforOathViewController.swift; sourceTree = "<group>"; };
+		886FB8E728253668006FA2F1 /* DailySadaqaValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySadaqaValueViewController.swift; sourceTree = "<group>"; };
+		88D054B7282A3D3900135D28 /* JsonLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLogin.swift; sourceTree = "<group>"; };
+		88D054BB282A428B00135D28 /* ApiURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
+		88D054BD282B81A300135D28 /* jsonSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonSignUp.swift; sourceTree = "<group>"; };
+		88D054BF282BDF9C00135D28 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		88DA35E2282574DB005A14CA /* FridaySadaqaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaySadaqaViewController.swift; sourceTree = "<group>"; };
+		88DA35E428257747005A14CA /* NeighboursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighboursViewController.swift; sourceTree = "<group>"; };
+		88DA35E628257846005A14CA /* DetressReliefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetressReliefViewController.swift; sourceTree = "<group>"; };
+		88DA35E828257DDA005A14CA /* SponsershipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsershipsViewController.swift; sourceTree = "<group>"; };
+		88DA35EA28257DEE005A14CA /* InitiativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeViewController.swift; sourceTree = "<group>"; };
+		88DA35EC28257E00005A14CA /* AboutTakafulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTakafulViewController.swift; sourceTree = "<group>"; };
+		88FB385D2862C28A00289779 /* HousingProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingProjectsViewController.swift; sourceTree = "<group>"; };
+		88FB385F2862C2AE00289779 /* ConditionsElectonicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsElectonicsViewController.swift; sourceTree = "<group>"; };
+		88FB38612862CF0100289779 /* CompletionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionDetailsViewController.swift; sourceTree = "<group>"; };
+		88FFFE9C2862A9510019C809 /* SponserAnOrphanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponserAnOrphanViewController.swift; sourceTree = "<group>"; };
+		88FFFE9E2862AA160019C809 /* SponsershipFamilyNeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsershipFamilyNeedViewController.swift; sourceTree = "<group>"; };
+		88FFFEA02862AA570019C809 /* SpecialNeedsSponsershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialNeedsSponsershipViewController.swift; sourceTree = "<group>"; };
+		88FFFEA22862AB300019C809 /* StudentSponsershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSponsershipViewController.swift; sourceTree = "<group>"; };
+		88FFFEA42862B4760019C809 /* GiveGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveGiftViewController.swift; sourceTree = "<group>"; };
+		A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TafakulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.release.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.release.xcconfig"; sourceTree = "<group>"; };
+		B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul_TafakulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80D46A2286AC9D5000AED68 /* PaymentWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWebView.swift; sourceTree = "<group>"; };
+		B82095B328E21F050092D4C1 /* SliderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderModel.swift; sourceTree = "<group>"; };
+		B82095B628E221390092D4C1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B82095B828E223E00092D4C1 /* DashBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardController.swift; sourceTree = "<group>"; };
+		B82095BC28E22AF40092D4C1 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		B82491F628EBF42B00D64532 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B82DF69728FAE8F600FBE8E4 /* DonationDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailsCell.swift; sourceTree = "<group>"; };
+		B82DF69A28FAEC6E00FBE8E4 /* DonationDetailsC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailsC.swift; sourceTree = "<group>"; };
+		B82EED052872C08800D423CE /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		B8316C0928E9EF1D00B59B90 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
+		B8475C4228F4920D00431EB3 /* PhoneSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignUpViewController.swift; sourceTree = "<group>"; };
+		B85382CB28E0B7D700A83BFB /* Colors+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+extension.swift"; sourceTree = "<group>"; };
+		B854EC6B28E065DD00FA632A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		B854EC6C28E065DD00FA632A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B854EC7028E0679C00FA632A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B854EC7228E0679F00FA632A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B854EC7328E06B8C00FA632A /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		B882137428EDCD94007B64B1 /* UserProfileUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileUpdateModel.swift; sourceTree = "<group>"; };
+		B89B60C428FA3FC600F912BB /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		B8BA08CB28FBCF4C00E13DA4 /* DonationDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailsModel.swift; sourceTree = "<group>"; };
+		B8CE0BFA28E888CB003633DB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B8CE0BFC28E88BAE003633DB /* UserDefaults+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+extension.swift"; sourceTree = "<group>"; };
+		B8CE11B92902F0BC008EAC43 /* ProfileUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUpdateViewController.swift; sourceTree = "<group>"; };
+		B8CE11BB2902F0F7008EAC43 /* ProfileUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUpdateController.swift; sourceTree = "<group>"; };
+		B8CE11BD2902F84B008EAC43 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		B8D246E2290D36DD007EE945 /* UITextField+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		B8D4260528ED888F004A44FB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B8D4260728EDA233004A44FB /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		B8D4260928EDA29D004A44FB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		B8F48CB328F612CF0040CCAA /* DonationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883FD5BB2811543B00DB2B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A1A1053E93D53B1F75892C /* Pods_Tafakul.framework in Frameworks */,
+				18001FD52954611500D7C884 /* L10n-swift in Frameworks */,
+				B8E201C128E4A1B30031F2F6 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5D12811543E00DB2B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F6CCB57FAF0E7545E756202 /* Pods_TafakulTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5DB2811543E00DB2B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8B3F2D40C8B1ECC3E39B77 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180E3621294C7C6500349A89 /* DashboardVC+Cell */ = {
+			isa = PBXGroup;
+			children = (
+				180E361B294C476E00349A89 /* DashboardVC.swift */,
+				18AA66652A14E8920012F69F /* CharityPayMoreCollectionViewCell.swift */,
+				18AA66632A14E8440012F69F /* CharityPayMoreViewController.swift */,
+				180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */,
+				180E361F294C587F00349A89 /* DashboardSliderCVCell.swift */,
+				180E3622294C7C9600349A89 /* CharityPaysCVCell.swift */,
+				1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */,
+				1871EB392952EA9B00884829 /* ContributeProjectCVCell.swift */,
+				1871EB3B2952ED3D00884829 /* InitiativeCVCell.swift */,
+				1871EB3D2952F2DF00884829 /* NewsVC.swift */,
+				1871EB452953050D00884829 /* NewsDetailsVC.swift */,
+				1871EB3F2952F43600884829 /* NewsTVCell.swift */,
+				1871EB412952FA0100884829 /* RapidDonationVC.swift */,
+				1871EB432952FA3B00884829 /* RapidDonationTVCell.swift */,
+			);
+			path = "DashboardVC+Cell";
+			sourceTree = "<group>";
+		};
+		18AA66692A154C490012F69F /* IconsLoginReg */ = {
+			isa = PBXGroup;
+			children = (
+				18AA66782A176C0D0012F69F /* donation_1.5.png */,
+				18AA66742A176B950012F69F /* Fasting.png */,
+				18AA66702A154CA50012F69F /* login_img.png */,
+				18AA666E2A154C980012F69F /* imgpsh_fullsize_anim-4.png */,
+				18AA666A2A154C680012F69F /* login_bg_img.png */,
+				18AA666C2A154C770012F69F /* back_login_img.png */,
+				18AA66722A154CB60012F69F /* register_btn.png */,
+			);
+			path = IconsLoginReg;
+			sourceTree = "<group>";
+		};
+		25EA9F997A11523116C005C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C4523C085824A63BB696EA /* Pods_Tafakul.framework */,
+				B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */,
+				A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88314E9C286423130018DF90 /* LoginSignupQuickLogins */ = {
+			isa = PBXGroup;
+			children = (
+				883FD5F7281173C700DB2B61 /* LoginViewController.swift */,
+				883FD5F328115B1100DB2B61 /* SignUpViewController.swift */,
+				883FD5F928117B2200DB2B61 /* QuickLoginViewController.swift */,
+				B8475C4228F4920D00431EB3 /* PhoneSignUpViewController.swift */,
+			);
+			path = LoginSignupQuickLogins;
+			sourceTree = "<group>";
+		};
+		883FD5B52811543B00DB2B61 = {
+			isa = PBXGroup;
+			children = (
+				B854EC7128E0679C00FA632A /* Localizable.strings */,
+				883FD5C02811543B00DB2B61 /* Tafakul */,
+				883FD5D72811543E00DB2B61 /* TafakulTests */,
+				883FD5E12811543E00DB2B61 /* TafakulUITests */,
+				883FD5BF2811543B00DB2B61 /* Products */,
+				FCDDF17A6D75E0A084613929 /* Pods */,
+				25EA9F997A11523116C005C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		883FD5BF2811543B00DB2B61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				883FD5BE2811543B00DB2B61 /* Tafakul.app */,
+				883FD5D42811543E00DB2B61 /* TafakulTests.xctest */,
+				883FD5DE2811543E00DB2B61 /* TafakulUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		883FD5C02811543B00DB2B61 /* Tafakul */ = {
+			isa = PBXGroup;
+			children = (
+				18AA66692A154C490012F69F /* IconsLoginReg */,
+				B8D4260128ED875F004A44FB /* Profile */,
+				B82095B528E221280092D4C1 /* NetworkManager */,
+				B85382CA28E0B6C000A83BFB /* Extensions */,
+				B80D46A6286B22B8000AED68 /* Util */,
+				B80D46A1286AC9AF000AED68 /* Payment */,
+				883FD5C12811543B00DB2B61 /* AppDelegate.swift */,
+				883FD5C32811543B00DB2B61 /* SceneDelegate.swift */,
+				18001FD22954441300D7C884 /* Constants.swift */,
+				883FD5F528115BFB00DB2B61 /* ReuseFile.swift */,
+				88D054B7282A3D3900135D28 /* JsonLogin.swift */,
+				1888BA472970062600AC00DA /* Model.swift */,
+				88D054BD282B81A300135D28 /* jsonSignUp.swift */,
+				883FD5C52811543B00DB2B61 /* ViewController.swift */,
+				885DEBF42812986500F071B9 /* DashboardViewController.swift */,
+				1802EE662951C7AD00A37190 /* CartVC.swift */,
+				1802EE682951CEA100A37190 /* CartTVCell.swift */,
+				180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */,
+				180E3621294C7C6500349A89 /* DashboardVC+Cell */,
+				88314E9C286423130018DF90 /* LoginSignupQuickLogins */,
+				88DA35EE282586B3005A14CA /* sideViewControllers */,
+				886FB8E728253668006FA2F1 /* DailySadaqaValueViewController.swift */,
+				18843DE62A1E03CC003A81F5 /* GiftDonateViewController.swift */,
+				88DA35E2282574DB005A14CA /* FridaySadaqaViewController.swift */,
+				18E16D5F295490F300A43535 /* ContributeVC.swift */,
+				18E16D60295490F300A43535 /* InitiativeVC.swift */,
+				18E16D61295490F300A43535 /* SponserShipVC.swift */,
+				88DA35E428257747005A14CA /* NeighboursViewController.swift */,
+				88DA35E628257846005A14CA /* DetressReliefViewController.swift */,
+				88D054BF282BDF9C00135D28 /* MoreViewController.swift */,
+				8869AC972862224900C08CCA /* PublicSadaqatViewController.swift */,
+				18E16D5D295490C900A43535 /* GiftVC.swift */,
+				18E16D5B295490A500A43535 /* DailySadaqaVC.swift */,
+				8869AC992862225900C08CCA /* FoodBasketViewController.swift */,
+				8869AC9B2862226A00C08CCA /* ClothingAPoorViewController.swift */,
+				8869AC9D2862228500C08CCA /* ExpiationforOathViewController.swift */,
+				885DEBF72812997900F071B9 /* SWRevealViewController.h */,
+				885DEBF82812997900F071B9 /* SWRevealViewController.m */,
+				88FFFE9C2862A9510019C809 /* SponserAnOrphanViewController.swift */,
+				88FFFE9E2862AA160019C809 /* SponsershipFamilyNeedViewController.swift */,
+				188F0F2E296461EA00A93873 /* DashboardFoodBasketViewController.swift */,
+				88FFFEA02862AA570019C809 /* SpecialNeedsSponsershipViewController.swift */,
+				88FFFEA22862AB300019C809 /* StudentSponsershipViewController.swift */,
+				18001FD02953449100D7C884 /* Reachability.swift */,
+				88FFFEA42862B4760019C809 /* GiveGiftViewController.swift */,
+				188892BE2959AB0E0080C768 /* DonateFieldsViewController.swift */,
+				88FB385D2862C28A00289779 /* HousingProjectsViewController.swift */,
+				18E16D65295594AA00A43535 /* DonateViewController.swift */,
+				18C7A5712953386700F617F5 /* HomeViewController.swift */,
+				188892C02959B7B80080C768 /* GiftDonateTableViewCell.swift */,
+				88FB385F2862C2AE00289779 /* ConditionsElectonicsViewController.swift */,
+				88FB38612862CF0100289779 /* CompletionDetailsViewController.swift */,
+				18E16D6729559E4000A43535 /* WebViewController.swift */,
+				18843DEA2A208F9E003A81F5 /* SearchCharityViewController.swift */,
+				18C7A56F2953362C00F617F5 /* TakafulProfileViewController.swift */,
+				18C807F7296EA2EA00417E2B /* SearchViewController.swift */,
+				18C807F9296EB0A700417E2B /* SearchTableViewCell.swift */,
+				188AE13329796EBB002D677A /* AllDonationDetailsViewController.swift */,
+				188AE13529797829002D677A /* CartDonationTableViewCell.swift */,
+				1888BA43296EF84F00AC00DA /* Search.json */,
+				883FD5C72811543B00DB2B61 /* Main.storyboard */,
+				883FD5CA2811543E00DB2B61 /* Assets.xcassets */,
+				187C636D295DA5210032ACD6 /* iOSDevCenters+GIF.swift */,
+				187C636B295DA4F20032ACD6 /* load-loading (1).gif */,
+				883FD5CC2811543E00DB2B61 /* LaunchScreen.storyboard */,
+				883FD5CF2811543E00DB2B61 /* Info.plist */,
+				885DEBF62812997800F071B9 /* Tafakul-Bridging-Header.h */,
+			);
+			path = Tafakul;
+			sourceTree = "<group>";
+		};
+		883FD5D72811543E00DB2B61 /* TafakulTests */ = {
+			isa = PBXGroup;
+			children = (
+				883FD5D82811543E00DB2B61 /* TafakulTests.swift */,
+			);
+			path = TafakulTests;
+			sourceTree = "<group>";
+		};
+		883FD5E12811543E00DB2B61 /* TafakulUITests */ = {
+			isa = PBXGroup;
+			children = (
+				883FD5E22811543E00DB2B61 /* TafakulUITests.swift */,
+				883FD5E42811543E00DB2B61 /* TafakulUITestsLaunchTests.swift */,
+			);
+			path = TafakulUITests;
+			sourceTree = "<group>";
+		};
+		88DA35EE282586B3005A14CA /* sideViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8F48CB128F612510040CCAA /* DonationDetails */,
+				B82095AF28E21EBF0092D4C1 /* DashBoard */,
+				88242EFF281302F900344050 /* SideViewController.swift */,
+				88DA35E828257DDA005A14CA /* SponsershipsViewController.swift */,
+				88DA35EA28257DEE005A14CA /* InitiativeViewController.swift */,
+				88DA35EC28257E00005A14CA /* AboutTakafulViewController.swift */,
+				18843DE82A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift */,
+			);
+			path = sideViewControllers;
+			sourceTree = "<group>";
+		};
+		B80D46A1286AC9AF000AED68 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				18AA66672A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png */,
+				B80D46A2286AC9D5000AED68 /* PaymentWebView.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		B80D46A6286B22B8000AED68 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88D054BB282A428B00135D28 /* ApiURL.swift */,
+				B82EED052872C08800D423CE /* LocalStorage.swift */,
+				B854EC7328E06B8C00FA632A /* LocalizationSystem.swift */,
+				B8CE0BFA28E888CB003633DB /* Constant.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B82095AF28E21EBF0092D4C1 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B82095BB28E22AC70092D4C1 /* CollectionCell */,
+				B82095BA28E223E80092D4C1 /* Controller */,
+				B82095B228E21EE50092D4C1 /* Model */,
+				B82095B028E21ECF0092D4C1 /* View */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		B82095B028E21ECF0092D4C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B82095B228E21EE50092D4C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B82095B328E21F050092D4C1 /* SliderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B82095B528E221280092D4C1 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B82095B628E221390092D4C1 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B82095BA28E223E80092D4C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B82095B828E223E00092D4C1 /* DashBoardController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B82095BB28E22AC70092D4C1 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				88242EFD2812E0BE00344050 /* MenuCollectionViewCell.swift */,
+				B82095BC28E22AF40092D4C1 /* SliderCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		B82DF69928FAEC5300FBE8E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B82DF69A28FAEC6E00FBE8E4 /* DonationDetailsC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B85382CA28E0B6C000A83BFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B85382CB28E0B7D700A83BFB /* Colors+extension.swift */,
+				B8CE0BFC28E88BAE003633DB /* UserDefaults+extension.swift */,
+				B8316C0928E9EF1D00B59B90 /* UIViewController+Extention.swift */,
+				B89B60C428FA3FC600F912BB /* AlertView.swift */,
+				B8CE11BD2902F84B008EAC43 /* DesignableUITextField.swift */,
+				18001FD629546C1600D7C884 /* Global.swift */,
+				B8D246E2290D36DD007EE945 /* UITextField+Extention.swift */,
+				1889DD502982C2CC00880415 /* SearchList.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B8BA08CA28FBCF3A00E13DA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8BA08CB28FBCF4C00E13DA4 /* DonationDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8D4260128ED875F004A44FB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B8D4260428ED877B004A44FB /* Model */,
+				B8D4260328ED876E004A44FB /* Controller */,
+				B8D4260228ED8769004A44FB /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B8D4260228ED8769004A44FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8D4260528ED888F004A44FB /* ProfileViewController.swift */,
+				B8CE11B92902F0BC008EAC43 /* ProfileUpdateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8D4260328ED876E004A44FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8D4260928EDA29D004A44FB /* ProfileController.swift */,
+				B8CE11BB2902F0F7008EAC43 /* ProfileUpdateController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8D4260428ED877B004A44FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8D4260728EDA233004A44FB /* UserProfileModel.swift */,
+				B882137428EDCD94007B64B1 /* UserProfileUpdateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8F48CB128F612510040CCAA /* DonationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B8BA08CA28FBCF3A00E13DA4 /* Model */,
+				B82DF69928FAEC5300FBE8E4 /* Controller */,
+				B8F48CB228F6125F0040CCAA /* View */,
+			);
+			path = DonationDetails;
+			sourceTree = "<group>";
+		};
+		B8F48CB228F6125F0040CCAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8F48CB328F612CF0040CCAA /* DonationDetailsViewController.swift */,
+				B82DF69728FAE8F600FBE8E4 /* DonationDetailsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDDF17A6D75E0A084613929 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */,
+				6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */,
+				83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */,
+				13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */,
+				44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */,
+				B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883FD5BD2811543B00DB2B61 /* Tafakul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883FD5E82811543E00DB2B61 /* Build configuration list for PBXNativeTarget "Tafakul" */;
+			buildPhases = (
+				C78889EF835B6FA65CA9D742 /* [CP] Check Pods Manifest.lock */,
+				883FD5BA2811543B00DB2B61 /* Sources */,
+				883FD5BB2811543B00DB2B61 /* Frameworks */,
+				883FD5BC2811543B00DB2B61 /* Resources */,
+				CCEDBA7A5D31EEF031D7F391 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tafakul;
+			packageProductDependencies = (
+				B8E201C028E4A1B30031F2F6 /* Alamofire */,
+				18001FD42954611500D7C884 /* L10n-swift */,
+			);
+			productName = Tafakul;
+			productReference = 883FD5BE2811543B00DB2B61 /* Tafakul.app */;
+			productType = "com.apple.product-type.application";
+		};
+		883FD5D32811543E00DB2B61 /* TafakulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883FD5EB2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulTests" */;
+			buildPhases = (
+				CA5E0DA68910DB04FB698027 /* [CP] Check Pods Manifest.lock */,
+				883FD5D02811543E00DB2B61 /* Sources */,
+				883FD5D12811543E00DB2B61 /* Frameworks */,
+				883FD5D22811543E00DB2B61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883FD5D62811543E00DB2B61 /* PBXTargetDependency */,
+			);
+			name = TafakulTests;
+			productName = TafakulTests;
+			productReference = 883FD5D42811543E00DB2B61 /* TafakulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		883FD5DD2811543E00DB2B61 /* TafakulUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883FD5EE2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulUITests" */;
+			buildPhases = (
+				3E77BB17759E7030D87BBAEB /* [CP] Check Pods Manifest.lock */,
+				883FD5DA2811543E00DB2B61 /* Sources */,
+				883FD5DB2811543E00DB2B61 /* Frameworks */,
+				883FD5DC2811543E00DB2B61 /* Resources */,
+				777000148E8E0C75A4762D60 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883FD5E02811543E00DB2B61 /* PBXTargetDependency */,
+			);
+			name = TafakulUITests;
+			productName = TafakulUITests;
+			productReference = 883FD5DE2811543E00DB2B61 /* TafakulUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883FD5B62811543B00DB2B61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					883FD5BD2811543B00DB2B61 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					883FD5D32811543E00DB2B61 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 883FD5BD2811543B00DB2B61;
+					};
+					883FD5DD2811543E00DB2B61 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 883FD5BD2811543B00DB2B61;
+					};
+				};
+			};
+			buildConfigurationList = 883FD5B92811543B00DB2B61 /* Build configuration list for PBXProject "Tafakul" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 883FD5B52811543B00DB2B61;
+			packageReferences = (
+				B8E201BF28E4A1B30031F2F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B8BE3613290402EC0076D94C /* XCRemoteSwiftPackageReference "L10n-swift" */,
+			);
+			productRefGroup = 883FD5BF2811543B00DB2B61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				883FD5BD2811543B00DB2B61 /* Tafakul */,
+				883FD5D32811543E00DB2B61 /* TafakulTests */,
+				883FD5DD2811543E00DB2B61 /* TafakulUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		883FD5BC2811543B00DB2B61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883FD5CE2811543E00DB2B61 /* LaunchScreen.storyboard in Resources */,
+				18AA66712A154CA50012F69F /* login_img.png in Resources */,
+				B854EC6F28E0679C00FA632A /* Localizable.strings in Resources */,
+				18AA66732A154CB60012F69F /* register_btn.png in Resources */,
+				18AA666D2A154C770012F69F /* back_login_img.png in Resources */,
+				18AA66682A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png in Resources */,
+				18AA66762A176B960012F69F /* Fasting.png in Resources */,
+				18AA66792A176C0D0012F69F /* donation_1.5.png in Resources */,
+				187C636C295DA4F20032ACD6 /* load-loading (1).gif in Resources */,
+				883FD5CB2811543E00DB2B61 /* Assets.xcassets in Resources */,
+				883FD5C92811543B00DB2B61 /* Main.storyboard in Resources */,
+				18AA666F2A154C980012F69F /* imgpsh_fullsize_anim-4.png in Resources */,
+				18AA666B2A154C680012F69F /* login_bg_img.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5D22811543E00DB2B61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5DC2811543E00DB2B61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E77BB17759E7030D87BBAEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tafakul-TafakulUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777000148E8E0C75A4762D60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C78889EF835B6FA65CA9D742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tafakul-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA5E0DA68910DB04FB698027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TafakulTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCEDBA7A5D31EEF031D7F391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul/Pods-Tafakul-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul/Pods-Tafakul-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tafakul/Pods-Tafakul-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883FD5BA2811543B00DB2B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883FD5F8281173C700DB2B61 /* LoginViewController.swift in Sources */,
+				180E361C294C476E00349A89 /* DashboardVC.swift in Sources */,
+				18001FD12953449100D7C884 /* Reachability.swift in Sources */,
+				883FD5F628115BFB00DB2B61 /* ReuseFile.swift in Sources */,
+				18C7A5702953362C00F617F5 /* TakafulProfileViewController.swift in Sources */,
+				18AA66642A14E8440012F69F /* CharityPayMoreViewController.swift in Sources */,
+				1871EB3A2952EA9B00884829 /* ContributeProjectCVCell.swift in Sources */,
+				1802EE692951CEA100A37190 /* CartTVCell.swift in Sources */,
+				B82DF69B28FAEC6E00FBE8E4 /* DonationDetailsC.swift in Sources */,
+				883FD5C62811543B00DB2B61 /* ViewController.swift in Sources */,
+				B82095BD28E22AF40092D4C1 /* SliderCollectionViewCell.swift in Sources */,
+				883FD5C22811543B00DB2B61 /* AppDelegate.swift in Sources */,
+				88FB385E2862C28A00289779 /* HousingProjectsViewController.swift in Sources */,
+				1871EB442952FA3B00884829 /* RapidDonationTVCell.swift in Sources */,
+				883FD5F428115B1100DB2B61 /* SignUpViewController.swift in Sources */,
+				88FFFEA12862AA570019C809 /* SpecialNeedsSponsershipViewController.swift in Sources */,
+				188892C12959B7B80080C768 /* GiftDonateTableViewCell.swift in Sources */,
+				1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */,
+				1802EE672951C7AD00A37190 /* CartVC.swift in Sources */,
+				88FB38622862CF0100289779 /* CompletionDetailsViewController.swift in Sources */,
+				88DA35E728257846005A14CA /* DetressReliefViewController.swift in Sources */,
+				180E3620294C587F00349A89 /* DashboardSliderCVCell.swift in Sources */,
+				B82EED062872C08800D423CE /* LocalStorage.swift in Sources */,
+				B82DF69828FAE8F600FBE8E4 /* DonationDetailsCell.swift in Sources */,
+				18E16D64295490F300A43535 /* SponserShipVC.swift in Sources */,
+				88DA35E928257DDA005A14CA /* SponsershipsViewController.swift in Sources */,
+				1871EB3E2952F2DF00884829 /* NewsVC.swift in Sources */,
+				88FFFE9F2862AA160019C809 /* SponsershipFamilyNeedViewController.swift in Sources */,
+				B82095B728E221390092D4C1 /* NetworkManager.swift in Sources */,
+				88FFFEA32862AB300019C809 /* StudentSponsershipViewController.swift in Sources */,
+				1889DD512982C2CC00880415 /* SearchList.swift in Sources */,
+				B80D46A3286AC9D5000AED68 /* PaymentWebView.swift in Sources */,
+				18C807F8296EA2EA00417E2B /* SearchViewController.swift in Sources */,
+				18E16D63295490F300A43535 /* InitiativeVC.swift in Sources */,
+				88D054BC282A428B00135D28 /* ApiURL.swift in Sources */,
+				1871EB402952F43600884829 /* NewsTVCell.swift in Sources */,
+				18C807FA296EB0A700417E2B /* SearchTableViewCell.swift in Sources */,
+				886FB8E828253668006FA2F1 /* DailySadaqaValueViewController.swift in Sources */,
+				B8316C0A28E9EF1D00B59B90 /* UIViewController+Extention.swift in Sources */,
+				18843DE92A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift in Sources */,
+				B82095B928E223E00092D4C1 /* DashBoardController.swift in Sources */,
+				88242F00281302FA00344050 /* SideViewController.swift in Sources */,
+				B8CE11BE2902F84B008EAC43 /* DesignableUITextField.swift in Sources */,
+				B89B60C528FA3FC600F912BB /* AlertView.swift in Sources */,
+				8869AC9A2862225900C08CCA /* FoodBasketViewController.swift in Sources */,
+				1871EB462953050D00884829 /* NewsDetailsVC.swift in Sources */,
+				885DEBF92812997900F071B9 /* SWRevealViewController.m in Sources */,
+				B8D4260A28EDA29D004A44FB /* ProfileController.swift in Sources */,
+				180E3623294C7C9600349A89 /* CharityPaysCVCell.swift in Sources */,
+				18E16D66295594AA00A43535 /* DonateViewController.swift in Sources */,
+				883FD5FA28117B2200DB2B61 /* QuickLoginViewController.swift in Sources */,
+				1871EB3C2952ED3D00884829 /* InitiativeCVCell.swift in Sources */,
+				B882137528EDCD95007B64B1 /* UserProfileUpdateModel.swift in Sources */,
+				18001FD729546C1600D7C884 /* Global.swift in Sources */,
+				883FD5C42811543B00DB2B61 /* SceneDelegate.swift in Sources */,
+				B82095B428E21F050092D4C1 /* SliderModel.swift in Sources */,
+				8869AC982862224900C08CCA /* PublicSadaqatViewController.swift in Sources */,
+				18E16D62295490F300A43535 /* ContributeVC.swift in Sources */,
+				B8CE0BFD28E88BAE003633DB /* UserDefaults+extension.swift in Sources */,
+				88FB38602862C2AE00289779 /* ConditionsElectonicsViewController.swift in Sources */,
+				B8D246E3290D36DD007EE945 /* UITextField+Extention.swift in Sources */,
+				88DA35E528257747005A14CA /* NeighboursViewController.swift in Sources */,
+				18843DE72A1E03CC003A81F5 /* GiftDonateViewController.swift in Sources */,
+				187C636E295DA5210032ACD6 /* iOSDevCenters+GIF.swift in Sources */,
+				18AA66662A14E8920012F69F /* CharityPayMoreCollectionViewCell.swift in Sources */,
+				18C7A5722953386700F617F5 /* HomeViewController.swift in Sources */,
+				1888BA44296EF84F00AC00DA /* Search.json in Sources */,
+				88FFFEA52862B4760019C809 /* GiveGiftViewController.swift in Sources */,
+				885DEBF52812986500F071B9 /* DashboardViewController.swift in Sources */,
+				B8CE11BA2902F0BC008EAC43 /* ProfileUpdateViewController.swift in Sources */,
+				8869AC9C2862226A00C08CCA /* ClothingAPoorViewController.swift in Sources */,
+				B8BA08CC28FBCF4C00E13DA4 /* DonationDetailsModel.swift in Sources */,
+				188AE13429796EBB002D677A /* AllDonationDetailsViewController.swift in Sources */,
+				B8CE11BC2902F0F7008EAC43 /* ProfileUpdateController.swift in Sources */,
+				18E16D6829559E4000A43535 /* WebViewController.swift in Sources */,
+				180B4B022A13B7840026E2B0 /* TakafulProfileTableViewCell.swift in Sources */,
+				88D054C0282BDF9C00135D28 /* MoreViewController.swift in Sources */,
+				180E361E294C49DF00349A89 /* DashboardTopCVCell.swift in Sources */,
+				88D054BE282B81A400135D28 /* jsonSignUp.swift in Sources */,
+				8869AC9E2862228500C08CCA /* ExpiationforOathViewController.swift in Sources */,
+				B8CE0BFB28E888CB003633DB /* Constant.swift in Sources */,
+				B854EC7428E06B8C00FA632A /* LocalizationSystem.swift in Sources */,
+				188AE13629797829002D677A /* CartDonationTableViewCell.swift in Sources */,
+				18E16D5C295490A500A43535 /* DailySadaqaVC.swift in Sources */,
+				B8D4260628ED888F004A44FB /* ProfileViewController.swift in Sources */,
+				B8475C4328F4920D00431EB3 /* PhoneSignUpViewController.swift in Sources */,
+				1888BA482970062600AC00DA /* Model.swift in Sources */,
+				88DA35ED28257E00005A14CA /* AboutTakafulViewController.swift in Sources */,
+				18001FD32954441300D7C884 /* Constants.swift in Sources */,
+				88FFFE9D2862A9510019C809 /* SponserAnOrphanViewController.swift in Sources */,
+				188892BF2959AB0E0080C768 /* DonateFieldsViewController.swift in Sources */,
+				188F0F2F296461EA00A93873 /* DashboardFoodBasketViewController.swift in Sources */,
+				1871EB422952FA0100884829 /* RapidDonationVC.swift in Sources */,
+				B85382CC28E0B7D700A83BFB /* Colors+extension.swift in Sources */,
+				88DA35E3282574DB005A14CA /* FridaySadaqaViewController.swift in Sources */,
+				18E16D5E295490C900A43535 /* GiftVC.swift in Sources */,
+				88DA35EB28257DEE005A14CA /* InitiativeViewController.swift in Sources */,
+				88D054B8282A3D3900135D28 /* JsonLogin.swift in Sources */,
+				88242EFE2812E0BE00344050 /* MenuCollectionViewCell.swift in Sources */,
+				18843DEB2A208F9E003A81F5 /* SearchCharityViewController.swift in Sources */,
+				B8F48CB428F612CF0040CCAA /* DonationDetailsViewController.swift in Sources */,
+				B8D4260828EDA233004A44FB /* UserProfileModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5D02811543E00DB2B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883FD5D92811543E00DB2B61 /* TafakulTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883FD5DA2811543E00DB2B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883FD5E32811543E00DB2B61 /* TafakulUITests.swift in Sources */,
+				883FD5E52811543E00DB2B61 /* TafakulUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		883FD5D62811543E00DB2B61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 883FD5BD2811543B00DB2B61 /* Tafakul */;
+			targetProxy = 883FD5D52811543E00DB2B61 /* PBXContainerItemProxy */;
+		};
+		883FD5E02811543E00DB2B61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 883FD5BD2811543B00DB2B61 /* Tafakul */;
+			targetProxy = 883FD5DF2811543E00DB2B61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		883FD5C72811543B00DB2B61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883FD5C82811543B00DB2B61 /* Base */,
+				B854EC6B28E065DD00FA632A /* ar */,
+				B82491F628EBF42B00D64532 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		883FD5CC2811543E00DB2B61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883FD5CD2811543E00DB2B61 /* Base */,
+				B854EC6C28E065DD00FA632A /* ar */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B854EC7128E0679C00FA632A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B854EC7028E0679C00FA632A /* en */,
+				B854EC7228E0679F00FA632A /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883FD5E62811543E00DB2B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		883FD5E72811543E00DB2B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883FD5E92811543E00DB2B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGFASG778A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tafakul/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Takaful;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.Tafakul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tafakul/Tafakul-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		883FD5EA2811543E00DB2B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGFASG778A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tafakul/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Takaful;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.Tafakul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tafakul/Tafakul-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		883FD5EC2811543E00DB2B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3MKM2YJ85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.TafakulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tafakul.app/Tafakul";
+			};
+			name = Debug;
+		};
+		883FD5ED2811543E00DB2B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3MKM2YJ85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.TafakulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tafakul.app/Tafakul";
+			};
+			name = Release;
+		};
+		883FD5EF2811543E00DB2B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3MKM2YJ85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.TafakulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tafakul;
+			};
+			name = Debug;
+		};
+		883FD5F02811543E00DB2B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3MKM2YJ85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.TafakulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tafakul;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883FD5B92811543B00DB2B61 /* Build configuration list for PBXProject "Tafakul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883FD5E62811543E00DB2B61 /* Debug */,
+				883FD5E72811543E00DB2B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883FD5E82811543E00DB2B61 /* Build configuration list for PBXNativeTarget "Tafakul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883FD5E92811543E00DB2B61 /* Debug */,
+				883FD5EA2811543E00DB2B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883FD5EB2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883FD5EC2811543E00DB2B61 /* Debug */,
+				883FD5ED2811543E00DB2B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883FD5EE2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883FD5EF2811543E00DB2B61 /* Debug */,
+				883FD5F02811543E00DB2B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8BE3613290402EC0076D94C /* XCRemoteSwiftPackageReference "L10n-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Decybel07/L10n-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B8E201BF28E4A1B30031F2F6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18001FD42954611500D7C884 /* L10n-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8BE3613290402EC0076D94C /* XCRemoteSwiftPackageReference "L10n-swift" */;
+			productName = "L10n-swift";
+		};
+		B8E201C028E4A1B30031F2F6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E201BF28E4A1B30031F2F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 883FD5B62811543B00DB2B61 /* Project object */;
+}

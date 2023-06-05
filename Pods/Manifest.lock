@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - Gemini (1.4.0)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (7.7.0)
+  - ObjectMapper (3.5.3)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Gemini
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 7.0)
+  - SwiftyJSON
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Gemini
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - ObjectMapper
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  Gemini: 4ad915cca8805577fe3021e02feeca2b77dcdbfc
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: f043ac666dfc96c1f37604f93effb45a7ee3a3e1
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: fc5465353378d4f6cfde1e59a527989035d5b293
+
+COCOAPODS: 1.11.3

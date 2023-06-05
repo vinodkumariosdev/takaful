@@ -1,0 +1,6 @@
+framework module Pods_Tafakul {
+  umbrella header "Pods-Tafakul-umbrella.h"
+
+  export *
+  module * { export * }
+}

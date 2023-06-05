@@ -1,0 +1,6 @@
+framework module Pods_Tafakul_TafakulUITests {
+  umbrella header "Pods-Tafakul-TafakulUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

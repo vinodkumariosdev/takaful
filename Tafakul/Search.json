@@ -1,0 +1,126 @@
+{
+    "data": [
+        {
+        "Name":"Daily Sadaqa",
+        "Icon":"sadqa",
+        },
+        {
+        "Name":"Next door neighbour",
+        "Icon":"neighbor",
+        },
+        {
+        "Name": "Distress Relief",
+        "Icon":"detress",
+        },
+        {
+        "Name":"Stop arrow",
+        "Icon":"house",
+        },
+        {
+        "Name":"Public Charity",
+        "Icon":"food",
+        },
+        {
+        "Name":"Clothing a poor For one year",
+        "Icon":"clothing",
+        },
+        {
+        "Name":"Clothing a Family For one year",
+        "Icon":"gift_4",
+        },
+        {
+        "Name":"Friday Charity",
+        "Icon":"friday_charity",
+        },
+        {
+        "Name":"Aqiqah",
+        "Icon":"aqiqah",
+        },
+        {
+        "Name":"Vow",
+        "Icon":"vow",
+        },
+        {
+        "Name":"Sacrifice",
+        "Icon":"sacrifice",
+        },
+        {
+        "Name":"Orphan charity",
+        "Icon":"head",
+        },
+        {
+        "Name":"Fasting ransom",
+        "Icon":"masque",
+        },
+        {
+        "Name":"A gift",
+        "Icon":"gift_s",
+        },
+        {
+        "Name":"Condition & elecctronics",
+        "Icon":"electronics",
+        },
+        {
+        "Name":"Economic empowerment",
+        "Icon":"economic",
+        },
+        {
+        "Name":"House maintenance",
+        "Icon":"house",
+        },
+        {
+        "Name":"Housing Project",
+        "Icon":"house",
+        },
+        {
+        "Name":"Student support",
+        "Icon":"student",
+        },
+        {
+        "Name":"Special needs",
+        "Icon":"need",
+        },
+        {
+        "Name":"Family in need",
+        "Icon":"need",
+        },
+        {
+        "Name":"Orphan",
+        "Icon":"hand",
+        },
+        {
+        "Name":"Expiation for a broken Oath",
+        "Icon":"expiation",
+        },
+        {
+        "Name":"Clothing a poor",
+        "Icon":"clothing",
+        },
+        {
+        "Name":"Food basket",
+        "Icon":"food",
+        },
+        {
+        "Name":"Public sadaqat",
+        "Icon":"food",
+        },
+        {
+        "Name":"Home for them",
+        "Icon":"house",
+        },
+        {
+        "Name":"School bag project",
+        "Icon":"student",
+        },
+        {
+        "Name":"Detress Relief",
+        "Icon":"detress",
+        },
+        {
+        "Name":"Housing project",
+        "Icon":"house",
+        },
+        
+    ]
+    
+}

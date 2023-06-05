@@ -1,0 +1,136 @@
+/* 
+  Localizable.strings
+ Takaful
+
+  Created by Tariqul Islam on 25/9/22.
+  
+*/
+"Daily Sadaqa" = "Daily Sadaqa";
+"Friday Charity" = "Friday Charity";
+"Next door neighbour" = "Next door neighbour";
+"Distress Relife" = "Distress Relife";
+"Give Gift" = "Give\nGift";
+"abouttakaful" = "From the story of a community that pulls each other together like a solid structure, the chapters of the Takaful Sohar Social Charitable Team started in 2012 from the volunteer portal, raising the slogan of our solidarity through our happiness to grow the dream to a more beautiful reality as a charitable team working under the umbrella of the Social Development Committee in Sohar, to support the structure brick by brick and complete the missing picture.The sense of responsibility has grown, and with the support of the hands of its inexhaustible benevolence, the structure is complete, and the horizons of work have expanded to include various aspects and sectors of charitable aspects aimed at empowering the needy and providing them with a decent life through sustainable development projects for a happier, giving and loving society.";
+"Login" = "Login";
+"User name" = "User name";
+"Password" = "Password";
+"Create new account" = "Create new account";
+"Quick Donation" = "Quick Donation";
+"Signup" = "Signup";
+"Name" = "Name";
+"User name" = "User name";
+"Email" = "Email";
+"Phone" = "Phone";
+"Country" = "Country";
+"City" = "City";
+"Password" = "Password";
+"Confirm Password" = "Confirm Password";
+"Signup with mobile" = "Signup with mobile";
+"Login with mobile" = "Login with mobile";
+"Mobile Number" = "Mobile Number";
+"Home" = "Home";
+"Sponserships" = "Sponsorships";
+"Initiative" = "Initiative";
+"About Takaful" = "About Takaful";
+"Donation Details" = "Donation Details";
+"Logout" = "Logout";
+"Donate Now" = "Donate Now";
+"Public Sadaqa" = "Public Sadaqa";
+"Clothing A Poor" = "Clothing A Poor";
+"Expiation for a broken Oath" = "Expiation for a broken Oath";
+"Daily Sadaqa Value" = "Daily Sadaqa Value";
+"Choose donation amount" = "Choose donation amount";
+"Total amount" = "Total amount";
+"Gift Donate Fields" = "Gift Donate Fields";
+"Choose one of the fields to donate as a gift" = "Choose one of the fields to donate as a gift";
+"Name:" = "Name:";
+"Email:" = "Email:";
+"Phone Number:" = "Phone Number:";
+"Country:" = "Country:";
+"City:" = "City:";
+"Update Profile" = "Update Profile";
+"Profile" = "Profile";
+"Completion Details" = "Completion Details";
+"Other amounts" = "Other amounts";
+"Sender's Details" = "Sender's Details";
+"Gift recipient's name" = "Gift recipient's name";
+"Recipient's mobile" = "Recipient's mobile";
+"Gift Amounts" = "Gift Amounts";
+"Hide gift's value" = "Hide gift's value";
+"Choose if you do not want  to show the gift's value" = "Choose if you do not want  to show the gift's value";
+"Prsonal Details" = "Personal Details";
+"Name" = "Name";
+"Food basket" = "Food basket";
+"Sheep Cattle" = "Sheep Cattle";
+"Sponserships" = "Sponsorships";
+"Orphan" = "Orphan";
+"Family in need" = "Family in need";
+"Special needs" = "Special needs";
+"Students" = "Students";
+"Contribute to a project" = "Contribute to a project";
+"Housing project" = "Housing project";
+"House maintenance" = "House maintenance";
+"Economic empowerment" = "Economic empowerment";
+"Other Projects" = "Other Projects";
+"Initiative" = "Initiative";
+"Gift" = "Gift";
+"Donation 2" = "Donation 2";
+"Donation 3" = "Donation 3";
+"Secrifice" = "Sacrifice";
+"Vow" = "Vow";
+"Aqiqah" = "Aqiqah";
+"Hosue maintenance" = "Hosue maintenance";
+"About us" = "About us";
+"about1" = "From the story of a community that pulls each other together like a solid structure, the chapters of the Sohar Takaful Social Charitable Team started in 2012 from the volunteer portal, raising the slogan of our solidarity through our happiness to grow the dream to a more beautiful reality as a charitable team working under the umbrella of the Social Development Committee in Sohar, to support the structure brick by brick and complete the missing picture. The sense of responsibility has grown, and with the support of the hands of its inexhaustible benevolence, the structure is complete, and the horizons of work have expanded to include various aspects and sectors of charitable aspects aimed at empowering the needy and providing them with a decent life through sustainable development projects for a happier, giving and loving society";
+"Who we are" = "Who we are";
+"about2" = "Takaful, a leading charitable team in Sohar that provides sustainable and reliable social, humanitarian and charitable services to the deserving groups in accordance with the values of transparency, sincerity and human justice to ensure a decent life for all segments of society";
+"The Mission" = "The Mission";
+"about3" = "Strengthening the principle of social solidarity in the state of Sohar in cooperation with giving partners by providing reliable donation channels aimed at empowering eligible groups according to standards of transparency, innovation and diversity.";
+"Vision" = "Vision";
+"about4" = "Pioneering the provision of charitable services and social programs that enhance community solidarity in the state";
+"Objectives" = "Objectives";
+"about5" = "    Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Providing and developing voluntary programs concerned with the social aspect.
+    Providing and developing voluntary programs concerned with the social aspect.
+    Achieving excellence and innovation in performance and developing human competencies in the team";
+"Donation Id" = "Donation Id";
+"Donation Type" = "Donation Type";
+"Donation Date" = "Donation Date";
+"Donation Amount" = "Donation Amount";
+"Invoice" = "Invoice";
+"Donation Status" = "Donation Status";
+"Choose monthly sponsership value" = "Choose monthly sponsorship value";
+"Sponsership Period" = "Sponsorship Period";
+"Sponser an Orphan" = "Sponsor an Orphan";
+"Enter number of years" = "Enter number of years";
+"Sponsership amounts" = "Sponsorship amounts";
+"You need to login to view profile" = "You need to login to view profile";
+"You need to login to complete payment" = "You need to login to complete payment";
+"You need to login to view donation details" = "You need to login to view donation details";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Conditions & Electronics" = "Conditions & Electronics";
+"Do you want to login?" = "Do you want to login?";
+"Sadaqat" = "Sadaqat";
+"Login Successful" = "Login Successful";
+"Something went wrong" = "Something went wrong";
+"Registration Successful" = "Registration Successful";
+"Please Enter Username" = "Please Enter Username";
+"Please Enter Name" = "Please Enter Name";
+"Please Enter Email" = "Please Enter Email";
+"Please Enter Password" = "Please Enter Password";
+"Please Enter City" = "Please Enter City";
+"Please Enter Country" = "Please Enter Country";
+"Successfully update" = "Successfully update";
+"OTP send to your number, please check" = "OTP send to your number, please check";
+"Ok" = "Ok";
+"Recipient name is required" = "Recipient name is required";
+"Recipient mobile number is required" = "Recipient mobile number is required";
+"Recipient amount is required" = "Recipient amount is required";
+"Donate" = "Donate";
+
+
+

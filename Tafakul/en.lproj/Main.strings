@@ -1,0 +1,1102 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "08h-8i-VCw"; */
+"08h-8i-VCw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Gm-fy-3RL"; */
+"0Gm-fy-3RL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0qg-m8-hRK"; */
+"0qg-m8-hRK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "1Rm-3l-kD4"; */
+"1Rm-3l-kD4.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "2HW-qF-fR9"; */
+"2HW-qF-fR9.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2IF-ap-aBk"; */
+"2IF-ap-aBk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "2LC-pA-txZ"; */
+"2LC-pA-txZ.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2Ud-41-82j"; */
+"2Ud-41-82j.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2ch-YA-wCQ"; */
+"2ch-YA-wCQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "2eJ-Ad-m58"; */
+"2eJ-Ad-m58.text" = "Choose donation amount";
+
+/* Class = "UILabel"; text = "Public Sadaqat"; ObjectID = "3Lp-vk-p2T"; */
+"3Lp-vk-p2T.text" = "Public Sadaqat";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3ZD-Ze-yMS"; */
+"3ZD-Ze-yMS.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "3oO-XY-YHx"; */
+"3oO-XY-YHx.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3qF-fJ-SRO"; */
+"3qF-fJ-SRO.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "4mG-ix-6TM"; */
+"4mG-ix-6TM.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4mG-ix-6TM"; */
+"4mG-ix-6TM.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4mz-MU-V4y"; */
+"4mz-MU-V4y.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "526-kl-qWN"; */
+"526-kl-qWN.placeholder" = "City";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "52O-ds-Hah"; */
+"52O-ds-Hah.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Jc-23-C6g"; */
+"5Jc-23-C6g.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Mobile No"; ObjectID = "5KW-ss-HhO"; */
+"5KW-ss-HhO.placeholder" = "Mobile No";
+
+/* Class = "UILabel"; text = "Special needs"; ObjectID = "5Q5-o5-Ohg"; */
+"5Q5-o5-Ohg.text" = "Special needs";
+
+/* Class = "UILabel"; text = "Sponsership Period"; ObjectID = "5QS-Oc-93c"; */
+"5QS-Oc-93c.text" = "Sponsership Period";
+
+/* Class = "UILabel"; text = "Prsonal Details"; ObjectID = "6ED-M5-FLU"; */
+"6ED-M5-FLU.text" = "Prsonal Details";
+
+/* Class = "UILabel"; text = "Expiation for a broken Oath"; ObjectID = "6Fi-0a-lA4"; */
+"6Fi-0a-lA4.text" = "Expiation for a broken Oath";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6IQ-Qc-ztP"; */
+"6IQ-Qc-ztP.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "6Np-ah-1og"; */
+"6Np-ah-1og.title" = "Takaful";
+
+/* Class = "UILabel"; text = "Housing Projects"; ObjectID = "6Pn-W1-x8S"; */
+"6Pn-W1-x8S.text" = "Housing Projects";
+
+/* Class = "UILabel"; text = "Signup"; ObjectID = "6Qd-ZD-Vge"; */
+"6Qd-ZD-Vge.text" = "Signup";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6Vp-EH-S4b"; */
+"6Vp-EH-S4b.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6dv-j8-30G"; */
+"6dv-j8-30G.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Gift Donate Fields"; ObjectID = "6uk-6b-3GQ"; */
+"6uk-6b-3GQ.text" = "Gift Donate Fields";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "70l-pV-fam"; */
+"70l-pV-fam.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "74v-fE-RYC"; */
+"74v-fE-RYC.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "78O-YG-iWo"; */
+"78O-YG-iWo.text" = "Total amount";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "7Qu-qB-FBe"; */
+"7Qu-qB-FBe.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Qu-qB-FBe"; */
+"7Qu-qB-FBe.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Initiative"; ObjectID = "7mR-Em-bBk"; */
+"7mR-Em-bBk.title" = "Initiative";
+
+/* Class = "UILabel"; text = "Choose monthly sponsership value"; ObjectID = "7vn-mc-YMD"; */
+"7vn-mc-YMD.text" = "Choose monthly sponsership value";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "833-yL-wR7"; */
+"833-yL-wR7.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "8RN-xj-gjA"; */
+"8RN-xj-gjA.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8ZC-up-DCt"; */
+"8ZC-up-DCt.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8nW-ug-1oz"; */
+"8nW-ug-1oz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sponserships"; ObjectID = "91A-lo-30H"; */
+"91A-lo-30H.text" = "Sponserships";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "93e-O1-KcH"; */
+"93e-O1-KcH.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Create new account"; ObjectID = "98r-V9-heT"; */
+"98r-V9-heT.configuration.title" = "Create new account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "98r-V9-heT"; */
+"98r-V9-heT.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9IG-Ky-Krg"; */
+"9IG-Ky-Krg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9iH-LU-hck"; */
+"9iH-LU-hck.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "A04-eZ-7sk"; */
+"A04-eZ-7sk.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ABN-XS-eAL"; */
+"ABN-XS-eAL.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Quick Donation"; ObjectID = "AKm-8a-32B"; */
+"AKm-8a-32B.configuration.title" = "Quick Donation";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AKm-8a-32B"; */
+"AKm-8a-32B.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ARt-io-RGy"; */
+"ARt-io-RGy.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "Ag7-WL-RKm"; */
+"Ag7-WL-RKm.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ag7-WL-RKm"; */
+"Ag7-WL-RKm.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ArR-nY-c2i"; */
+"ArR-nY-c2i.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Arn-Vm-fva"; */
+"Arn-Vm-fva.placeholder" = "Username";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "B8Z-9p-lOg"; */
+"B8Z-9p-lOg.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B8Z-9p-lOg"; */
+"B8Z-9p-lOg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose monthly sponsership value"; ObjectID = "BGe-qK-bSt"; */
+"BGe-qK-bSt.text" = "Choose monthly sponsership value";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BY9-w5-hUW"; */
+"BY9-w5-hUW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Signup"; ObjectID = "Buc-J8-Kdz"; */
+"Buc-J8-Kdz.configuration.title" = "Signup";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Buc-J8-Kdz"; */
+"Buc-J8-Kdz.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C38-XF-Xpq"; */
+"C38-XF-Xpq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Quick Donation"; ObjectID = "C46-6R-vql"; */
+"C46-6R-vql.text" = "Quick Donation";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C8b-Zy-qYL"; */
+"C8b-Zy-qYL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose if you do not want to show the gift's value"; ObjectID = "CcV-Ot-o8A"; */
+"CcV-Ot-o8A.text" = "Choose if you do not want to show the gift's value";
+
+/* Class = "UILabel"; text = "Detress Relief"; ObjectID = "ChI-CH-giY"; */
+"ChI-CH-giY.text" = "Detress Relief";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "CtP-pH-07I"; */
+"CtP-pH-07I.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CtP-pH-07I"; */
+"CtP-pH-07I.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "D8F-b3-ZfS"; */
+"D8F-b3-ZfS.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DRP-vc-yhU"; */
+"DRP-vc-yhU.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "DV6-Lf-g0r"; */
+"DV6-Lf-g0r.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DV6-Lf-g0r"; */
+"DV6-Lf-g0r.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dln-9a-r0d"; */
+"Dln-9a-r0d.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Daily Sadaqa Value"; ObjectID = "Dzm-VR-Fvb"; */
+"Dzm-VR-Fvb.text" = "Daily Sadaqa Value";
+
+/* Class = "UIButton"; configuration.title = "B"; ObjectID = "E4s-Rd-DEd"; */
+"E4s-Rd-DEd.configuration.title" = "B";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "E4s-Rd-DEd"; */
+"E4s-Rd-DEd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "E77-6Q-k2J"; */
+"E77-6Q-k2J.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "EKb-me-65R"; */
+"EKb-me-65R.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EKb-me-65R"; */
+"EKb-me-65R.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EKe-s9-1XS"; */
+"EKe-s9-1XS.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EbY-V8-zzK"; */
+"EbY-V8-zzK.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Efa-B9-cxL"; */
+"Efa-B9-cxL.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "Esa-ur-3zN"; */
+"Esa-ur-3zN.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Esa-ur-3zN"; */
+"Esa-ur-3zN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ez0-hH-Qo8"; */
+"Ez0-hH-Qo8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "F9Q-bM-gkz"; */
+"F9Q-bM-gkz.text" = "Total amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FcA-n4-3y5"; */
+"FcA-n4-3y5.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Fhw-F1-27t"; */
+"Fhw-F1-27t.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "G3G-2L-NQT"; */
+"G3G-2L-NQT.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "G3G-2L-NQT"; */
+"G3G-2L-NQT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Other Projects"; ObjectID = "GDr-TH-hu6"; */
+"GDr-TH-hu6.text" = "Other Projects";
+
+/* Class = "UILabel"; text = "Adhya"; ObjectID = "GE8-Tg-jkS"; */
+"GE8-Tg-jkS.text" = "Adhya";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "GF6-j5-TsA"; */
+"GF6-j5-TsA.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GF6-j5-TsA"; */
+"GF6-j5-TsA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Neighbours in Village"; ObjectID = "GIB-iT-8bb"; */
+"GIB-iT-8bb.text" = "Neighbours in Village";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "GWA-sE-Umx"; */
+"GWA-sE-Umx.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GXd-BZ-fK8"; */
+"GXd-BZ-fK8.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gh5-xU-Dpf"; */
+"Gh5-xU-Dpf.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ghg-Pw-n8d"; */
+"Ghg-Pw-n8d.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "Gsg-O8-gqQ"; */
+"Gsg-O8-gqQ.text" = "Total amount";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "H3W-bO-mcQ"; */
+"H3W-bO-mcQ.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "H6C-Sg-4xV"; */
+"H6C-Sg-4xV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HMX-QF-Esl"; */
+"HMX-QF-Esl.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HRg-5M-iwX"; */
+"HRg-5M-iwX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "HXA-GJ-REk"; */
+"HXA-GJ-REk.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "His-rV-phN"; */
+"His-rV-phN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "How-fB-MJY"; */
+"How-fB-MJY.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "IBK-A0-CGa"; */
+"IBK-A0-CGa.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IBK-A0-CGa"; */
+"IBK-A0-CGa.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Public Sadaqa Value"; ObjectID = "IXL-nU-2Zg"; */
+"IXL-nU-2Zg.text" = "Public Sadaqa Value";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "Idp-w6-7jC"; */
+"Idp-w6-7jC.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Idp-w6-7jC"; */
+"Idp-w6-7jC.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "J8L-2n-bIP"; */
+"J8L-2n-bIP.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JD6-Mv-WUE"; */
+"JD6-Mv-WUE.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JVQ-0s-7zE"; */
+"JVQ-0s-7zE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Completion Details"; ObjectID = "JmQ-EZ-GGY"; */
+"JmQ-EZ-GGY.text" = "Completion Details";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "K0y-kj-tbL"; */
+"K0y-kj-tbL.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "K0y-kj-tbL"; */
+"K0y-kj-tbL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KOs-Eo-nfM"; */
+"KOs-Eo-nfM.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "Kb7-LE-0Ui"; */
+"Kb7-LE-0Ui.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "L8t-Vr-dGW"; */
+"L8t-Vr-dGW.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "L8t-Vr-dGW"; */
+"L8t-Vr-dGW.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "Lmr-83-aH1"; */
+"Lmr-83-aH1.text" = "Total amount";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "M0x-dA-C4S"; */
+"M0x-dA-C4S.title" = "Item";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "M9T-DB-co5"; */
+"M9T-DB-co5.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MBB-6f-sKM"; */
+"MBB-6f-sKM.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose monthly sponsership value"; ObjectID = "Mbo-Dp-Ghz"; */
+"Mbo-Dp-Ghz.text" = "Choose monthly sponsership value";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Mc8-50-Vz6"; */
+"Mc8-50-Vz6.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Sadaqat"; ObjectID = "Mfk-4I-GFu"; */
+"Mfk-4I-GFu.text" = "Sadaqat";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NCP-5F-Tx3"; */
+"NCP-5F-Tx3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Donate as a gift"; ObjectID = "NGN-hF-MWY"; */
+"NGN-hF-MWY.text" = "Donate as a gift";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "NXj-rE-ByC"; */
+"NXj-rE-ByC.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NXj-rE-ByC"; */
+"NXj-rE-ByC.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "NjE-Nv-eJe"; */
+"NjE-Nv-eJe.title" = "Takaful";
+
+/* Class = "UILabel"; text = "Economic empowerment"; ObjectID = "Nm6-Zl-eYP"; */
+"Nm6-Zl-eYP.text" = "Economic empowerment";
+
+/* Class = "UILabel"; text = "Donate as a gift"; ObjectID = "NoI-BA-agP"; */
+"NoI-BA-agP.text" = "Donate as a gift";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Nol-Lg-PWU"; */
+"Nol-Lg-PWU.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O5e-Fx-J5Q"; */
+"O5e-Fx-J5Q.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Initiative"; ObjectID = "O9k-NC-Keb"; */
+"O9k-NC-Keb.text" = "Initiative";
+
+/* Class = "UILabel"; text = "Sacrifice"; ObjectID = "OBK-Od-2fa"; */
+"OBK-Od-2fa.text" = "Sacrifice";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OXt-63-Ofs"; */
+"OXt-63-Ofs.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OXt-Px-noQ"; */
+"OXt-Px-noQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Osj-D6-V6M"; */
+"Osj-D6-V6M.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Recipient's mobile"; ObjectID = "Ou2-eB-Jd1"; */
+"Ou2-eB-Jd1.text" = "Recipient's mobile";
+
+/* Class = "UILabel"; text = "Friday Charity"; ObjectID = "P0w-0r-mou"; */
+"P0w-0r-mou.text" = "Friday Charity";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P4v-qk-TI8"; */
+"P4v-qk-TI8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "P7e-yc-JN9"; */
+"P7e-yc-JN9.text" = "Login";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "PKh-Al-7vX"; */
+"PKh-Al-7vX.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Q8A-Bn-zWi"; */
+"Q8A-Bn-zWi.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Takaful"; ObjectID = "QaP-Aq-cWK"; */
+"QaP-Aq-cWK.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qai-fQ-Kd2"; */
+"Qai-fQ-Kd2.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "R1s-mS-fQ1"; */
+"R1s-mS-fQ1.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RGs-X1-VNY"; */
+"RGs-X1-VNY.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "RLj-jA-TeD"; */
+"RLj-jA-TeD.placeholder" = "Country";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "RR9-p4-2nD"; */
+"RR9-p4-2nD.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Daily Sadaqa"; ObjectID = "Rjz-8z-y8I"; */
+"Rjz-8z-y8I.text" = "Daily Sadaqa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RnJ-ML-Zd0"; */
+"RnJ-ML-Zd0.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Rrm-Yx-MeC"; */
+"Rrm-Yx-MeC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Rz0-3z-qBJ"; */
+"Rz0-3z-qBJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SEB-ds-4mx"; */
+"SEB-ds-4mx.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SG2-E0-I3I"; */
+"SG2-E0-I3I.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Sd9-1N-7rn"; */
+"Sd9-1N-7rn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Si1-hx-2Jm"; */
+"Si1-hx-2Jm.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SoA-SA-ZGO"; */
+"SoA-SA-ZGO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Special needs"; ObjectID = "SpN-Kv-Abw"; */
+"SpN-Kv-Abw.text" = "Special needs";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TPk-jE-oUg"; */
+"TPk-jE-oUg.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "TVv-80-RYs"; */
+"TVv-80-RYs.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TVv-80-RYs"; */
+"TVv-80-RYs.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Number Of People"; ObjectID = "TXU-Qx-KHa"; */
+"TXU-Qx-KHa.placeholder" = "Number Of People";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TYp-Bu-Mrd"; */
+"TYp-Bu-Mrd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TdT-Ad-VCl"; */
+"TdT-Ad-VCl.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "U9b-n3-83A"; */
+"U9b-n3-83A.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UXL-tx-hL6"; */
+"UXL-tx-hL6.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VP5-fW-W2V"; */
+"VP5-fW-W2V.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VQV-km-oVw"; */
+"VQV-km-oVw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VcA-AT-4Ds"; */
+"VcA-AT-4Ds.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Compensatary Fasting"; ObjectID = "VkW-g2-PFh"; */
+"VkW-g2-PFh.text" = "Compensatary Fasting";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "Vzg-gn-xXS"; */
+"Vzg-gn-xXS.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Vzg-gn-xXS"; */
+"Vzg-gn-xXS.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "WDA-Wg-PiH"; */
+"WDA-Wg-PiH.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Sponsership Period"; ObjectID = "WHd-Jo-JCE"; */
+"WHd-Jo-JCE.text" = "Sponsership Period";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "WZe-JE-WpG"; */
+"WZe-JE-WpG.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Choose one of the fields to donate as a gift"; ObjectID = "WbU-oj-OFx"; */
+"WbU-oj-OFx.text" = "Choose one of the fields to donate as a gift";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "Wh5-YK-QJz"; */
+"Wh5-YK-QJz.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Wlh-39-t44"; */
+"Wlh-39-t44.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "XAF-Xj-aoq"; */
+"XAF-Xj-aoq.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "XEO-6S-0gO"; */
+"XEO-6S-0gO.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XEO-6S-0gO"; */
+"XEO-6S-0gO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "XJs-mq-BUh"; */
+"XJs-mq-BUh.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XbN-h0-m1T"; */
+"XbN-h0-m1T.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "Y49-Nq-z26"; */
+"Y49-Nq-z26.title" = "Takaful";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "YDu-mR-66t"; */
+"YDu-mR-66t.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YDu-mR-66t"; */
+"YDu-mR-66t.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "More"; ObjectID = "YIi-Mn-Wdg"; */
+"YIi-Mn-Wdg.text" = "More";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YtL-UI-O66"; */
+"YtL-UI-O66.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Number Of People"; ObjectID = "YxF-H5-X4R"; */
+"YxF-H5-X4R.placeholder" = "Number Of People";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Zds-Wq-caw"; */
+"Zds-Wq-caw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Zes-VD-AWQ"; */
+"Zes-VD-AWQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "Zfm-4H-hIA"; */
+"Zfm-4H-hIA.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Clothing A Poor"; ObjectID = "Zn0-31-Kzp"; */
+"Zn0-31-Kzp.text" = "Clothing A Poor";
+
+/* Class = "UILabel"; text = "Signup with mobile"; ObjectID = "a3p-pA-lAs"; */
+"a3p-pA-lAs.text" = "Signup with mobile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "b2l-Ko-3M0"; */
+"b2l-Ko-3M0.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bZn-Tg-o97"; */
+"bZn-Tg-o97.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "More"; ObjectID = "ban-3t-qSQ"; */
+"ban-3t-qSQ.text" = "More";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "bn0-28-LGq"; */
+"bn0-28-LGq.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bn0-28-LGq"; */
+"bn0-28-LGq.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "bvo-Ut-HDQ"; */
+"bvo-Ut-HDQ.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bvo-Ut-HDQ"; */
+"bvo-Ut-HDQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cC0-48-Rum"; */
+"cC0-48-Rum.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "cDr-Gz-feE"; */
+"cDr-Gz-feE.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cDr-Gz-feE"; */
+"cDr-Gz-feE.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cF4-wf-OqU"; */
+"cF4-wf-OqU.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "cNN-oD-BYC"; */
+"cNN-oD-BYC.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cNN-oD-BYC"; */
+"cNN-oD-BYC.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "cUi-tO-BHI"; */
+"cUi-tO-BHI.title" = "Takaful";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "cbg-fc-YQJ"; */
+"cbg-fc-YQJ.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "coO-Ia-Tiw"; */
+"coO-Ia-Tiw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cov-BE-yOb"; */
+"cov-BE-yOb.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cr7-kH-FCF"; */
+"cr7-kH-FCF.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cx0-Xs-SGw"; */
+"cx0-Xs-SGw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Food basket"; ObjectID = "cxU-0M-Mgf"; */
+"cxU-0M-Mgf.text" = "Food basket";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "czU-1P-iPH"; */
+"czU-1P-iPH.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Hosue Maintenance"; ObjectID = "dHT-96-Dqb"; */
+"dHT-96-Dqb.text" = "Hosue Maintenance";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "dTP-Th-W3S"; */
+"dTP-Th-W3S.placeholder" = "Password";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "dWx-aS-frY"; */
+"dWx-aS-frY.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dbD-CX-0KB"; */
+"dbD-CX-0KB.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dfH-8m-Nr2"; */
+"dfH-8m-Nr2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "dst-ht-MFZ"; */
+"dst-ht-MFZ.text" = "Choose donation amount";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "dzx-Zh-K3k"; */
+"dzx-Zh-K3k.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dzy-C9-bzP"; */
+"dzy-C9-bzP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "e2N-0d-Eyv"; */
+"e2N-0d-Eyv.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "eA0-Dv-NbJ"; */
+"eA0-Dv-NbJ.text" = "Total amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ebX-gR-6SS"; */
+"ebX-gR-6SS.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ebt-OP-KOQ"; */
+"ebt-OP-KOQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "ee9-fj-Cfc"; */
+"ee9-fj-Cfc.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ee9-fj-Cfc"; */
+"ee9-fj-Cfc.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "eyF-V1-E0t"; */
+"eyF-V1-E0t.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eyF-V1-E0t"; */
+"eyF-V1-E0t.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "f02-a7-kPu"; */
+"f02-a7-kPu.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "fAs-Pd-3S1"; */
+"fAs-Pd-3S1.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fHA-Gy-ilC"; */
+"fHA-Gy-ilC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sponsership Period"; ObjectID = "fUA-C7-Ggw"; */
+"fUA-C7-Ggw.text" = "Sponsership Period";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fVd-1M-R8N"; */
+"fVd-1M-R8N.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fiK-6L-v0i"; */
+"fiK-6L-v0i.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fwA-9S-dxC"; */
+"fwA-9S-dxC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g8h-Wq-Lk9"; */
+"g8h-Wq-Lk9.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "gUm-OJ-2gK"; */
+"gUm-OJ-2gK.title" = "Takaful";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "gaR-so-6sQ"; */
+"gaR-so-6sQ.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "12345678"; ObjectID = "gaR-so-6sQ"; */
+"gaR-so-6sQ.text" = "12345678";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gql-QU-lmQ"; */
+"gql-QU-lmQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Gift"; ObjectID = "gtK-94-bec"; */
+"gtK-94-bec.text" = "Gift";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "guq-dg-2wL"; */
+"guq-dg-2wL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "h0k-gj-6lU"; */
+"h0k-gj-6lU.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ha7-8O-654"; */
+"ha7-8O-654.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; prompt = " "; ObjectID = "hmc-4r-LIQ"; */
+"hmc-4r-LIQ.prompt" = " ";
+
+/* Class = "UILabel"; text = "Housing project"; ObjectID = "hng-RM-mHl"; */
+"hng-RM-mHl.text" = "Housing project";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "iNI-YJ-OoO"; */
+"iNI-YJ-OoO.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ibs-Ve-kgz"; */
+"ibs-Ve-kgz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "food basket"; ObjectID = "ito-mW-mrp"; */
+"ito-mW-mrp.text" = "food basket";
+
+/* Class = "UILabel"; text = "Expiation for a broken Oath"; ObjectID = "ixi-HH-c6U"; */
+"ixi-HH-c6U.text" = "Expiation for a broken Oath";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "j0r-5k-zyu"; */
+"j0r-5k-zyu.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jAD-TW-A5b"; */
+"jAD-TW-A5b.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "conditions & Electronics"; ObjectID = "jEZ-5X-DgX"; */
+"jEZ-5X-DgX.text" = "conditions & Electronics";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jTe-fB-e1r"; */
+"jTe-fB-e1r.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jmp-u2-q2C"; */
+"jmp-u2-q2C.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Special Needs Sponsership"; ObjectID = "kIh-es-1Xw"; */
+"kIh-es-1Xw.text" = "Special Needs Sponsership";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kMm-jx-tOH"; */
+"kMm-jx-tOH.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kSg-Pu-gfg"; */
+"kSg-Pu-gfg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kbc-8L-rNz"; */
+"kbc-8L-rNz.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "klO-wM-ZqE"; */
+"klO-wM-ZqE.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "klO-wM-ZqE"; */
+"klO-wM-ZqE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Donate as a gift"; ObjectID = "kyq-Fz-oQH"; */
+"kyq-Fz-oQH.text" = "Donate as a gift";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "l3A-ch-Dhb"; */
+"l3A-ch-Dhb.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Sponser an Orphan"; ObjectID = "lCV-as-ID9"; */
+"lCV-as-ID9.text" = "Sponser an Orphan";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "lEg-ra-rOR"; */
+"lEg-ra-rOR.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lJe-tZ-t4v"; */
+"lJe-tZ-t4v.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0.0M"; ObjectID = "lVO-9b-amO"; */
+"lVO-9b-amO.text" = "0.0M";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "lij-7h-yrZ"; */
+"lij-7h-yrZ.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lij-7h-yrZ"; */
+"lij-7h-yrZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Donate as a gift"; ObjectID = "lyv-Z2-8ev"; */
+"lyv-Z2-8ev.text" = "Donate as a gift";
+
+/* Class = "UILabel"; text = "Electronics"; ObjectID = "lzb-uP-aYw"; */
+"lzb-uP-aYw.text" = "Electronics";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "m3s-en-TOc"; */
+"m3s-en-TOc.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mWM-wC-laB"; */
+"mWM-wC-laB.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "maf-im-Uig"; */
+"maf-im-Uig.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mnG-vB-hrU"; */
+"mnG-vB-hrU.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "n87-K9-ZwG"; */
+"n87-K9-ZwG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sponsership Period"; ObjectID = "nMF-3Q-mda"; */
+"nMF-3Q-mda.text" = "Sponsership Period";
+
+/* Class = "UILabel"; text = "Vaw"; ObjectID = "npz-Lp-IVq"; */
+"npz-Lp-IVq.text" = "Vaw";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oAp-Jq-Dip"; */
+"oAp-Jq-Dip.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose donation amount"; ObjectID = "oII-8U-4hD"; */
+"oII-8U-4hD.text" = "Choose donation amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oUA-g0-IRL"; */
+"oUA-g0-IRL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oZF-f5-tn8"; */
+"oZF-f5-tn8.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Gift recipient's name"; ObjectID = "oZS-QJ-UWM"; */
+"oZS-QJ-UWM.text" = "Gift recipient's name";
+
+/* Class = "UILabel"; text = "0.0M"; ObjectID = "oeJ-KI-H8R"; */
+"oeJ-KI-H8R.text" = "0.0M";
+
+/* Class = "UIButton"; configuration.title = "B"; ObjectID = "ol3-3m-YX2"; */
+"ol3-3m-YX2.configuration.title" = "B";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ol3-3m-YX2"; */
+"ol3-3m-YX2.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "osY-nM-56v"; */
+"osY-nM-56v.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0.0M"; ObjectID = "ozj-iG-znP"; */
+"ozj-iG-znP.text" = "0.0M";
+
+/* Class = "UILabel"; text = "Donate as a gift"; ObjectID = "p7N-w6-JDX"; */
+"p7N-w6-JDX.text" = "Donate as a gift";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pNe-x9-v63"; */
+"pNe-x9-v63.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pQM-qk-Gdg"; */
+"pQM-qk-Gdg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pWk-l5-YKm"; */
+"pWk-l5-YKm.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "pf8-xi-PDt"; */
+"pf8-xi-PDt.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pzd-4K-mma"; */
+"pzd-4K-mma.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "q9a-w4-CJI"; */
+"q9a-w4-CJI.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qDR-YT-zZZ"; */
+"qDR-YT-zZZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qXT-Sa-CcT"; */
+"qXT-Sa-CcT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sponsership family in need"; ObjectID = "qcG-zu-Flx"; */
+"qcG-zu-Flx.text" = "Sponsership family in need";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "qdx-ba-K28"; */
+"qdx-ba-K28.title" = "Takaful";
+
+/* Class = "UIButton"; configuration.title = "Add to basket"; ObjectID = "rBz-EQ-0gu"; */
+"rBz-EQ-0gu.configuration.title" = "Add to basket";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rBz-EQ-0gu"; */
+"rBz-EQ-0gu.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "rM8-CU-wcK"; */
+"rM8-CU-wcK.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rOf-SC-W4h"; */
+"rOf-SC-W4h.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rST-5q-Hfu"; */
+"rST-5q-Hfu.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rng-oi-7GV"; */
+"rng-oi-7GV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rtE-sf-x2z"; */
+"rtE-sf-x2z.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "rvs-iW-kI2"; */
+"rvs-iW-kI2.text" = "Total amount";
+
+/* Class = "UILabel"; text = "Choose monthly sponsership value"; ObjectID = "s9h-kU-5ab"; */
+"s9h-kU-5ab.text" = "Choose monthly sponsership value";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sBa-Lr-zFU"; */
+"sBa-Lr-zFU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Student"; ObjectID = "sJQ-3w-Hk3"; */
+"sJQ-3w-Hk3.text" = "Student";
+
+/* Class = "UILabel"; text = "family in need"; ObjectID = "sSQ-oT-ViL"; */
+"sSQ-oT-ViL.text" = "family in need";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sX2-ns-q3C"; */
+"sX2-ns-q3C.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "t3p-oU-cfQ"; */
+"t3p-oU-cfQ.title" = "Takaful";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tlI-sH-goW"; */
+"tlI-sH-goW.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "to1-Q6-yKB"; */
+"to1-Q6-yKB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Aqiqah"; ObjectID = "u7o-ZL-QbM"; */
+"u7o-ZL-QbM.text" = "Aqiqah";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uIl-X8-IdM"; */
+"uIl-X8-IdM.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Number Of People"; ObjectID = "uoh-gz-xQx"; */
+"uoh-gz-xQx.placeholder" = "Number Of People";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "v0g-oU-MvQ"; */
+"v0g-oU-MvQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "v2S-Sc-0b3"; */
+"v2S-Sc-0b3.text" = "Total amount";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "v6J-nA-T3T"; */
+"v6J-nA-T3T.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "vNm-I0-KIt"; */
+"vNm-I0-KIt.text" = "Total amount";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "vTI-a9-C3l"; */
+"vTI-a9-C3l.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vk8-II-Xrg"; */
+"vk8-II-Xrg.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "wUi-pH-Tju"; */
+"wUi-pH-Tju.placeholder" = "Other amounts";
+
+/* Class = "UILabel"; text = "Student Sponsership"; ObjectID = "wcB-2Q-8tT"; */
+"wcB-2Q-8tT.text" = "Student Sponsership";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wco-nk-twk"; */
+"wco-nk-twk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0.0M"; ObjectID = "wfS-Ph-5Ec"; */
+"wfS-Ph-5Ec.text" = "0.0M";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "wrG-UI-F4O"; */
+"wrG-UI-F4O.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wrG-UI-F4O"; */
+"wrG-UI-F4O.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Mobile Number"; ObjectID = "xVS-IK-Ub9"; */
+"xVS-IK-Ub9.text" = "Mobile Number";
+
+/* Class = "UILabel"; text = "Sender's Details"; ObjectID = "xVU-4G-geR"; */
+"xVU-4G-geR.text" = "Sender's Details";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xZn-UD-Qza"; */
+"xZn-UD-Qza.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Clothing For The Needy"; ObjectID = "xgP-zr-fL3"; */
+"xgP-zr-fL3.text" = "Clothing For The Needy";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "xuE-UM-jYD"; */
+"xuE-UM-jYD.placeholder" = "Username";
+
+/* Class = "UITextField"; text = "testuser"; ObjectID = "xuE-UM-jYD"; */
+"xuE-UM-jYD.text" = "testuser";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xw0-OR-wE0"; */
+"xw0-OR-wE0.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "xwt-aq-zXN"; */
+"xwt-aq-zXN.configuration.title" = "Donate Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xwt-aq-zXN"; */
+"xwt-aq-zXN.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Contribute to a project"; ObjectID = "xz1-pZ-XuH"; */
+"xz1-pZ-XuH.text" = "Contribute to a project";
+
+/* Class = "UIBarButtonItem"; title = "Takaful"; ObjectID = "yVv-vW-uzo"; */
+"yVv-vW-uzo.title" = "Takaful";
+
+/* Class = "UILabel"; text = "Friday Sadaqa value"; ObjectID = "yjb-Mi-6gX"; */
+"yjb-Mi-6gX.text" = "Friday Sadaqa value";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yv8-bq-uvo"; */
+"yv8-bq-uvo.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yvM-YN-YQd"; */
+"yvM-YN-YQd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "z1K-5b-pIM"; */
+"z1K-5b-pIM.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Other amounts"; ObjectID = "zMw-01-qrh"; */
+"zMw-01-qrh.placeholder" = "Other amounts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zRc-tX-z3f"; */
+"zRc-tX-z3f.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zaL-wf-fhR"; */
+"zaL-wf-fhR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Orphan"; ObjectID = "zbs-8T-F6T"; */
+"zbs-8T-F6T.text" = "Orphan";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "zeO-ur-0rg"; */
+"zeO-ur-0rg.text" = "Total amount";
+"Hvr-5L-YFl.text" = "From the story of a community that pulls each other together like a solid structure, the chapters of the Sohar Takaful Social Charitable Team started in 2012 from the volunteer portal, raising the slogan of our solidarity through our happiness to grow the dream to a more beautiful reality as a charitable team working under the umbrella of the Social Development Committee in Sohar, to support the structure brick by brick and complete the missing picture. The sense of responsibility has grown, and with the support of the hands of its inexhaustible benevolence, the structure is complete, and the horizons of work have expanded to include various aspects and sectors of charitable aspects aimed at empowering the needy and providing them with a decent life through sustainable development projects for a happier, giving and loving society"
+"APh-h1-wOP.text" = "Takaful, a leading charitable team in Sohar that provides sustainable and reliable social, humanitarian and charitable services to the deserving groups in accordance with the values of transparency, sincerity and human justice to ensure a decent life for all segments of society";
+"gnt-AQ-ow6.text" = "Pioneering the provision of charitable services and social programs that enhance community solidarity in the state";
+
+
+"U4n-hg-05R.text" = " Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Pioneering professional institutional charitable work
+    Providing and developing voluntary programs concerned with the social aspect.
+    Providing and developing voluntary programs concerned with the social aspect.
+    Achieving excellence and innovation in performance and developing human competencies in the team
+";
