@@ -50,8 +50,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             userid = UserDefaults.standard.string(forKey: "id")
             amountTF.delegate = self
             amount = "1"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             donationAmtlbl.text = "اختر مبلغ التبرع"
             self.titleLbl.text = titleText
             self.DonateNowBtn.setTitle("تبرع الآن", for: .normal)
@@ -91,8 +91,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             amountTF.text = ""
             self.amount = "1"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             RupeeBtn.setImage(UIImage(named: "donation_1"), for: UIControl.State.normal)
             fiveRupeeBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenRupeeBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
@@ -115,8 +115,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             amountTF.text = ""
             self.amount = "5"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             RupeeBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveRupeeBtn.setImage(UIImage(named: "donation_5_1"), for: UIControl.State.normal)
             tenRupeeBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
@@ -139,8 +139,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             amountTF.text = ""
             self.amount = "10"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             RupeeBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveRupeeBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenRupeeBtn.setImage(UIImage(named: "donation_10_2"), for: UIControl.State.normal)
@@ -163,8 +163,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             amountTF.text = ""
             self.amount = "20"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             RupeeBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveRupeeBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenRupeeBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
@@ -196,8 +196,8 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                 tenRupeeBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
                 twentyRupeeBtn.setImage(UIImage(named: "donation_20"), for: UIControl.State.normal)
                 amountValue = amountTF.text!
-                let totalAmounts = "المبالغ الإجمالية"
-                amountlbl.text = "\(totalAmounts) \(amountValue ?? "") ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountlbl.text = "\(totalAmounts) \(amountValue ?? "") ر.ع"
             }
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight

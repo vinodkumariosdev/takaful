@@ -355,8 +355,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             numberOathExpitationsTF.delegate = self
             numberOathExpitationsTF.text = ""
             self.expirationAmt = "15"
-            let totalAmounts = "المبالغ الإجمالية"
-            self.expitationLbl.text = "\(totalAmounts) 15 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.expitationLbl.text = "\(totalAmounts) 15 ر.ع"
             Food1myValue = "1"
             self.expitationBackLbl.text = "كفارة حنث اليمين"
             donateExpitationBtn.setTitle("تبرع الآن", for: .normal)
@@ -440,8 +440,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 sacrifice250Btn.addTarget(self, action: #selector(sacrifice250BtnAction), for: .touchUpInside)
                 sacrificeAmount = "45"
                 sacrifice45AmtValue = 45
-                let totalAmounts = "المبالغ الإجمالية"
-                self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.ع"
                 DonateSacBtn.setTitle("تبرع الآن", for: .normal)
                 sacrificeAddCartBtn.setTitle("اضافة للعربة", for: .normal)
                 sacrificeCattleLbl.text = "ماشية"
@@ -487,8 +487,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 self.aqiqahVieww.isHidden = true
                 self.sacrificeMoreVieww.isHidden = true
                 ransomAmount = Int(1.5)
-                let totalAmounts = "المبالغ الإجمالية"
-                self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.ع"
                 donateRansomBtn.addTarget(self, action: #selector(ransomDonateBtnAction), for: .touchUpInside)
                 ransomLbl.text = "فدية صيام"
                 DashboardRansomBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
@@ -540,8 +540,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 self.aqiqahVieww.isHidden = true
                 self.sacrificeMoreVieww.isHidden = true
                 vowAmt = 45
-                let totalAmounts = "المبالغ الإجمالية"
-                self.vowAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                self.vowAmtLbl.text = "\(totalAmounts) 45 ر.ع"
                 vow45Btn.addTarget(self, action: #selector(vow45BtnAction), for: .touchUpInside)
                 vow250Btn.addTarget(self, action: #selector(vow250BtnAction), for: .touchUpInside)
             }else{
@@ -589,8 +589,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 self.aqiqahVieww.isHidden = false
                 self.sacrificeMoreVieww.isHidden = true
                 aqiqahAmt = 45
-                let totalAmounts = "المبالغ الإجمالية"
-                self.aqiqahNumberLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                self.aqiqahNumberLbl.text = "\(totalAmounts) 45 ر.ع"
                 aqiqah45Btn.addTarget(self, action: #selector(aqiqah45BtnAction), for: .touchUpInside)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -635,8 +635,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 self.sacrificeMoreVieww.isHidden = false
                 self.sacrificeMoreTF.delegate = self
                 sacrificeMoreAmt = 45
-                let totalAmounts = "المبالغ الإجمالية"
-                self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.ع"
                 sacrificeMore315Btn.addTarget(self, action: #selector(sacrificeMore315btnAction), for: .touchUpInside)
                 sacrificeMore45Btn.addTarget(self, action: #selector(sacrificeMore45btnAction), for: .touchUpInside)
                 sacrificeMore45Btn1.addTarget(self, action: #selector(sacrificeMore45_1btnAction), for: .touchUpInside)
@@ -679,8 +679,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             tenBtn.addTarget(self, action: #selector(tenBtnAction), for: .touchUpInside)
             twentyBtnAction.addTarget(self, action: #selector(twentyBtnAc), for: .touchUpInside)
             self.foodamountValue = "1"
-            let totalAmounts = "المبالغ الإجمالية"
-            self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.ع"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             self.otherAmountTF.delegate = self
@@ -736,8 +736,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             sacrificeMoreAmt = 315
-            let totalAmounts = "المبالغ الإجمالية"
-            self.sacrificeMoreLbl.text = "\(totalAmounts) 315 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.sacrificeMoreLbl.text = "\(totalAmounts) 315 ر.ع"
             sacrificeMore315Btn.setImage(UIImage(named: "donation_315_2"), for: UIControl.State.normal)
             sacrificeMore45Btn1.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
             sacrificeMore45Btn.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
@@ -758,8 +758,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             sacrificeMoreAmt = 45
-            let totalAmounts = "المبالغ الإجمالية"
-            self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.ع"
             sacrificeMore315Btn.setImage(UIImage(named: "donation_315"), for: UIControl.State.normal)
             sacrificeMore45Btn1.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
             sacrificeMore45Btn.setImage(UIImage(named: "donation_45"), for: UIControl.State.normal)
@@ -780,8 +780,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             sacrificeMoreAmt = 45
-            let totalAmounts = "المبالغ الإجمالية"
-            self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.ع"
             sacrificeMore315Btn.setImage(UIImage(named: "donation_315"), for: UIControl.State.normal)
             sacrificeMore45Btn1.setImage(UIImage(named: "donation_45"), for: UIControl.State.normal)
             sacrificeMore45Btn.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
@@ -803,8 +803,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             vowAmt = 45
             vowNumebrTF.text = ""
-            let totalAmounts = "المبالغ الإجمالية"
-            self.vowAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.vowAmtLbl.text = "\(totalAmounts) 45 ر.ع"
             vow45Btn.setImage(UIImage(named: "donation_45"), for: UIControl.State.normal)
             vow250Btn.setImage(UIImage(named: "donation_250"), for: UIControl.State.normal)
         }else{
@@ -831,8 +831,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             vowAmt = 250
             vowNumebrTF.text = ""
-            let totalAmounts = "المبالغ الإجمالية"
-            self.vowAmtLbl.text = "\(totalAmounts) 250 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.vowAmtLbl.text = "\(totalAmounts) 250 ر.ع"
             vow45Btn.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
             vow250Btn.setImage(UIImage(named: "donation_250_2"), for: UIControl.State.normal)
         }else{
@@ -858,8 +858,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             ransomAmount = Int(1.5)
             ransomTF.text = ""
-            let totalAmounts = "المبالغ الإجمالية"
-            self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.ع"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             ransomAmount = Int(1.5)
@@ -957,8 +957,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             sacrificeNumberTF.text = ""
             sacrificeAmount = "45"
             sacrifice45AmtValue = 45
-            let totalAmounts = "المبالغ الإجمالية"
-            self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.ع"
             sacrifice45Btn.setImage(UIImage(named: "donation_45"), for: UIControl.State.normal)
             sacrifice250Btn.setImage(UIImage(named: "donation_250"), for: UIControl.State.normal)
         }else{
@@ -979,8 +979,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             sacrificeNumberTF.text = ""
             sacrificeAmount = "250"
             sacrifice45AmtValue = 250
-            let totalAmounts = "المبالغ الإجمالية"
-            self.sacrificeAmtLbl.text = "\(totalAmounts) 250 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.sacrificeAmtLbl.text = "\(totalAmounts) 250 ر.ع"
             sacrifice45Btn.setImage(UIImage(named: "donation_45_2"), for: UIControl.State.normal)
             sacrifice250Btn.setImage(UIImage(named: "donation_250_2"), for: UIControl.State.normal)
         }else
@@ -1003,17 +1003,17 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if otherAmountTF.text == ""{
                     if Food1myValue == "1"{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.totalAmountLbl.text = "\(totalAmounts) 1 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.totalAmountLbl.text = "\(totalAmounts) 1 ر.ع"
                     }else if Food5myValue == "5"{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.totalAmountLbl.text = "\(totalAmounts) 5 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.totalAmountLbl.text = "\(totalAmounts) 5 ر.ع"
                     }else if Food10myValue == "10"{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.totalAmountLbl.text = "\(totalAmounts) 10 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.totalAmountLbl.text = "\(totalAmounts) 10 ر.ع"
                     }else{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.totalAmountLbl.text = "\(totalAmounts) 20 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.totalAmountLbl.text = "\(totalAmounts) 20 ر.ع"
                     }
                 }else{
                     if Food1myValue == "1"{
@@ -1022,13 +1022,13 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                             if otherAmount == ""{
                                 result = 1
                                 self.foodamountValue = "1"
-                                let totalAmounts = "المبالغ الإجمالية"
-                                self.totalAmountLbl.text = "\(totalAmounts) 1 ر.عر.ع"
+                                let totalAmounts = "المبلغ الإجمالي"
+                                self.totalAmountLbl.text = "\(totalAmounts) 1 ر.ع"
                             }else{
                                 self.foodamountValue = "\(otherAmount)"
                                 result = Int(otherAmount)
-                                let totalAmounts = "المبالغ الإجمالية"
-                                self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.عر.ع"
+                                let totalAmounts = "المبلغ الإجمالي"
+                                self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.ع"
                             }
                             
                         }
@@ -1040,8 +1040,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                             if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                                  result = value1 * value2
                                 print(result)
-                                let totalAmounts = "المبالغ الإجمالية"
-                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                                let totalAmounts = "المبلغ الإجمالي"
+                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                             } else {
                                 print("One or both values are nil")
                             }
@@ -1054,8 +1054,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                             if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                                   result = value1 * value2
                                 print(result)
-                                let totalAmounts = "المبالغ الإجمالية"
-                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                                let totalAmounts = "المبلغ الإجمالي"
+                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                                 
                             } else {
                                 print("One or both values are nil")
@@ -1069,8 +1069,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                             if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                                 result = value1 * value2
                                 print(result)
-                                let totalAmounts = "المبالغ الإجمالية"
-                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                                let totalAmounts = "المبلغ الإجمالي"
+                                self.totalAmountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                             } else {
                                 print("One or both values are nil")
                             }
@@ -1157,16 +1157,16 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if numberOathExpitationsTF.text == ""{
-                    let totalAmounts = "المبالغ الإجمالية"
-                    self.expitationLbl.text = "\(totalAmounts) 15 ر.عر.ع"
+                    let totalAmounts = "المبلغ الإجمالي"
+                    self.expitationLbl.text = "\(totalAmounts) 15 ر.ع"
                 }else{
                     let otherAmount = self.numberOathExpitationsTF.text!
                     let optionalValue1: Int? = 15
                     if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                          result = value1 * value2
                         print(result)
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.expitationLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.expitationLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                     } else {
                         print("One or both values are nil")
                     }
@@ -1196,11 +1196,11 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if sacrificeNumberTF.text == ""{
                     if sacrifice45AmtValue == 45{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.ع"
                     }else{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.sacrificeAmtLbl.text = "\(totalAmounts) 250 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.sacrificeAmtLbl.text = "\(totalAmounts) 250 ر.ع"
                     }
                     
                 }else{
@@ -1210,8 +1210,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.sacrificeAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.sacrificeAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1221,8 +1221,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.sacrificeAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.sacrificeAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1271,8 +1271,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if ransomTF.text == ""{
                     if ransomAmount == Int(1.5){
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.ransomAmtLbl.text = "\(totalAmounts) 1.5 ر.ع"
                     }
                 }else{
                     let number: Double? = 1.5
@@ -1280,8 +1280,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                     let multiplier = ransomTF.text!
                     if let unwrappedNumber = number {
                         ransomResult = unwrappedNumber * Double(multiplier)!
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.ransomAmtLbl.text = "\(totalAmounts) \(ransomResult ?? 0) ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.ransomAmtLbl.text = "\(totalAmounts) \(ransomResult ?? 0) ر.ع"
                     } else {
                         print("Number is nil")
                     }
@@ -1312,11 +1312,11 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if vowNumebrTF.text == ""{
                     if vowAmt == 45{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.vowAmtLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.vowAmtLbl.text = "\(totalAmounts) 45 ر.ع"
                     }else{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.vowAmtLbl.text = "\(totalAmounts) 250 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.vowAmtLbl.text = "\(totalAmounts) 250 ر.ع"
                     }
                 }else{
                     if vowAmt == 45{
@@ -1325,8 +1325,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.vowAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.vowAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1336,8 +1336,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.vowAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.vowAmtLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1384,16 +1384,16 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if aqiqahNumberTF.text == ""{
                     aqiqahAmt = 45
-                    let totalAmounts = "المبالغ الإجمالية"
-                    self.aqiqahNumberLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                    let totalAmounts = "المبلغ الإجمالي"
+                    self.aqiqahNumberLbl.text = "\(totalAmounts) 45 ر.ع"
                 }else{
                     let otherAmount = self.aqiqahNumberTF.text!
                     let optionalValue1: Int? = 45
                     if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                          result = value1 * value2
                         print(result)
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.aqiqahNumberLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.aqiqahNumberLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                     } else {
                         print("One or both values are nil")
                     }
@@ -1424,14 +1424,14 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if sacrificeMoreTF.text == ""{
                     if sacrificeMoreAmt == 45{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.ع"
                     }else if sacrificeMoreAmt == 315{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.sacrificeMoreLbl.text = "\(totalAmounts) 315 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.sacrificeMoreLbl.text = "\(totalAmounts) 315 ر.ع"
                     }else{
-                        let totalAmounts = "المبالغ الإجمالية"
-                        self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.عر.ع"
+                        let totalAmounts = "المبلغ الإجمالي"
+                        self.sacrificeMoreLbl.text = "\(totalAmounts) 45 ر.ع"
                     }
                 }else{
                     if sacrificeMoreAmt == 315{
@@ -1440,8 +1440,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1452,8 +1452,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                              result = value1 * value2
                             print(result)
                             
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1463,8 +1463,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                         if let value1 = optionalValue1, let value2 = Int(otherAmount) {
                              result = value1 * value2
                             print(result)
-                            let totalAmounts = "المبالغ الإجمالية"
-                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                            let totalAmounts = "المبلغ الإجمالي"
+                            self.sacrificeMoreLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
                         } else {
                             print("One or both values are nil")
                         }
@@ -1820,8 +1820,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             foodamountValue = "1"
-            let totalAmounts = "المبالغ الإجمالية"
-            self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.totalAmountLbl.text = "\(totalAmounts) \(foodamountValue ?? "") ر.ع"
             oneBtn.setImage(UIImage(named: "donation_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
@@ -1858,8 +1858,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     @objc func fiveBtnAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.totalAmountLbl.text = "\(totalAmounts) 5 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.totalAmountLbl.text = "\(totalAmounts) 5 ر.ع"
             foodamountValue = "5"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5_1"), for: UIControl.State.normal)
@@ -1890,8 +1890,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     @objc func tenBtnAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.totalAmountLbl.text = "\(totalAmounts) 10 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.totalAmountLbl.text = "\(totalAmounts) 10 ر.ع"
             foodamountValue = "10"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
@@ -1922,8 +1922,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     @objc func twentyBtnAc(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.totalAmountLbl.text = "\(totalAmounts) 20 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.totalAmountLbl.text = "\(totalAmounts) 20 ر.ع"
             foodamountValue = "20"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)

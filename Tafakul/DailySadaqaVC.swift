@@ -56,7 +56,7 @@ class DailySadaqaVC: UIViewController {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                self.titelLbl.text = "ديلي صدقة"
+                self.titelLbl.text = "الصدقة اليومية"
                 descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (ما ينقص الصدقة في المال). رواه مسلم"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
             }else{
@@ -70,7 +70,7 @@ class DailySadaqaVC: UIViewController {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                self.titelLbl.text = "الجمعة الخيرية"
+                self.titelLbl.text = "صدقة الجمعة"
                 descriptionLbl.text = "عن عقبة عامر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (الرجل في ظل صدقته حتى يقرر بين الناس). رواه أحمد"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
             }else{

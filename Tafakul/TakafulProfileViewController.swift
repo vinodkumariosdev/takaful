@@ -43,7 +43,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             profileLbl.text = "الملف الشخصي"
             if userid == nil{
-                profileInfo.append(profileList(name: "تبرع الان", image: Constants.Account.Donate))
+                profileInfo.append(profileList(name: "التبرعات", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "عن فريق تكافل صحار", image: Constants.Account.About))
                 profileInfo.append(profileList(name: "تغيير اللغة", image: Constants.Account.ChangeLanguage))
                 profileInfo.append(profileList(name: "سياسة الخصوصية", image: Constants.Account.PrivacyPolicy))
@@ -54,7 +54,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 backVieww.isHidden = false
                 contentView.isHidden = true
             }else{
-                profileInfo.append(profileList(name: "تبرع الان", image: Constants.Account.Donate))
+                profileInfo.append(profileList(name: "التبرعات", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "عن فريق تكافل صحار", image: Constants.Account.About))
                 profileInfo.append(profileList(name: "تغيير اللغة", image: Constants.Account.ChangeLanguage))
                 profileInfo.append(profileList(name: "سياسة الخصوصية", image: Constants.Account.PrivacyPolicy))
@@ -71,7 +71,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
             backBtn.setImage(UIImage.init(named: "BackButton"), for: .normal)
             profileLbl.text = "Profile"
             if userid == nil{
-                profileInfo.append(profileList(name: "Donate", image: Constants.Account.Donate))
+                profileInfo.append(profileList(name: "Donations", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "About Takaful Sohar", image: Constants.Account.About))
                 profileInfo.append(profileList(name: "Change Language", image: Constants.Account.ChangeLanguage))
                 profileInfo.append(profileList(name: "Privacy Policy", image: Constants.Account.PrivacyPolicy))
@@ -82,7 +82,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 backVieww.isHidden = false
                 contentView.isHidden = true
             }else{
-                profileInfo.append(profileList(name: "Donate", image: Constants.Account.Donate))
+                profileInfo.append(profileList(name: "Donations", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "About Takaful Sohar", image: Constants.Account.About))
                 profileInfo.append(profileList(name: "Change Language", image: Constants.Account.ChangeLanguage))
                 profileInfo.append(profileList(name: "Privacy Policy", image: Constants.Account.PrivacyPolicy))
@@ -141,9 +141,9 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                     UIView.appearance().semanticContentAttribute = .forceRightToLeft
                     let alertController = UIAlertController(title: "", message: "هل ترغب بالخروج", preferredStyle: .alert)
-                    let cancelButton = UIAlertAction(title: "يلغي", style: .cancel) { _ in
+                    let cancelButton = UIAlertAction(title: "إلغاء", style: .cancel) { _ in
                     }
-                    let confirmButton = UIAlertAction(title: "يكمل", style: .default) { _ in
+                    let confirmButton = UIAlertAction(title: "إكمال", style: .default) { _ in
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                         UserDefaults.standard.removeObject(forKey: "id")
                         vc.modalPresentationStyle = .fullScreen
@@ -182,9 +182,9 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 if userid == nil{
                     let alertController = UIAlertController(title: "", message: "تحتاج إلى تسجيل الدخول أولاً لمشاهدة الملف الشخصي", preferredStyle: .alert)
-                    let cancelButton = UIAlertAction(title: "يلغي", style: .cancel) { _ in
+                    let cancelButton = UIAlertAction(title: "إلغاء", style: .cancel) { _ in
                     }
-                    let confirmButton = UIAlertAction(title: "يكمل", style: .default) { _ in
+                    let confirmButton = UIAlertAction(title: "إكمال", style: .default) { _ in
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)

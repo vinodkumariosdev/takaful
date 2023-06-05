@@ -5,11 +5,11 @@
   Created by Tariqul Islam on 25/9/22.
   
 */
-"Daily Sadaqa" = "ديلي صدقة";
-"Friday Charity" = "الجمعة الخيرية";
-"Next door neighbor" = "الجار المجاور";
-"Distress Relife" = "تخفيف الضيق";
-"Give Gift" = "أعط هدية";
+"Daily Sadaqa" = "الصدقة اليومية";
+"Friday Charity" = "صدقة الجمعة";
+"Next door neighbor" ="الجار الجنب";
+"Distress Relife" = "فك كربة";
+"Give Gift" = "الهدية";
 "abouttakaful" = "من حكاية مجتمع يشد بعضه البعض كالبنيان المرصوص، بدأت فصول فريق تكافل صحار الخيري الاجتماعي عام 2012 من بوابة التطوع رافعين شعار تكافلنا طريق سعادتنا ليكبر الحلم لواقع أجمل كفريق خيري يعمل تحت مظلة لجنة التنمية الاجتماعية بصحار، ليسند البنيان طوبة طوبة ويكمل الصورة الناقصة . عظم الشعور بالمسؤولية، وبمساندة أياد خيرها لا ينضب علا البنيان واكتملت الصورة وتوسعت آفاق العمل لتشمل جوانب وقطاعات مختلفة من أوجه الخير تهدف لتمكين المعوزين ذاتيا وتوفير الحياة الكريمة لهم عبر مشاريع تنموية مستدامة لمجتمع أكثر سعادة وعطاء ومحبة.";
 "Login" = "تسجيل الدخول";
 "User name" = "اسم المستخدم";
@@ -29,13 +29,13 @@
 "Login with mobile" = "تسجيل الدخول باستخدام الهاتف المحمول";
 "Mobile Number" = "رقم الهاتف المحمول";
 "Home" = "مسكن";
-"Sponserships" = "الرعايات";
+"Sponserships" = "الكفالات";
 "Initiative" = "مبادرة";
 "About Takaful" = "عن التكافل";
 "Donation Details" = "تفاصيل التبرع";
 "Logout" = "تسجيل خروج";
 "Donate Now" = "تبرع الآن";
-"Public Sadaqa" = "الصدقات العامة";
+"Public Sadaqa" = "صدقات عامة";
 "Clothing A Poor" = "ملابس رديئة";
 "Expiation for a broken Oath" = "كفارة حنث اليمين";
 "Daily Sadaqa Value" = "قيمة الصدقة اليومية";
@@ -63,7 +63,7 @@
 "Name" = "اسم";
 "Food basket" = "سلة طعام";
 "Sheep Cattle" = "ماشية الأغنام";
-"Sponserships" = "الرعايات";
+"Sponserships" = "الكفالات";
 "Orphan" = "يتيم";
 "Family in need" = "عائلة محتاجة";
 "Special needs" = "الاحتياجات الخاصة";
@@ -111,8 +111,8 @@
 "You need to login to complete payment" = "تحتاج إلى تسجيل الدخول لإكمال الدفع";
 "You need to login to view donation details" = "تحتاج إلى تسجيل الدخول لعرض تفاصيل التبرع.";
 "OK" = "نعم";
-"Cancel" = "يلغي";
-"Conditions & Electronics" = "الشروط والالكترونيات";
+"Cancel" = "إلغاء";
+"Conditions & Electronics" = "مكيفات وإلكترونيات";
 "Hosue maintenance" = "صيانة المنزل";
 "Do you want to login?" = "هل تريد الدخول؟";
 "Sadaqat" = "صدقات";
@@ -126,7 +126,7 @@
 "Please Enter City" = "الرجاء إدخال المدينة";
 "Please Enter Country" = "الرجاء إدخال الدولة";
 "Successfully update" = "تحديث ملف التعريف الخاص بك بنجاح";
-"OTP send to your number, please check" = "لذا أرسل رقمك ، يرجى التحقق";
+"OTP send to your number, please check" = "تم إرسال رمز سري مؤقت على الرقم، يرجى إدخاله";
 "Ok" = "نعم";
 "Recipient name is required" = "اسم المستلم مطلوب";
 "Recipient mobile number is required" = "مطلوب رقم هاتف المستلم";

@@ -245,7 +245,7 @@ class RapidDonationVC: UIViewController,UITextFieldDelegate
     
     var titleArray = ["Friday Charity","Aqiqah","Vow","Sacrifice","Orphan Charity","Fasting ransom","A gift","Condition & Electronics","Economic empowerment","House maintenance","Student support","Special needs","Family in need","Orphan","Expiation for a broken Oath","Clothing a poor","Food basket","Public sadaqat","Home for them","School bag project","Detress Relief","Housing Project"]
     
-    var titleArabciArray = ["الجمعة الخيرية","العقيقة","نذر","تصحية","صدقة ليتيم","فدية صيام","A هدية","الشروط والالكترونيات","التمكين الاقتصادي","صيانة المنزل","دعم طالب علم","الاحتياجات الخاصة","عائلة محتاجة","يتيم","كفارة حنث اليمين","ملابس رديئة","سلة طعام","الصدقات العامة","منزل يؤويهم","مشروع الحقيبة المدرسية","تخفيف الضيق","مشروع اسكان"]
+    var titleArabciArray = ["صدقة الجمعة","العقيقة","نذر","تصحية","صدقة ليتيم","فدية صيام","إرسال هدية","الشروط والالكترونيات","التمكين الاقتصادي","صيانة المنزل","طالب علم","الاحتياجات الخاصة","عائلة محتاجة","يتيم","كفارة حنث اليمين","ملابس رديئة","سلة طعام","صدقات عامة","منزل يؤويهم","مشروع الحقيبة المدرسية","تخفيف الضيق","مشروع اسكان"]
     
     var imgArray = ["charity","aqiqah","vow","sacrifice","gift_s","electronics","economic","maintainence","house","student","need","family","hand","expiation","clothing","food","public","house","student","detress","house"]
     

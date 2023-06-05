@@ -98,7 +98,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             searchTF.delegate = self
             items = [
-                Item(name: "ديلي صدقة", image: UIImage(named: "sadqa")!),
+                Item(name: "الصدقة اليومية", image: UIImage(named: "sadqa")!),
                 Item(name: "الجار المجاور", image: UIImage(named: "neighbor")!),
                 Item(name: "فك كربة", image: UIImage(named: "detress")!),
                 Item(name: "سهم وقف", image: UIImage(named: "house")!),
@@ -116,14 +116,14 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                 Item(name: "التمكين الاقتصادي", image: UIImage(named: "economic")!),
                 Item(name: "صيانة المنزل", image: UIImage(named: "house")!),
                 Item(name: "مشروع اسكان", image: UIImage(named: "house")!),
-                Item(name: "دعم طالب علم", image: UIImage(named: "student")!),
+                Item(name: "طالب علم", image: UIImage(named: "student")!),
                 Item(name: "دعم ذوي الاحتياجات الخاصة", image: UIImage(named: "need")!),
                 Item(name: "كسوة اسرة معسرة", image: UIImage(named: "need")!),
                 Item(name: "كفالة يتيم", image: UIImage(named: "hand")!),
                 Item(name: "كفارة يمين", image: UIImage(named: "expiation")!),
                 Item(name: "ملابس رديئة", image: UIImage(named: "clothing")!),
                 Item(name: "السلة الغذائية", image: UIImage(named: "food")!),
-                Item(name: "الصدقات العامة", image: UIImage(named: "food")!),
+                Item(name: "صدقات عامة", image: UIImage(named: "food")!),
                 Item(name: "منزل يؤويهم", image: UIImage(named: "house")!),
                 Item(name: "مشروع الحقيبة المدرسية", image: UIImage(named: "student")!),
                 Item(name: "فك كربة", image: UIImage(named: "detress")!),
@@ -478,7 +478,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 94{
                                         self.nextDoorNeighborID = id
                                     }
-                                    if Artitle == "كسوة أسرة معسرة"{
+                                    if Artitle == "عائلة محتاجة"{
                                         self.familyInNeedlbl = Artitle
                                     }
                                     if id == 74{
@@ -502,13 +502,13 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 79{
                                         self.EconmimcEmpowermentId = id
                                     }
-                                    if Artitle == "صيانة المنازل"{
+                                    if Artitle == "صيانة منازل"{
                                         self.houseMaintenanceLbl = Artitle
                                     }
                                     if id == 78{
                                         self.houseMaintenanceId = id
                                     }
-                                    if Artitle == "مشاريع إسكانية"{
+                                    if Artitle == "منزل يؤويهم"{
                                         self.HousingProject = Artitle
                                     }
                                     if id == 77{
@@ -532,7 +532,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 73{
                                         self.orphanID = id
                                     }
-                                    if Artitle == "دعم طالب علم"{
+                                    if Artitle == "طالب علم"{
                                         self.StudentsLbl = Artitle
                                     }
                                     if id == 76{
@@ -550,7 +550,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 70{
                                         self.foodBasketID = id
                                     }
-                                    if Artitle == "الصدقات العامة"{
+                                    if Artitle == "صدقات عامة"{
                                         self.Publicsadaqat = Artitle
                                     }
                                     if id == 69{
@@ -589,7 +589,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 83{
                                         self.FastingId = id
                                     }
-                                    if Artitle == "مشاريع إسكانية"{
+                                    if Artitle == "منزل يؤويهم"{
                                         self.Housingprojectslbl = Artitle
                                     }
                                     if id == 77{
@@ -666,10 +666,10 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
         let item = filteredItems[indexPath.row]
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            if item.name == "ديلي صدقة"{
+            if item.name == "الصدقة اليومية"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "ديلي صدقة"
+                vc.titleText = "الصدقة اليومية"
                 vc.imgView = "daily_sadqa"
                 vc.sadaquId = String(dailysadaquID)
                 vc.descriptionString = "On the authority of Abu Hurairah, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (What charity lacks in money). narrated by Muslim"
@@ -766,7 +766,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                 vc.descriptionString = "Nothing compares to a safe heaven for a happy family with the aim of improving the standard of living for families and achieving social stability. The team seeks, in partnership with various agencies and individuals, to build housing project for homeless families with limited income and to provide the basic requirements for safe and comfortable housing. By building and maintaning housing units for low-income citizens in which basis facilites and services aer available taking into account the number of family members."
                 present(vc, animated: true,completion: nil)
             }
-            else if item.name == "دعم طالب علم"{
+            else if item.name == "طالب علم"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = StudentsLbl
@@ -809,7 +809,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                vc.modalTransitionStyle = .coverVertical
                present(vc, animated: true,completion: nil)
             }
-            else if item.name == "الصدقات العامة"{
+            else if item.name == "صدقات عامة"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = "Public Charity"

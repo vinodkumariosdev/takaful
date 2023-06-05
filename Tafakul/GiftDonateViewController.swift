@@ -55,8 +55,8 @@ class GiftDonateViewController: UIViewController {
                 clotingView.isHidden = false
                 headingLb.text = headTextlbl ?? ""
                 clothinAmount = 30
-                let totalAmounts = "المبالغ الإجمالية"
-                amountclothingLbl.text = "\(totalAmounts) \(clothinAmount ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountclothingLbl.text = "\(totalAmounts) \(clothinAmount ?? 0) ر.ع"
                 donate30Btn.addTarget(self, action: #selector(thirtyBtn), for: .touchUpInside)
                 donate360Btn.addTarget(self, action: #selector(thirtysixBtn), for: .touchUpInside)
                 clotingDonateBtn.addTarget(self, action: #selector(clotinDonateNowBtn), for: .touchUpInside)
@@ -64,8 +64,8 @@ class GiftDonateViewController: UIViewController {
                 clotingView.isHidden = true
                 headingLb.text = headTextlbl ?? ""
                 amount = 5
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(amount ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(amount ?? 0) ر.ع"
                 donate5Btn.addTarget(self, action: #selector(fivebtn), for: .touchUpInside)
                 donate10Btn.addTarget(self, action: #selector(tenbtn), for: .touchUpInside)
                 donate20Btn.addTarget(self, action: #selector(twentybtn), for: .touchUpInside)
@@ -101,8 +101,8 @@ class GiftDonateViewController: UIViewController {
     @objc func thirtyBtn(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountclothingLbl.text = "\(totalAmounts) 30 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountclothingLbl.text = "\(totalAmounts) 30 ر.ع"
             self.clothinAmount = 30
             donate30Btn.setImage(UIImage(named: "donation_30"), for: UIControl.State.normal)
             donate360Btn.setImage(UIImage(named: "donation_360"), for: UIControl.State.normal)
@@ -119,8 +119,8 @@ class GiftDonateViewController: UIViewController {
     @objc func thirtysixBtn(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountclothingLbl.text = "\(totalAmounts) 360 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountclothingLbl.text = "\(totalAmounts) 360 ر.ع"
             self.clothinAmount = 360
             donate30Btn.setImage(UIImage(named: "donation_30_1"), for: UIControl.State.normal)
             donate360Btn.setImage(UIImage(named: "donation_360_1"), for: UIControl.State.normal)
@@ -137,8 +137,8 @@ class GiftDonateViewController: UIViewController {
     @objc func fivebtn(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountLbl.text = "\(totalAmounts) 5 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountLbl.text = "\(totalAmounts) 5 ر.ع"
             self.amount = 5
             donate5Btn.setImage(UIImage(named: "donation_5_1"), for: UIControl.State.normal)
             donate10Btn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
@@ -157,8 +157,8 @@ class GiftDonateViewController: UIViewController {
     @objc func tenbtn(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountLbl.text = "\(totalAmounts) 10 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountLbl.text = "\(totalAmounts) 10 ر.ع"
             self.amount = 10
             donate5Btn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             donate10Btn.setImage(UIImage(named: "donation_10_2"), for: UIControl.State.normal)
@@ -177,8 +177,8 @@ class GiftDonateViewController: UIViewController {
     @objc func twentybtn(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountLbl.text = "\(totalAmounts) 20 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountLbl.text = "\(totalAmounts) 20 ر.ع"
             self.amount = 20
             donate5Btn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             donate10Btn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)

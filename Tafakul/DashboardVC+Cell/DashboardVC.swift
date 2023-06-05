@@ -88,7 +88,7 @@ class DashboardVC: UIViewController {
     
     var TopCVitems = ["Give Gift","Distress Relief","Next door neighbor","Friday Charity","Daily Sadaqa"]
     
-    var TopCvArabicItems = ["الهدية","فك كربة","الجار المجاور","الجمعة الخيرية","ديلي صدقة"]
+    var TopCvArabicItems = ["الهدية","فك كربة","الجار المجاور","صدقة الجمعة","الصدقة اليومية"]
     
     @IBOutlet weak var charityPayLbl: UILabel!
     
@@ -102,7 +102,7 @@ class DashboardVC: UIViewController {
     
     var CharityPaysArray = ["Clothing a poor","Food Basket","Public sadaqat","Expiration for a broken Oath"]
     
-    var CharityPaysArabicArray = ["كسوة مسكين","السلة الغذائية","الصدقات العامة","كفارة يمين"]
+    var CharityPaysArabicArray = ["كسوة مسكين","السلة الغذائية","صدقات عامة","كفارة يمين"]
     
     var charityPaysImages = ["clothing","food","public","expiation"]
     
@@ -184,7 +184,7 @@ class DashboardVC: UIViewController {
             self.intitativeLbl.text = "المبادرات"
             self.charityMoreLbl.text = "المزيد"
             self.contributeLbl.text = "مشاريع خيرية وصدقات جارية"
-            self.sponsorshipLbl.text = "الرعايات"
+            self.sponsorshipLbl.text = "الكفالات"
             langBtn.setImage(ar, for: .normal)
             let en = UIImage(named: "en")
             langBtn.setImage(en, for: .normal)
@@ -410,7 +410,7 @@ class DashboardVC: UIViewController {
                                     if id == 94{
                                         self.nextDoorNeighborID = id
                                     }
-                                    if Artitle == "كسوة أسرة معسرة"{
+                                    if Artitle == "عائلة محتاجة"{
                                         self.familyInNeedlbl = Artitle
                                     }
                                     if id == 74{
@@ -434,13 +434,13 @@ class DashboardVC: UIViewController {
                                     if id == 79{
                                         self.EconmimcEmpowermentId = id
                                     }
-                                    if Artitle == "صيانة المنازل"{
+                                    if Artitle == "صيانة منازل"{
                                         self.houseMaintenanceLbl = Artitle
                                     }
                                     if id == 78{
                                         self.houseMaintenanceId = id
                                     }
-                                    if Artitle == "مشاريع إسكانية"{
+                                    if Artitle == "منزل يؤويهم"{
                                         self.HousingProject = Artitle
                                     }
                                     if id == 77{
@@ -464,7 +464,7 @@ class DashboardVC: UIViewController {
                                     if id == 73{
                                         self.orphanID = id
                                     }
-                                    if Artitle == "دعم طالب علم"{
+                                    if Artitle == "طالب علم"{
                                         self.StudentsLbl = Artitle
                                     }
                                     if id == 76{
@@ -482,7 +482,7 @@ class DashboardVC: UIViewController {
                                     if id == 70{
                                         self.foodBasketID = id
                                     }
-                                    if Artitle == "الصدقات العامة"{
+                                    if Artitle == "صدقات عامة"{
                                         self.Publicsadaqat = Artitle
                                     }
                                     if id == 69{
@@ -856,7 +856,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }
                 
                 if indexPath.row == 0{
-                    cell?.dashboardLbl.text = "يعطي \(giftlbl ?? "")"
+                    cell?.dashboardLbl.text = "إرسال \(giftlbl ?? "")"
                     
                 }
                 
@@ -868,7 +868,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardSliderCVCell", for: indexPath) as! DashboardSliderCVCell
                 cell.ProjectNameLbl.text = titleArray[indexPath.row]
-                cell.tragetLbl.text = "هدف"
+                cell.tragetLbl.text = "المتبقي"
                 cell.omrLbl.text = "\(RaisedArray[indexPath.row]) OMR"
                 let url = URL(string: imgArray[indexPath.row])
                 cell.DashimageView.kf.setImage(with: url)

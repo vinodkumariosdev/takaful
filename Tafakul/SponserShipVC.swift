@@ -119,8 +119,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             self.openYearConst.constant = 0
             userid = UserDefaults.standard.string(forKey: "id")
             amount = "25"
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             donateBtn.setTitle("تبرع الآن", for: .normal)
             sponsorShipLbl.text = "فترة الكفالة"
             donationLbl.text = "اختر مبلغ التبرع"
@@ -211,8 +211,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
                 fourntyBtn.setImage(UIImage(named: "donation_40_1"), for: UIControl.State.normal)
                 twentyFiveBtn.setImage(UIImage(named: "donation_25"), for: UIControl.State.normal)
                 amount = numberYearsTF.text
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(amount ?? "")  ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(amount ?? "")  ر.ع"
             }
             if textField == yearsTF{
                 thirtyBtn.setImage(UIImage(named: "donation_30_1"), for: UIControl.State.normal)
@@ -221,8 +221,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
                 twentyFiveBtn.setImage(UIImage(named: "donation_25"), for: UIControl.State.normal)
                 var amountFiled = yearsTF.text!
                 result = Int(amount)! * Int(amountFiled)!
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
             }
             
         }else{
@@ -257,8 +257,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             twentyFiveBtn.setImage(UIImage(named: "donation_25_2"), for: UIControl.State.normal)
             yearBtn.setImage(UIImage(named: "year"), for: UIControl.State.normal)
             twoYearsBnt.setImage(UIImage(named: "2year"), for: UIControl.State.normal)
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) 25 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) 25 ر.ع"
             amount = "25"
             
         }else{
@@ -285,8 +285,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             twentyFiveBtn.setImage(UIImage(named: "donation_25"), for: UIControl.State.normal)
             yearBtn.setImage(UIImage(named: "year"), for: UIControl.State.normal)
             twoYearsBnt.setImage(UIImage(named: "2year"), for: UIControl.State.normal)
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) 30 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) 30 ر.ع"
             amount = "30"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -312,8 +312,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             twentyFiveBtn.setImage(UIImage(named: "donation_25"), for: UIControl.State.normal)
             yearBtn.setImage(UIImage(named: "year"), for: UIControl.State.normal)
             twoYearsBnt.setImage(UIImage(named: "2year"), for: UIControl.State.normal)
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) 35 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) 35 ر.ع"
             amount = "35"
             
         }else{
@@ -340,8 +340,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             twentyFiveBtn.setImage(UIImage(named: "donation_25"), for: UIControl.State.normal)
             yearBtn.setImage(UIImage(named: "year"), for: UIControl.State.normal)
             twoYearsBnt.setImage(UIImage(named: "2year"), for: UIControl.State.normal)
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) 40 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) 40 ر.ع"
             amount = "40"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -366,8 +366,8 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             openYearBtn.setImage(UIImage(named: "open"), for: UIControl.State.normal)
             self.openYearConst.constant = 0
             result = Int(amount)! * 1
-            let totalAmounts = "المبالغ الإجمالية"
-            amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             yearBtn.setImage(UIImage(named: "year"), for: UIControl.State.normal)
@@ -389,17 +389,17 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             self.openYearConst.constant = 0
             if numberYearsTF.text == ""{
                 result = Int(amount)! * 2
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
             }else if numberYearsTF.text == nil{
                 result = Int(amount)! * 2
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
             }else{
                 amount = numberYearsTF.text!
                 result = Int(amount)! * 2
-                let totalAmounts = "المبالغ الإجمالية"
-                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                amountLbl.text = "\(totalAmounts) \(result ?? 0) ر.ع"
             }
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight

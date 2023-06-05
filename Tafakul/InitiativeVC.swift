@@ -45,8 +45,8 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
             amountTF.delegate = self
             userid = UserDefaults.standard.string(forKey: "id")
             amount = "1"
-            let totalAmounts = "المبالغ الإجمالية"
-            self.amountLbl.text = "\(totalAmounts) 1 ر.عر.ع"
+            let totalAmounts = "المبلغ الإجمالي"
+            self.amountLbl.text = "\(totalAmounts) 1 ر.ع"
             foodAmtlbl = "1"
             self.titleLbl.text = titleText
             oneBtn.addTarget(self, action: #selector(RupeeAction), for: .touchUpInside)
@@ -87,13 +87,13 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
     @objc func RupeeAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             amountTF.text = ""
-            let totalAmounts = "المبالغ الإجمالية"
+            let totalAmounts = "المبلغ الإجمالي"
             self.amount = "1"
             oneBtn.setImage(UIImage(named: "donation_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
             twentyBtn.setImage(UIImage(named: "donation_20"), for: UIControl.State.normal)
-            self.amountLbl.text = "\(totalAmounts) 1 ر.عر.ع"
+            self.amountLbl.text = "\(totalAmounts) 1 ر.ع"
             foodAmtlbl = "1"
         }else{
             amountTF.text = ""
@@ -110,14 +110,14 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
 
     @objc func fiveAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-            let totalAmounts = "المبالغ الإجمالية"
+            let totalAmounts = "المبلغ الإجمالي"
             amountTF.text = ""
             self.amount = "5"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5_1"), for: UIControl.State.normal)
             tenBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
             twentyBtn.setImage(UIImage(named: "donation_20"), for: UIControl.State.normal)
-            self.amountLbl.text = "\(totalAmounts) 5 ر.عر.ع"
+            self.amountLbl.text = "\(totalAmounts) 5 ر.ع"
             foodAmtlbl = "5"
         }else{
             amountTF.text = ""
@@ -134,14 +134,14 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
     
     @objc func tenAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-            let totalAmounts = "المبالغ الإجمالية"
+            let totalAmounts = "المبلغ الإجمالي"
             amountTF.text = ""
             self.amount = "10"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenBtn.setImage(UIImage(named: "donation_10_2"), for: UIControl.State.normal)
             twentyBtn.setImage(UIImage(named: "donation_20"), for: UIControl.State.normal)
-            self.amountLbl.text = "\(totalAmounts) 10 ر.عر.ع"
+            self.amountLbl.text = "\(totalAmounts) 10 ر.ع"
             foodAmtlbl = "10"
         }else{
             amountTF.text = ""
@@ -159,13 +159,13 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
     @objc func TwentyAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             amountTF.text = ""
-            let totalAmounts = "المبالغ الإجمالية"
+            let totalAmounts = "المبلغ الإجمالي"
             self.amount = "20"
             oneBtn.setImage(UIImage(named: "donation_1_1"), for: UIControl.State.normal)
             fiveBtn.setImage(UIImage(named: "donation_5"), for: UIControl.State.normal)
             tenBtn.setImage(UIImage(named: "donation_10"), for: UIControl.State.normal)
             twentyBtn.setImage(UIImage(named: "donation_20_2"), for: UIControl.State.normal)
-            self.amountLbl.text = "\(totalAmounts) 20 ر.عر.ع"
+            self.amountLbl.text = "\(totalAmounts) 20 ر.ع"
             foodAmtlbl = "20"
         }else{
             amountTF.text = ""
@@ -184,8 +184,8 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             if textField == self.amountTF{
                 let amount = self.amountTF.text
-                let totalAmounts = "المبالغ الإجمالية"
-                 self.amountLbl.text = "\(totalAmounts) \(amount ?? "") ر.عر.ع"
+                let totalAmounts = "المبلغ الإجمالي"
+                 self.amountLbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
                 foodAmtlbl = amount
             }
         }else{

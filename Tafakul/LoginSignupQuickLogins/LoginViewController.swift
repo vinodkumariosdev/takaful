@@ -96,8 +96,8 @@ class LoginViewController: UIViewController {
             loginBtn.setTitle("تسجيل الدخول", for: .normal)
             UsernameTF.placeholder = "الرجاء إدخال اسم المستخدم"
             passwordTF.placeholder = "الرجاء إدخال كلمة المرور"
-            AlreadyLbl.text = "بالفعل"
-            haveAnLbl.text = "أحصل على"
+            AlreadyLbl.text = "لديك"
+            haveAnLbl.text = "مسبقا"
             AccountLbl.text = "حساب ؟"
             newUserLbl.text = "مستخدم جديد؟ إنشاء حساب";
         }

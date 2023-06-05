@@ -30,7 +30,7 @@
 "2eJ-Ad-m58.text" = "اختر مبلغ التبرع";
 
 /* Class = "UILabel"; text = "Public Sadaqat"; ObjectID = "3Lp-vk-p2T"; */
-"3Lp-vk-p2T.text" = "الصدقات العامة";
+"3Lp-vk-p2T.text" = "صدقات عامة";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3ZD-Ze-yMS"; */
 "3ZD-Ze-yMS.normalTitle" = "Button";
@@ -129,7 +129,7 @@
 "8nW-ug-1oz.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Sponserships"; ObjectID = "91A-lo-30H"; */
-"91A-lo-30H.text" = "الرعايات";
+"91A-lo-30H.text" = "الكفالات";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "93e-O1-KcH"; */
 "93e-O1-KcH.normalTitle" = "Button";
@@ -441,7 +441,7 @@
 "Ou2-eB-Jd1.text" = "هاتف المستلم";
 
 /* Class = "UILabel"; text = "Friday Charity"; ObjectID = "P0w-0r-mou"; */
-"P0w-0r-mou.text" = "الجمعة الخيرية";
+"P0w-0r-mou.text" = "صدقة الجمعة";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P4v-qk-TI8"; */
 "P4v-qk-TI8.normalTitle" = "Button";
@@ -474,7 +474,7 @@
 "RR9-p4-2nD.text" = "المبلغ الإجمالي";
 
 /* Class = "UILabel"; text = "Daily Sadaqa"; ObjectID = "Rjz-8z-y8I"; */
-"Rjz-8z-y8I.text" = "ديلي صدقة";
+"Rjz-8z-y8I.text" = "الصدقة اليومية";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RnJ-ML-Zd0"; */
 "RnJ-ML-Zd0.normalTitle" = "Button";
