@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
     var requestView: String? = ""
     
 
+    @IBOutlet weak var loginMobileNumberBtn: UIButton!
     
     override func viewDidLoad()
     
@@ -67,8 +68,15 @@ class LoginViewController: UIViewController {
         registerBtnImg.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         registerBtnImg.addGestureRecognizer(tapGesture)
+        loginMobileNumberBtn.addTarget(self, action: #selector(loginBtnNumber), for: .touchUpInside)
         
-        
+    }
+    
+    @objc func loginBtnNumber(){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MobileNumberViewController") as! MobileNumberViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.isfromLogin = "IsLogIn"
+        self.present(vc, animated: true)
     }
     
     
@@ -103,6 +111,7 @@ class LoginViewController: UIViewController {
         }
     }
    
+    
     
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true,completion: nil)

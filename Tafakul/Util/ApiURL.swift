@@ -19,5 +19,6 @@ struct APIURL
     static var categories = baseUrl + "categories"
     static var addfav = baseUrl + "wishlist"
     static var addcart = baseUrl + "cart"
+    static var otp = baseUrl + "otp-login"
 
 }

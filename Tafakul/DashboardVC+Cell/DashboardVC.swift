@@ -107,7 +107,7 @@ class DashboardVC: UIViewController {
     var charityPaysImages = ["clothing","food","public","expiation"]
     
     
-    var sponsershipsArray = ["Special needs","Family in need","Orphan","Student"]
+    var sponsershipsArray = ["Special needs","Family in needFamily in need","Orphan","Student"]
     var sponsershipImageArray = ["need","family","hand","student"]
     
     var ContributeProjectArray = [" Economic empowerment","House maintenance","Housing Project","Condition & elecronics"]
@@ -1084,7 +1084,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InitiativeCVCell", for: indexPath) as! InitiativeCVCell
                 if indexPath.row == 0{
-                    cell.initiativeLbl.text = familyInNeedlbl ?? ""
+                    cell.initiativeLbl.text =  "Family Consultant Support"
                 }
                 
                 if indexPath.row == 1{

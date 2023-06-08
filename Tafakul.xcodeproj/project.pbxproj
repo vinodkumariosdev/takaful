@@ -14,6 +14,8 @@
 		1802EE672951C7AD00A37190 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE662951C7AD00A37190 /* CartVC.swift */; };
 		1802EE692951CEA100A37190 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE682951CEA100A37190 /* CartTVCell.swift */; };
 		1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */; };
+		180312972A30919B00E2E90B /* MobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180312962A30919B00E2E90B /* MobileNumberViewController.swift */; };
+		180312992A30A08B00E2E90B /* OtpVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */; };
 		180B4B022A13B7840026E2B0 /* TakafulProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */; };
 		180E361C294C476E00349A89 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361B294C476E00349A89 /* DashboardVC.swift */; };
 		180E361E294C49DF00349A89 /* DashboardTopCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */; };
@@ -157,6 +159,8 @@
 		1802EE662951C7AD00A37190 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		1802EE682951CEA100A37190 /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
 		1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsershipsCVCell.swift; sourceTree = "<group>"; };
+		180312962A30919B00E2E90B /* MobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberViewController.swift; sourceTree = "<group>"; };
+		180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVerificationViewController.swift; sourceTree = "<group>"; };
 		180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakafulProfileTableViewCell.swift; sourceTree = "<group>"; };
 		180E361B294C476E00349A89 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTopCVCell.swift; sourceTree = "<group>"; };
@@ -455,10 +459,12 @@
 				88FB38612862CF0100289779 /* CompletionDetailsViewController.swift */,
 				18E16D6729559E4000A43535 /* WebViewController.swift */,
 				18843DEA2A208F9E003A81F5 /* SearchCharityViewController.swift */,
+				180312962A30919B00E2E90B /* MobileNumberViewController.swift */,
 				18C7A56F2953362C00F617F5 /* TakafulProfileViewController.swift */,
 				18C807F7296EA2EA00417E2B /* SearchViewController.swift */,
 				18C807F9296EB0A700417E2B /* SearchTableViewCell.swift */,
 				188AE13329796EBB002D677A /* AllDonationDetailsViewController.swift */,
+				180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */,
 				188AE13529797829002D677A /* CartDonationTableViewCell.swift */,
 				1888BA43296EF84F00AC00DA /* Search.json */,
 				883FD5C72811543B00DB2B61 /* Main.storyboard */,
@@ -949,6 +955,7 @@
 				1871EB442952FA3B00884829 /* RapidDonationTVCell.swift in Sources */,
 				883FD5F428115B1100DB2B61 /* SignUpViewController.swift in Sources */,
 				88FFFEA12862AA570019C809 /* SpecialNeedsSponsershipViewController.swift in Sources */,
+				180312972A30919B00E2E90B /* MobileNumberViewController.swift in Sources */,
 				188892C12959B7B80080C768 /* GiftDonateTableViewCell.swift in Sources */,
 				1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */,
 				1802EE672951C7AD00A37190 /* CartVC.swift in Sources */,
@@ -975,6 +982,7 @@
 				18843DE92A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift in Sources */,
 				B82095B928E223E00092D4C1 /* DashBoardController.swift in Sources */,
 				88242F00281302FA00344050 /* SideViewController.swift in Sources */,
+				180312992A30A08B00E2E90B /* OtpVerificationViewController.swift in Sources */,
 				B8CE11BE2902F84B008EAC43 /* DesignableUITextField.swift in Sources */,
 				B89B60C528FA3FC600F912BB /* AlertView.swift in Sources */,
 				8869AC9A2862225900C08CCA /* FoodBasketViewController.swift in Sources */,
@@ -1227,7 +1235,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HGFASG778A;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Takaful;
@@ -1262,7 +1270,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HGFASG778A;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Takaful;
