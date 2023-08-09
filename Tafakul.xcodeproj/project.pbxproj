@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135210D62A8375770070DA5F /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */; };
+		135210D72A8375770070DA5F /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D02A8375720070DA5F /* Tajawal-Black.ttf */; };
+		135210D82A8375770070DA5F /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D12A8375730070DA5F /* Tajawal-Bold.ttf */; };
+		135210D92A8375770070DA5F /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */; };
+		135210DA2A8375770070DA5F /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D32A8375750070DA5F /* Tajawal-Light.ttf */; };
+		135210DB2A8375770070DA5F /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D42A8375760070DA5F /* Tajawal-Regular.ttf */; };
+		135210DC2A8375770070DA5F /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */; };
 		18001FD12953449100D7C884 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD02953449100D7C884 /* Reachability.swift */; };
 		18001FD32954441300D7C884 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD22954441300D7C884 /* Constants.swift */; };
 		18001FD52954611500D7C884 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 18001FD42954611500D7C884 /* L10n-swift */; };
@@ -152,6 +159,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
+		135210D02A8375720070DA5F /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
+		135210D12A8375730070DA5F /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
+		135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
+		135210D32A8375750070DA5F /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
+		135210D42A8375760070DA5F /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
 		18001FD02953449100D7C884 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		18001FD22954441300D7C884 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -323,6 +337,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135210CE2A8375430070DA5F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				135210D02A8375720070DA5F /* Tajawal-Black.ttf */,
+				135210D12A8375730070DA5F /* Tajawal-Bold.ttf */,
+				135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */,
+				135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */,
+				135210D32A8375750070DA5F /* Tajawal-Light.ttf */,
+				135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */,
+				135210D42A8375760070DA5F /* Tajawal-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		180E3621294C7C6500349A89 /* DashboardVC+Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +433,7 @@
 		883FD5C02811543B00DB2B61 /* Tafakul */ = {
 			isa = PBXGroup;
 			children = (
+				135210CE2A8375430070DA5F /* fonts */,
 				18AA66692A154C490012F69F /* IconsLoginReg */,
 				B8D4260128ED875F004A44FB /* Profile */,
 				B82095B528E221280092D4C1 /* NetworkManager */,
@@ -799,18 +828,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135210D92A8375770070DA5F /* Tajawal-ExtraLight.ttf in Resources */,
 				883FD5CE2811543E00DB2B61 /* LaunchScreen.storyboard in Resources */,
 				18AA66712A154CA50012F69F /* login_img.png in Resources */,
+				135210DC2A8375770070DA5F /* Tajawal-ExtraBold.ttf in Resources */,
 				B854EC6F28E0679C00FA632A /* Localizable.strings in Resources */,
 				18AA66732A154CB60012F69F /* register_btn.png in Resources */,
+				135210D62A8375770070DA5F /* Tajawal-Medium.ttf in Resources */,
 				18AA666D2A154C770012F69F /* back_login_img.png in Resources */,
+				135210DB2A8375770070DA5F /* Tajawal-Regular.ttf in Resources */,
 				18AA66682A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png in Resources */,
 				18AA66762A176B960012F69F /* Fasting.png in Resources */,
 				18AA66792A176C0D0012F69F /* donation_1.5.png in Resources */,
+				135210DA2A8375770070DA5F /* Tajawal-Light.ttf in Resources */,
+				135210D72A8375770070DA5F /* Tajawal-Black.ttf in Resources */,
 				187C636C295DA4F20032ACD6 /* load-loading (1).gif in Resources */,
 				883FD5CB2811543E00DB2B61 /* Assets.xcassets in Resources */,
 				883FD5C92811543B00DB2B61 /* Main.storyboard in Resources */,
 				18AA666F2A154C980012F69F /* imgpsh_fullsize_anim-4.png in Resources */,
+				135210D82A8375770070DA5F /* Tajawal-Bold.ttf in Resources */,
 				18AA666B2A154C680012F69F /* login_bg_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1235,7 +1271,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M38KL5R48X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Takaful;
@@ -1270,7 +1306,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M38KL5R48X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Takaful;

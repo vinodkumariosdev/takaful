@@ -140,6 +140,8 @@ class DashboardVC: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+
         searchBarAction.addTarget(self, action: #selector(searchController), for: .touchUpInside)
         configureAnimation()
         self.logoutBtn.addTarget(self, action: #selector(logoutAction), for: .touchUpInside)
@@ -392,7 +394,7 @@ class DashboardVC: UIViewController {
                                     if id == 64{
                                         self.destressId = id
                                     }
-                                    if Artitle == "هدية"{
+                                    if Artitle == "إرسال هدية" {
                                         self.giftlbl = Artitle
                                     }
                                     if id == 81{
@@ -410,7 +412,7 @@ class DashboardVC: UIViewController {
                                     if id == 94{
                                         self.nextDoorNeighborID = id
                                     }
-                                    if Artitle == "عائلة محتاجة"{
+                                    if Artitle == "أسرة معسرة"{
                                         self.familyInNeedlbl = Artitle
                                     }
                                     if id == 74{
@@ -458,7 +460,7 @@ class DashboardVC: UIViewController {
                                     if id == 75{
                                         self.specialNeedsId = id
                                     }
-                                    if Artitle == "كفالة يتيم"{
+                                    if Artitle == "كفالة يتيم" {
                                         self.orphanLbl = Artitle
                                     }
                                     if id == 73{
@@ -584,7 +586,7 @@ class DashboardVC: UIViewController {
                                     if id == 64{
                                         self.destressId = id
                                     }
-                                    if title == "Gift"{
+                                    if title == "Send A Gift"{
                                         self.giftlbl = title
                                     }
                                     if id == 81{
