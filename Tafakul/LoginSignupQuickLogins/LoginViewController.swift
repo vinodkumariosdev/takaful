@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     
 
+    @IBOutlet weak var backButnn: UIButton!
     @IBOutlet weak var newUserLbl: UILabel!
     @IBOutlet weak var passwordLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
@@ -29,6 +30,10 @@ class LoginViewController: UIViewController {
 @IBOutlet weak var quickBtn:      UIButton!
     
     @IBOutlet weak var registerBtnImg: UIImageView!
+    
+    
+    
+    
     
     @IBOutlet weak var UsernameTF: UITextField!{
         didSet{
@@ -69,20 +74,26 @@ class LoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         registerBtnImg.addGestureRecognizer(tapGesture)
         loginMobileNumberBtn.addTarget(self, action: #selector(loginBtnNumber), for: .touchUpInside)
-        
+//        registerBtnImg.isHidden = true
+//        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+
+//        registerText.addGestureRecognizer(tapGesture)
+//        newUserLbl.addGestureRecognizer(tapGesture2)
     }
     
     @objc func loginBtnNumber(){
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MobileNumberViewController") as! MobileNumberViewController
-        vc.modalPresentationStyle = .fullScreen
-        vc.isfromLogin = "IsLogIn"
-        self.present(vc, animated: true)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        vc.isfromLogin = "IsLogIn"
+//        self.present(vc, animated: true)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         print(LocalizationSystem.sharedInstance.getLanguage())
         if LocalizationSystem.sharedInstance.getLanguage() == "ar"{
+            
+            
             self.UsernameTF.textAlignment = .left
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             self.passwordTF.textAlignment = .left
@@ -96,6 +107,7 @@ class LoginViewController: UIViewController {
             AccountLbl.text = "Account ?"
             newUserLbl.text = "New User? Create An Account"
         }else{
+            backButnn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             self.UsernameTF.textAlignment = .right
             self.passwordTF.textAlignment = .right
@@ -128,6 +140,8 @@ class LoginViewController: UIViewController {
         let Url = APIURL.login
             guard let serviceUrl = URL(string: Url) else { return }
         var paramtersArray = ["username": "\(UsernameTF.text!)", "password": "\(passwordTF.text!)","api_token":"WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"] as! [String:Any]
+        print("API RESPONSE")
+        print(paramtersArray)
             var request = URLRequest(url: serviceUrl)
             request.httpMethod = "POST"
             request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
@@ -198,6 +212,8 @@ class LoginViewController: UIViewController {
             guard let serviceUrl = URL(string: Url) else { return }
         var paramtersArray = ["username": "\(UsernameTF.text!)", "password": "\(passwordTF.text!)","api_token":"WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"] as! [String:Any]
             var request = URLRequest(url: serviceUrl)
+            print("I am the real login")
+            print(paramtersArray)
             request.httpMethod = "POST"
             request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
             guard let httpBody = try? JSONSerialization.data(withJSONObject: paramtersArray, options: []) else {
@@ -267,7 +283,8 @@ class LoginViewController: UIViewController {
    //  Helper.showLoadingIndicator(view)
          var paramtersArray = ["username": "\(UsernameTF.text!)", "password": "\(passwordTF.text!)","api_token":"WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"] as! [String:Any]
          let urlString  = APIURL.login
-         print(urlString)
+        print("API RESPONSE")
+         print(paramtersArray)
          guard let url = URL(string: urlString) else {return}
          var request        = URLRequest(url: url)
          request.httpMethod = "POST"
@@ -356,14 +373,14 @@ class LoginViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                // UtilitiesAlert.showSimpleAlert(OnViewController: self, Message: "Enter Password")
             }else{
-                if isRememberMe{
-                    UserDefaults.standard.set(UsernameTF.text ?? "", forKey: "mobile")
-                    UserDefaults.standard.set(passwordTF.text ?? "", forKey: "password")
-                }else{
-                    UserDefaults.standard.removeObject(forKey: "mobile")
-                    UserDefaults.standard.removeObject(forKey: "password")
-                    
-                }
+//                if isRememberMe{
+                UserDefaults.standard.set(UsernameTF.text ?? "", forKey: "mobile")
+                UserDefaults.standard.set(passwordTF.text ?? "", forKey: "password")
+//                }else{
+//                    UserDefaults.standard.removeObject(forKey: "mobile")
+//                    UserDefaults.standard.removeObject(forKey: "password")
+//
+//                }
                 self.ArabicSignUp()
             }
 

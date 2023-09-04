@@ -112,9 +112,9 @@ class SignUpViewController: UIViewController {
     
     @IBAction func mobileNumberAct(_ sender: Any)
     {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MobileNumberViewController") as! MobileNumberViewController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true)
     }
     
     @objc func checkAction() {

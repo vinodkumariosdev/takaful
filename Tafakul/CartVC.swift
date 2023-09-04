@@ -83,17 +83,17 @@ class CartVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if isbackCart == "backCart"{
-            self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
-            self.titleArray.append(titleCart)
-            self.titleArrayElements = titleArray.uniquelements()
-            self.amountArray.append(cartAmount)
-            self.imgArray.append(cartIconImg)
-            self.idArray.append(donateCartID)
-            self.DonateamountArray.append(amountDonate)
-            self.cartDonateTB.delegate = self
-            self.cartDonateTB.dataSource = self
-            self.cartDonateTB.reloadData()
+        if isbackCart == "backCart" {
+//            self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
+//            self.titleArray.append(titleCart)
+//            self.titleArrayElements = titleArray.uniquelements()
+//            self.amountArray.append(cartAmount)
+//            self.imgArray.append(cartIconImg)
+//            self.idArray.append(donateCartID)
+//            self.DonateamountArray.append(amountDonate)
+//            self.cartDonateTB.delegate = self
+//            self.cartDonateTB.dataSource = self
+//            self.cartDonateTB.reloadData()
         }else{
             if titleCart == nil{
                 if LocalizationSystem.sharedInstance.getLanguage() == "en"{

@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		135210D62A8375770070DA5F /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */; };
-		135210D72A8375770070DA5F /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D02A8375720070DA5F /* Tajawal-Black.ttf */; };
-		135210D82A8375770070DA5F /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D12A8375730070DA5F /* Tajawal-Bold.ttf */; };
-		135210D92A8375770070DA5F /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */; };
-		135210DA2A8375770070DA5F /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D32A8375750070DA5F /* Tajawal-Light.ttf */; };
-		135210DB2A8375770070DA5F /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D42A8375760070DA5F /* Tajawal-Regular.ttf */; };
-		135210DC2A8375770070DA5F /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */; };
+		10F8E4E796DF5A54AA48AC36 /* Pods_Tafakul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9FD6D2B7B5773771F6975 /* Pods_Tafakul.framework */; };
+		139BEF222AA47DF000741B02 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */; };
+		139BEF242AA47E5C00741B02 /* AStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */; };
+		139BEF282AA4904700741B02 /* DashboardNextDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */; };
+		139BEF312AA4965B00741B02 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2A2AA4965B00741B02 /* Tajawal-Medium.ttf */; };
+		139BEF322AA4965B00741B02 /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2B2AA4965B00741B02 /* Tajawal-Black.ttf */; };
+		139BEF332AA4965B00741B02 /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2C2AA4965B00741B02 /* Tajawal-Bold.ttf */; };
+		139BEF342AA4965B00741B02 /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2D2AA4965B00741B02 /* Tajawal-ExtraLight.ttf */; };
+		139BEF352AA4965B00741B02 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2E2AA4965B00741B02 /* Tajawal-Regular.ttf */; };
+		139BEF362AA4965B00741B02 /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2F2AA4965B00741B02 /* Tajawal-ExtraBold.ttf */; };
+		139BEF372AA4965B00741B02 /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF302AA4965B00741B02 /* Tajawal-Light.ttf */; };
 		18001FD12953449100D7C884 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD02953449100D7C884 /* Reachability.swift */; };
 		18001FD32954441300D7C884 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD22954441300D7C884 /* Constants.swift */; };
 		18001FD52954611500D7C884 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 18001FD42954611500D7C884 /* L10n-swift */; };
@@ -21,8 +25,6 @@
 		1802EE672951C7AD00A37190 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE662951C7AD00A37190 /* CartVC.swift */; };
 		1802EE692951CEA100A37190 /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE682951CEA100A37190 /* CartTVCell.swift */; };
 		1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */; };
-		180312972A30919B00E2E90B /* MobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180312962A30919B00E2E90B /* MobileNumberViewController.swift */; };
-		180312992A30A08B00E2E90B /* OtpVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */; };
 		180B4B022A13B7840026E2B0 /* TakafulProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */; };
 		180E361C294C476E00349A89 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361B294C476E00349A89 /* DashboardVC.swift */; };
 		180E361E294C49DF00349A89 /* DashboardTopCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */; };
@@ -69,9 +71,7 @@
 		18E16D64295490F300A43535 /* SponserShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D61295490F300A43535 /* SponserShipVC.swift */; };
 		18E16D66295594AA00A43535 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D65295594AA00A43535 /* DonateViewController.swift */; };
 		18E16D6829559E4000A43535 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E16D6729559E4000A43535 /* WebViewController.swift */; };
-		3D8B3F2D40C8B1ECC3E39B77 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */; };
-		74A1A1053E93D53B1F75892C /* Pods_Tafakul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C4523C085824A63BB696EA /* Pods_Tafakul.framework */; };
-		7F6CCB57FAF0E7545E756202 /* Pods_TafakulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */; };
+		5B141565ABDF9CBDFCF3B580 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E224B7C8E47E88FB6ABBE4FC /* Pods_Tafakul_TafakulUITests.framework */; };
 		88242EFE2812E0BE00344050 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88242EFD2812E0BE00344050 /* MenuCollectionViewCell.swift */; };
 		88242F00281302FA00344050 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88242EFF281302F900344050 /* SideViewController.swift */; };
 		883FD5C22811543B00DB2B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FD5C12811543B00DB2B61 /* AppDelegate.swift */; };
@@ -139,6 +139,7 @@
 		B8D4260A28EDA29D004A44FB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4260928EDA29D004A44FB /* ProfileController.swift */; };
 		B8E201C128E4A1B30031F2F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8E201C028E4A1B30031F2F6 /* Alamofire */; };
 		B8F48CB428F612CF0040CCAA /* DonationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F48CB328F612CF0040CCAA /* DonationDetailsViewController.swift */; };
+		F66D8C6D78FA22F9745656E5 /* Pods_TafakulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC38D731872B7CE9EB962590 /* Pods_TafakulTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,22 +160,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
-		135210D02A8375720070DA5F /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
-		135210D12A8375730070DA5F /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
-		135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
-		135210D32A8375750070DA5F /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
-		135210D42A8375760070DA5F /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
-		135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
-		13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B7A605E81120F53CB50B8DA /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
+		139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
+		139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AStoryboard.storyboard; sourceTree = "<group>"; };
+		139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNextDoorViewController.swift; sourceTree = "<group>"; };
+		139BEF2A2AA4965B00741B02 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
+		139BEF2B2AA4965B00741B02 /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
+		139BEF2C2AA4965B00741B02 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
+		139BEF2D2AA4965B00741B02 /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
+		139BEF2E2AA4965B00741B02 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		139BEF2F2AA4965B00741B02 /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
+		139BEF302AA4965B00741B02 /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
 		18001FD02953449100D7C884 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		18001FD22954441300D7C884 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18001FD629546C1600D7C884 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		1802EE662951C7AD00A37190 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		1802EE682951CEA100A37190 /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
 		1802EE6C2951EF5A00A37190 /* SponsershipsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsershipsCVCell.swift; sourceTree = "<group>"; };
-		180312962A30919B00E2E90B /* MobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberViewController.swift; sourceTree = "<group>"; };
-		180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVerificationViewController.swift; sourceTree = "<group>"; };
 		180B4B012A13B7840026E2B0 /* TakafulProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakafulProfileTableViewCell.swift; sourceTree = "<group>"; };
 		180E361B294C476E00349A89 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		180E361D294C49DF00349A89 /* DashboardTopCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTopCVCell.swift; sourceTree = "<group>"; };
@@ -221,11 +223,8 @@
 		18E16D61295490F300A43535 /* SponserShipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponserShipVC.swift; sourceTree = "<group>"; };
 		18E16D65295594AA00A43535 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		18E16D6729559E4000A43535 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.debug.xcconfig"; sourceTree = "<group>"; };
-		43C4523C085824A63BB696EA /* Pods_Tafakul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.debug.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.release.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.release.xcconfig"; sourceTree = "<group>"; };
-		83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B681930EC68821C4981ADBC /* Pods-Tafakul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.release.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.release.xcconfig"; sourceTree = "<group>"; };
+		365AE805304EEA6EC7F46E1E /* Pods-TafakulTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.debug.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88242EFD2812E0BE00344050 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		88242EFF281302F900344050 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
 		883FD5BE2811543B00DB2B61 /* Tafakul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tafakul.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,9 +271,8 @@
 		88FFFEA02862AA570019C809 /* SpecialNeedsSponsershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialNeedsSponsershipViewController.swift; sourceTree = "<group>"; };
 		88FFFEA22862AB300019C809 /* StudentSponsershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSponsershipViewController.swift; sourceTree = "<group>"; };
 		88FFFEA42862B4760019C809 /* GiveGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveGiftViewController.swift; sourceTree = "<group>"; };
-		A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TafakulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.release.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.release.xcconfig"; sourceTree = "<group>"; };
-		B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul_TafakulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901EA31EA734D3928F5973AA /* Pods-Tafakul-TafakulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94A9FD6D2B7B5773771F6975 /* Pods_Tafakul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80D46A2286AC9D5000AED68 /* PaymentWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWebView.swift; sourceTree = "<group>"; };
 		B82095B328E21F050092D4C1 /* SliderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderModel.swift; sourceTree = "<group>"; };
 		B82095B628E221390092D4C1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -305,6 +303,10 @@
 		B8D4260728EDA233004A44FB /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		B8D4260928EDA29D004A44FB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B8F48CB328F612CF0040CCAA /* DonationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDetailsViewController.swift; sourceTree = "<group>"; };
+		CC38D731872B7CE9EB962590 /* Pods_TafakulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TafakulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89BC3BC834E0B76A094F03A /* Pods-Tafakul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul.debug.xcconfig"; path = "Target Support Files/Pods-Tafakul/Pods-Tafakul.debug.xcconfig"; sourceTree = "<group>"; };
+		E224B7C8E47E88FB6ABBE4FC /* Pods_Tafakul_TafakulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tafakul_TafakulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E408E0FBB9E4A4034232ECD6 /* Pods-TafakulTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TafakulTests.release.xcconfig"; path = "Target Support Files/Pods-TafakulTests/Pods-TafakulTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,9 +314,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A1A1053E93D53B1F75892C /* Pods_Tafakul.framework in Frameworks */,
 				18001FD52954611500D7C884 /* L10n-swift in Frameworks */,
 				B8E201C128E4A1B30031F2F6 /* Alamofire in Frameworks */,
+				10F8E4E796DF5A54AA48AC36 /* Pods_Tafakul.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F6CCB57FAF0E7545E756202 /* Pods_TafakulTests.framework in Frameworks */,
+				F66D8C6D78FA22F9745656E5 /* Pods_TafakulTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,23 +332,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8B3F2D40C8B1ECC3E39B77 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */,
+				5B141565ABDF9CBDFCF3B580 /* Pods_Tafakul_TafakulUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		135210CE2A8375430070DA5F /* fonts */ = {
+		139BEF292AA4963D00741B02 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				135210D02A8375720070DA5F /* Tajawal-Black.ttf */,
-				135210D12A8375730070DA5F /* Tajawal-Bold.ttf */,
-				135210D52A8375770070DA5F /* Tajawal-ExtraBold.ttf */,
-				135210D22A8375740070DA5F /* Tajawal-ExtraLight.ttf */,
-				135210D32A8375750070DA5F /* Tajawal-Light.ttf */,
-				135210CF2A8375710070DA5F /* Tajawal-Medium.ttf */,
-				135210D42A8375760070DA5F /* Tajawal-Regular.ttf */,
+				139BEF2B2AA4965B00741B02 /* Tajawal-Black.ttf */,
+				139BEF2C2AA4965B00741B02 /* Tajawal-Bold.ttf */,
+				139BEF2F2AA4965B00741B02 /* Tajawal-ExtraBold.ttf */,
+				139BEF2D2AA4965B00741B02 /* Tajawal-ExtraLight.ttf */,
+				139BEF302AA4965B00741B02 /* Tajawal-Light.ttf */,
+				139BEF2A2AA4965B00741B02 /* Tajawal-Medium.ttf */,
+				139BEF2E2AA4965B00741B02 /* Tajawal-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -386,12 +388,12 @@
 			path = IconsLoginReg;
 			sourceTree = "<group>";
 		};
-		25EA9F997A11523116C005C8 /* Frameworks */ = {
+		26E2AAE8805809D346FF0423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43C4523C085824A63BB696EA /* Pods_Tafakul.framework */,
-				B73B98B170C327964651C8AC /* Pods_Tafakul_TafakulUITests.framework */,
-				A29A980D5DD548D2417A952C /* Pods_TafakulTests.framework */,
+				94A9FD6D2B7B5773771F6975 /* Pods_Tafakul.framework */,
+				E224B7C8E47E88FB6ABBE4FC /* Pods_Tafakul_TafakulUITests.framework */,
+				CC38D731872B7CE9EB962590 /* Pods_TafakulTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -416,7 +418,7 @@
 				883FD5E12811543E00DB2B61 /* TafakulUITests */,
 				883FD5BF2811543B00DB2B61 /* Products */,
 				FCDDF17A6D75E0A084613929 /* Pods */,
-				25EA9F997A11523116C005C8 /* Frameworks */,
+				26E2AAE8805809D346FF0423 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,7 +435,7 @@
 		883FD5C02811543B00DB2B61 /* Tafakul */ = {
 			isa = PBXGroup;
 			children = (
-				135210CE2A8375430070DA5F /* fonts */,
+				139BEF292AA4963D00741B02 /* fonts */,
 				18AA66692A154C490012F69F /* IconsLoginReg */,
 				B8D4260128ED875F004A44FB /* Profile */,
 				B82095B528E221280092D4C1 /* NetworkManager */,
@@ -488,12 +490,10 @@
 				88FB38612862CF0100289779 /* CompletionDetailsViewController.swift */,
 				18E16D6729559E4000A43535 /* WebViewController.swift */,
 				18843DEA2A208F9E003A81F5 /* SearchCharityViewController.swift */,
-				180312962A30919B00E2E90B /* MobileNumberViewController.swift */,
 				18C7A56F2953362C00F617F5 /* TakafulProfileViewController.swift */,
 				18C807F7296EA2EA00417E2B /* SearchViewController.swift */,
 				18C807F9296EB0A700417E2B /* SearchTableViewCell.swift */,
 				188AE13329796EBB002D677A /* AllDonationDetailsViewController.swift */,
-				180312982A30A08B00E2E90B /* OtpVerificationViewController.swift */,
 				188AE13529797829002D677A /* CartDonationTableViewCell.swift */,
 				1888BA43296EF84F00AC00DA /* Search.json */,
 				883FD5C72811543B00DB2B61 /* Main.storyboard */,
@@ -503,6 +503,9 @@
 				883FD5CC2811543E00DB2B61 /* LaunchScreen.storyboard */,
 				883FD5CF2811543E00DB2B61 /* Info.plist */,
 				885DEBF62812997800F071B9 /* Tafakul-Bridging-Header.h */,
+				139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */,
+				139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */,
+				139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */,
 			);
 			path = Tafakul;
 			sourceTree = "<group>";
@@ -699,12 +702,12 @@
 		FCDDF17A6D75E0A084613929 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */,
-				6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */,
-				83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */,
-				13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */,
-				44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */,
-				B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */,
+				D89BC3BC834E0B76A094F03A /* Pods-Tafakul.debug.xcconfig */,
+				1B681930EC68821C4981ADBC /* Pods-Tafakul.release.xcconfig */,
+				901EA31EA734D3928F5973AA /* Pods-Tafakul-TafakulUITests.debug.xcconfig */,
+				0B7A605E81120F53CB50B8DA /* Pods-Tafakul-TafakulUITests.release.xcconfig */,
+				365AE805304EEA6EC7F46E1E /* Pods-TafakulTests.debug.xcconfig */,
+				E408E0FBB9E4A4034232ECD6 /* Pods-TafakulTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -716,11 +719,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883FD5E82811543E00DB2B61 /* Build configuration list for PBXNativeTarget "Tafakul" */;
 			buildPhases = (
-				C78889EF835B6FA65CA9D742 /* [CP] Check Pods Manifest.lock */,
+				1BE3FFA61C7BC16053A32CBB /* [CP] Check Pods Manifest.lock */,
 				883FD5BA2811543B00DB2B61 /* Sources */,
 				883FD5BB2811543B00DB2B61 /* Frameworks */,
 				883FD5BC2811543B00DB2B61 /* Resources */,
-				CCEDBA7A5D31EEF031D7F391 /* [CP] Embed Pods Frameworks */,
+				512DF3E85B4831641DBFC18F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -739,7 +742,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883FD5EB2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulTests" */;
 			buildPhases = (
-				CA5E0DA68910DB04FB698027 /* [CP] Check Pods Manifest.lock */,
+				22D4BB140192064B4E40967A /* [CP] Check Pods Manifest.lock */,
 				883FD5D02811543E00DB2B61 /* Sources */,
 				883FD5D12811543E00DB2B61 /* Frameworks */,
 				883FD5D22811543E00DB2B61 /* Resources */,
@@ -758,11 +761,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883FD5EE2811543E00DB2B61 /* Build configuration list for PBXNativeTarget "TafakulUITests" */;
 			buildPhases = (
-				3E77BB17759E7030D87BBAEB /* [CP] Check Pods Manifest.lock */,
+				232BF9319C41AF719F582EF0 /* [CP] Check Pods Manifest.lock */,
 				883FD5DA2811543E00DB2B61 /* Sources */,
 				883FD5DB2811543E00DB2B61 /* Frameworks */,
 				883FD5DC2811543E00DB2B61 /* Resources */,
-				777000148E8E0C75A4762D60 /* [CP] Embed Pods Frameworks */,
+				BDF4B7CFA4632B2047537D23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -828,25 +831,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135210D92A8375770070DA5F /* Tajawal-ExtraLight.ttf in Resources */,
 				883FD5CE2811543E00DB2B61 /* LaunchScreen.storyboard in Resources */,
 				18AA66712A154CA50012F69F /* login_img.png in Resources */,
-				135210DC2A8375770070DA5F /* Tajawal-ExtraBold.ttf in Resources */,
+				139BEF332AA4965B00741B02 /* Tajawal-Bold.ttf in Resources */,
+				139BEF362AA4965B00741B02 /* Tajawal-ExtraBold.ttf in Resources */,
+				139BEF342AA4965B00741B02 /* Tajawal-ExtraLight.ttf in Resources */,
 				B854EC6F28E0679C00FA632A /* Localizable.strings in Resources */,
 				18AA66732A154CB60012F69F /* register_btn.png in Resources */,
-				135210D62A8375770070DA5F /* Tajawal-Medium.ttf in Resources */,
+				139BEF372AA4965B00741B02 /* Tajawal-Light.ttf in Resources */,
 				18AA666D2A154C770012F69F /* back_login_img.png in Resources */,
-				135210DB2A8375770070DA5F /* Tajawal-Regular.ttf in Resources */,
+				139BEF352AA4965B00741B02 /* Tajawal-Regular.ttf in Resources */,
 				18AA66682A1516E80012F69F /* Screenshot 2023-05-17 at 7.33.27 PM.png in Resources */,
 				18AA66762A176B960012F69F /* Fasting.png in Resources */,
 				18AA66792A176C0D0012F69F /* donation_1.5.png in Resources */,
-				135210DA2A8375770070DA5F /* Tajawal-Light.ttf in Resources */,
-				135210D72A8375770070DA5F /* Tajawal-Black.ttf in Resources */,
 				187C636C295DA4F20032ACD6 /* load-loading (1).gif in Resources */,
 				883FD5CB2811543E00DB2B61 /* Assets.xcassets in Resources */,
 				883FD5C92811543B00DB2B61 /* Main.storyboard in Resources */,
+				139BEF322AA4965B00741B02 /* Tajawal-Black.ttf in Resources */,
+				139BEF242AA47E5C00741B02 /* AStoryboard.storyboard in Resources */,
 				18AA666F2A154C980012F69F /* imgpsh_fullsize_anim-4.png in Resources */,
-				135210D82A8375770070DA5F /* Tajawal-Bold.ttf in Resources */,
+				139BEF312AA4965B00741B02 /* Tajawal-Medium.ttf in Resources */,
 				18AA666B2A154C680012F69F /* login_bg_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -868,46 +872,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E77BB17759E7030D87BBAEB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Tafakul-TafakulUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		777000148E8E0C75A4762D60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C78889EF835B6FA65CA9D742 /* [CP] Check Pods Manifest.lock */ = {
+		1BE3FFA61C7BC16053A32CBB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -929,7 +894,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CA5E0DA68910DB04FB698027 /* [CP] Check Pods Manifest.lock */ = {
+		22D4BB140192064B4E40967A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -951,9 +916,31 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CCEDBA7A5D31EEF031D7F391 /* [CP] Embed Pods Frameworks */ = {
+		232BF9319C41AF719F582EF0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tafakul-TafakulUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		512DF3E85B4831641DBFC18F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -966,6 +953,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tafakul/Pods-Tafakul-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF4B7CFA4632B2047537D23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -991,7 +995,6 @@
 				1871EB442952FA3B00884829 /* RapidDonationTVCell.swift in Sources */,
 				883FD5F428115B1100DB2B61 /* SignUpViewController.swift in Sources */,
 				88FFFEA12862AA570019C809 /* SpecialNeedsSponsershipViewController.swift in Sources */,
-				180312972A30919B00E2E90B /* MobileNumberViewController.swift in Sources */,
 				188892C12959B7B80080C768 /* GiftDonateTableViewCell.swift in Sources */,
 				1802EE6D2951EF5A00A37190 /* SponsershipsCVCell.swift in Sources */,
 				1802EE672951C7AD00A37190 /* CartVC.swift in Sources */,
@@ -1018,13 +1021,14 @@
 				18843DE92A1E35D8003A81F5 /* DonateGiftDetailsViewController.swift in Sources */,
 				B82095B928E223E00092D4C1 /* DashBoardController.swift in Sources */,
 				88242F00281302FA00344050 /* SideViewController.swift in Sources */,
-				180312992A30A08B00E2E90B /* OtpVerificationViewController.swift in Sources */,
+				139BEF282AA4904700741B02 /* DashboardNextDoorViewController.swift in Sources */,
 				B8CE11BE2902F84B008EAC43 /* DesignableUITextField.swift in Sources */,
 				B89B60C528FA3FC600F912BB /* AlertView.swift in Sources */,
 				8869AC9A2862225900C08CCA /* FoodBasketViewController.swift in Sources */,
 				1871EB462953050D00884829 /* NewsDetailsVC.swift in Sources */,
 				885DEBF92812997900F071B9 /* SWRevealViewController.m in Sources */,
 				B8D4260A28EDA29D004A44FB /* ProfileController.swift in Sources */,
+				139BEF222AA47DF000741B02 /* TestSwiftUIView.swift in Sources */,
 				180E3623294C7C9600349A89 /* CharityPaysCVCell.swift in Sources */,
 				18E16D66295594AA00A43535 /* DonateViewController.swift in Sources */,
 				883FD5FA28117B2200DB2B61 /* QuickLoginViewController.swift in Sources */,
@@ -1264,13 +1268,13 @@
 		};
 		883FD5E92811543E00DB2B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AB6182E1E17E4AB5FC01FD2 /* Pods-Tafakul.debug.xcconfig */;
+			baseConfigurationReference = D89BC3BC834E0B76A094F03A /* Pods-Tafakul.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M38KL5R48X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1279,15 +1283,17 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.Tafakul;
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tafakul/Tafakul-Bridging-Header.h";
@@ -1299,13 +1305,13 @@
 		};
 		883FD5EA2811543E00DB2B61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D9B3ED77CA4CBA6495C9696 /* Pods-Tafakul.release.xcconfig */;
+			baseConfigurationReference = 1B681930EC68821C4981ADBC /* Pods-Tafakul.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M38KL5R48X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1314,15 +1320,17 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Amtech.Tafakul;
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tafakul/Tafakul-Bridging-Header.h";
@@ -1333,7 +1341,7 @@
 		};
 		883FD5EC2811543E00DB2B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44649DB07C9946BCE016B000 /* Pods-TafakulTests.debug.xcconfig */;
+			baseConfigurationReference = 365AE805304EEA6EC7F46E1E /* Pods-TafakulTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1354,7 +1362,7 @@
 		};
 		883FD5ED2811543E00DB2B61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B733619BF05BCFD34D028CF6 /* Pods-TafakulTests.release.xcconfig */;
+			baseConfigurationReference = E408E0FBB9E4A4034232ECD6 /* Pods-TafakulTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1375,7 +1383,7 @@
 		};
 		883FD5EF2811543E00DB2B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83E87FF209784AE5F31198A3 /* Pods-Tafakul-TafakulUITests.debug.xcconfig */;
+			baseConfigurationReference = 901EA31EA734D3928F5973AA /* Pods-Tafakul-TafakulUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1394,7 +1402,7 @@
 		};
 		883FD5F02811543E00DB2B61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13FC27C1DB27B3C474A3AE35 /* Pods-Tafakul-TafakulUITests.release.xcconfig */;
+			baseConfigurationReference = 0B7A605E81120F53CB50B8DA /* Pods-Tafakul-TafakulUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

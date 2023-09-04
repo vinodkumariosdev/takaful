@@ -8,6 +8,10 @@
 import UIKit
 
 class ContributeVC: UIViewController,UITextFieldDelegate {
+    
+
+   
+
 
     @IBOutlet weak var titleLbl: UILabel!
     
@@ -49,6 +53,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             userid = UserDefaults.standard.string(forKey: "id")
             amountTF.delegate = self
+            
             amount = "1"
             let totalAmounts = "المبلغ الإجمالي"
             amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
@@ -64,6 +69,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             totalAmtTF.textAlignment = .right
             amountTF.placeholder = "الرجاء إدخال المبلغ"
             totalAmtTF.placeholder = ""
+            
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             userid = UserDefaults.standard.string(forKey: "id")
@@ -82,7 +88,9 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             fiveRupeeBtn.addTarget(self, action: #selector(fiveAction), for: .touchUpInside)
             twentyRupeeBtn.addTarget(self, action: #selector(TwentyAction), for: .touchUpInside)
             self.DonateNowBtn.addTarget(self, action: #selector(donateNowBtn), for: .touchUpInside)
+            
         }
+        
         
     }
     
@@ -293,5 +301,9 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         self.amountTF.text = ""
     }
+
+    
+    
+    
 
 }

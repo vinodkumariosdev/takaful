@@ -80,9 +80,6 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 webVieww.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
             }
         }
-        
-        
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -95,19 +92,18 @@ class WebViewController: UIViewController,WKNavigationDelegate {
         if title == "Takaful"{
             loadingVieww.isHidden = true
             self.webVieww.isHidden = false
-            
         }
+        
         if title == ""{
             self.webVieww.isHidden = true
             loadingVieww.isHidden = false
-            
         }
+        
         if title == "checkout"{
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self.loadingVieww.isHidden = true
                 self.webVieww.isHidden = false
             }
-            
         }
         
         }

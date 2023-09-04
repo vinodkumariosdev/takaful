@@ -50,7 +50,7 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             self.getArabicCauses()
-            self.morelbl.text = "أكثر"
+            self.morelbl.text = "المزيد"
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             
         }

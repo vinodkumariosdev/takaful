@@ -40,7 +40,8 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
         
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
+//            backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
+            backBtn.isHidden = true
             profileLbl.text = "الملف الشخصي"
             if userid == nil{
                 profileInfo.append(profileList(name: "التبرعات", image: Constants.Account.Donate))
@@ -237,6 +238,22 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
+            }
+        }
+        
+        if indexPath.row == 3 {
+            if let url = URL(string: "https://www.takafulsuhar.om/privacy"), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+            }
+        }
+        if indexPath.row == 4 {
+            if let url = URL(string: "https://www.takafulsuhar.om/volunteer"), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+            }
+        }
+        if indexPath.row == 5 {
+            if let url = URL(string: "https://www.takafulsuhar.om/contact"), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
             }
         }
     }

@@ -17,4 +17,7 @@ class DashboardSliderCVCell: GeminiCell {
     @IBOutlet weak var omrLbl: UILabel!
     @IBOutlet weak var ProjectNameLbl: UILabel!
     @IBOutlet weak var DashimageView: UIImageView!
+    
+    
+    @IBOutlet weak var progressBar: UIProgressView!
 }

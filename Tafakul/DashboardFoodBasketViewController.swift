@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
 
@@ -175,6 +176,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     var isFastingRansom:String!
     var isSacrificeMore:String!
     var foodbasket:String?
+    var nextDoor: String?
+    var nextDoorId: Int?
     var expitationsAuth:String?
     var sacrifice45AmtValue:Int?
     var sacrifice250AmtValue:Int?
@@ -390,6 +393,50 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             self.aqiqahVieww.isHidden = true
             self.sacrificeMoreVieww.isHidden = true
         }
+        
+        if nextDoor == "fromDashboardNextDoor" {
+            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+                self.foodBasketVieww.isHidden = false
+                self.expitationOathVieww.isHidden = true
+                self.sacrificeVieww.isHidden = true
+                self.ransomVivew.isHidden = true
+                self.vowVieww.isHidden = true
+                self.aqiqahVieww.isHidden = true
+                self.sacrificeMoreVieww.isHidden = true
+                
+                self.foodBasektBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
+                foodbasktHeadLbl.text = "الجار الجنب"
+                foodbsktLbl.text = "عن عبد الله بن عمر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال لي مازال جبريل يطلعني على الجار حتى ظننت أنه سيرثه. رواه البخاري"
+                otherAmountTF.textAlignment = .right
+                foodbsktLbl.numberOfLines = 5
+                otherAmountTF.placeholder = "عدد السلّات"
+                donateBtn.setTitle("تبرع الآن", for: .normal)
+                addcartBtn.setTitle("اضافة للعربة", for: .normal)
+            }else{
+                UIView.appearance().semanticContentAttribute = .forceLeftToRight
+                self.foodBasketVieww.isHidden = false
+                self.expitationOathVieww.isHidden = true
+                self.sacrificeVieww.isHidden = true
+                self.ransomVivew.isHidden = true
+                self.vowVieww.isHidden = true
+                self.aqiqahVieww.isHidden = true
+                self.sacrificeMoreVieww.isHidden = true
+                self.foodBasektBtn.setImage(UIImage.init(named: "BackButton"), for: .normal)
+                foodbasktHeadLbl.text = "Neighbours in Village"
+                foodbsktLbl.text = "On the authority of Abdulla bin Omar, may God be pleased with him, that the Messenger of God, may God's prayers and peace be upon him, said Gabriel still advised me about the neighbour, until I thought that he would inherit it. Narrated by Al-Bukhari"
+                foodbsktLbl.numberOfLines = 5
+                otherAmountTF.textAlignment = .left
+                otherAmountTF.placeholder = "Number of Baskets"
+                donateBtn.setTitle("Donate Now", for: .normal)
+                addcartBtn.setTitle("Add Cart", for: .normal)
+            }
+            
+            otherAmountTF.isHidden = true
+
+        }
+        
+
         if foodbasket == "fromDashboard"{
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
@@ -2044,4 +2091,140 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+}
+
+
+struct DropdownSelector: View {
+    @State private var shouldShowDropdown = false
+    @State private var selectedOption: DropdownOption? = nil
+    var placeholder: String
+    var options: [DropdownOption]
+    var onOptionSelected: ((_ option: DropdownOption) -> Void)?
+    private let buttonHeight: CGFloat = 45
+
+    var body: some View {
+        Button(action: {
+            self.shouldShowDropdown.toggle()
+        }) {
+            HStack {
+                Text(selectedOption == nil ? placeholder : selectedOption!.value)
+                    .font(.system(size: 14))
+                    .foregroundColor(selectedOption == nil ? Color.gray: Color.black)
+
+                Spacer()
+
+                Image(systemName: self.shouldShowDropdown ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
+                    .resizable()
+                    .frame(width: 9, height: 5)
+                    .font(Font.system(size: 9, weight: .medium))
+                    .foregroundColor(Color.black)
+            }
+        }
+        .padding(.horizontal)
+        .cornerRadius(5)
+        .frame(width: .infinity, height: self.buttonHeight)
+        .overlay(
+            RoundedRectangle(cornerRadius: 5)
+                .stroke(Color.gray, lineWidth: 1)
+        )
+        .overlay(
+            VStack {
+                if self.shouldShowDropdown {
+                    Spacer(minLength: buttonHeight + 10)
+                    Dropdown(options: self.options, onOptionSelected:  { option in
+                        shouldShowDropdown = false
+                        selectedOption = option
+                        self.onOptionSelected?(option)
+                    })
+                }
+            }, alignment: .topLeading
+        )
+        .background(
+            RoundedRectangle(cornerRadius: 5).fill(Color.white)
+        )
+    }
+}
+
+
+
+struct DropdownSelector_Previews: PreviewProvider {
+    static var uniqueKey: String {
+        UUID().uuidString
+    }
+
+    static let options: [DropdownOption] = [
+        DropdownOption(key: uniqueKey, value: "Sunday"),
+        DropdownOption(key: uniqueKey, value: "Monday"),
+        DropdownOption(key: uniqueKey, value: "Tuesday"),
+        DropdownOption(key: uniqueKey, value: "Wednesday"),
+        DropdownOption(key: uniqueKey, value: "Thursday"),
+        DropdownOption(key: uniqueKey, value: "Friday"),
+        DropdownOption(key: uniqueKey, value: "Saturday")
+    ]
+
+
+    static var previews: some View {
+        Group {
+            DropdownSelector(
+                placeholder: "Day of the week",
+                options: options,
+                onOptionSelected: { option in
+                    print(option)
+            })
+            .padding(.horizontal)
+        }
+    }
+}
+
+struct DropdownOption: Hashable {
+    let key: String
+    let value: String
+
+    public static func == (lhs: DropdownOption, rhs: DropdownOption) -> Bool {
+        return lhs.key == rhs.key
+    }
+}
+
+struct DropdownRow: View {
+    var option: DropdownOption
+    var onOptionSelected: ((_ option: DropdownOption) -> Void)?
+
+    var body: some View {
+        Button(action: {
+            if let onOptionSelected = self.onOptionSelected {
+                onOptionSelected(self.option)
+            }
+        }) {
+            HStack {
+                Text(self.option.value)
+                    .font(.system(size: 14))
+                    .foregroundColor(Color.black)
+                Spacer()
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 5)
+    }
+}
+struct Dropdown: View {
+    var options: [DropdownOption]
+    var onOptionSelected: ((_ option: DropdownOption) -> Void)?
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                ForEach(self.options, id: \.self) { option in
+                    DropdownRow(option: option, onOptionSelected: self.onOptionSelected)
+                }
+            }
+        }
+        .frame(minHeight: CGFloat(options.count) * 30, maxHeight: 250)
+        .padding(.vertical, 5)
+        .background(Color.white)
+        .cornerRadius(5)
+        .overlay(
+            RoundedRectangle(cornerRadius: 5)
+                .stroke(Color.gray, lineWidth: 1)
+        )
+    }
 }

@@ -129,11 +129,15 @@ class DashboardVC: UIViewController {
       ]
     
     var menuModifyImage: [UIImage?] = [
-        UIImage(named: "gift"),
-        UIImage(named: "detress"),
-        UIImage(named: "neighbor"),
+        
+        UIImage(named: "sadqa"),
         UIImage(named: "friday_charity"),
-        UIImage(named: "sadqa")
+
+        UIImage(named: "neighbor"),
+
+        UIImage(named: "detress"),
+
+        UIImage(named: "gift")
       ]
    
     
@@ -144,7 +148,6 @@ class DashboardVC: UIViewController {
 
         searchBarAction.addTarget(self, action: #selector(searchController), for: .touchUpInside)
         configureAnimation()
-        self.logoutBtn.addTarget(self, action: #selector(logoutAction), for: .touchUpInside)
         self.langBtn.addTarget(self, action: #selector(languBtnAction), for: .touchUpInside)
     }
     
@@ -190,6 +193,7 @@ class DashboardVC: UIViewController {
             langBtn.setImage(ar, for: .normal)
             let en = UIImage(named: "en")
             langBtn.setImage(en, for: .normal)
+            
             self.getArabicCauses()
             self.getArabicSlider()
         }else{
@@ -197,7 +201,7 @@ class DashboardVC: UIViewController {
             let ar = UIImage(named: "en")
             self.charityPayLbl.text = "Charity Pay"
             self.intitativeLbl.text = "Initiative"
-            self.contributeLbl.text = "Contribute_to_a_project"
+            self.contributeLbl.text = "Contribute To A Project"
             self.charityMoreLbl.text = "More"
             self.sponsorshipLbl.text = "Sponsorships"
             langBtn.setImage(ar, for: .normal)
@@ -262,9 +266,15 @@ class DashboardVC: UIViewController {
                                         self.totalAmountArray.append(amount)
                                         self.RaisedArray.append(raised)
                                         self.sliderCV.reloadData()
+                                        
                                     }
                                    
                                 }
+//                                self.sliderCV.gemini.circleRotationAnimation()
+//                                let indexPath = IndexPath(item: 0, section: 0)
+//
+//                                self.sliderCV.collectionViewLayout.collectionView?.scrollToItem(at: indexPath,  at: [.centeredVertically, .centeredHorizontally], animated: true)
+
                                 
                             }
                            // self.loadinHubDismiss()
@@ -835,12 +845,14 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+//            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            self.view.semanticContentAttribute = .forceRightToLeft
+
             if(collectionView == self.topCv)
             {
                 let cell = topCv.dequeueReusableCell(withReuseIdentifier: "DashboardTopCVCell", for: indexPath) as? DashboardTopCVCell
                 
-                if indexPath.row == 3{
+                if indexPath.row == 3 {
                     cell?.dashboardLbl.text = charitylbl ?? ""
                 }
                 
@@ -858,8 +870,15 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }
                 
                 if indexPath.row == 0{
-                    cell?.dashboardLbl.text = "إرسال \(giftlbl ?? "")"
+                    cell?.dashboardLbl.text = "\(giftlbl ?? "")"
                     
+                }
+                
+                if cell?.dashboardLbl.text?.split(separator: " ").count ?? 1 > 1 {
+                    var items = cell?.dashboardLbl.text?.split(separator: " ")
+                    cell?.dashboardLbl.text = "\(items![0]) \n \(items![1])"
+//                    cell?.dashboardLbl.font = UIFont(name: "", size: 14)
+
                 }
                 
                 cell?.DashboardimageView.image = menuImage[indexPath.item]
@@ -874,14 +893,21 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 cell.omrLbl.text = "\(RaisedArray[indexPath.row]) OMR"
                 let url = URL(string: imgArray[indexPath.row])
                 cell.DashimageView.kf.setImage(with: url)
-                self.sliderCV.animateCell(cell)
-                cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
+                cell.progressBar.progress = Float(percentageArray[indexPath.row] / 100)
+//                self.sliderCV.animateCell(cell)
+                if(percentageArray[indexPath.row] > 100) {
+                    cell.percentageLbl.text = "100%"
+                }else {
+                    cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
+                }
+//                cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 cell.percentageLbl.textColor = UIColor.blue
                 cell.shareBtn.addTarget(self, action: #selector(shareButton(_sender:)), for: .touchUpInside)
                 cell.shareBtn.tag = indexPath.row
                 cell.donateBtn.setTitle("تبرع الان", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
+                
                 return cell
             }
             
@@ -969,7 +995,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             else
             {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardSliderCVCell", for: indexPath) as! DashboardSliderCVCell
-                self.sliderCV.animateCell(cell)
+//                self.sliderCV.animateCell(cell)
                 return cell
             }
             
@@ -979,29 +1005,30 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             {
                 let cell = topCv.dequeueReusableCell(withReuseIdentifier: "DashboardTopCVCell", for: indexPath) as? DashboardTopCVCell
                 
-                if indexPath.row == 3{
-                    cell?.dashboardLbl.text = charitylbl ?? ""
-                }
-                
                 if indexPath.row == 4{
                     cell?.dashboardLbl.text = dailySadaqu ?? ""
                 }
+                
+                if indexPath.row == 1{
+                    cell?.dashboardLbl.text = charitylbl ?? ""
+                }
+                
                 
                 if indexPath.row == 2{
                     cell?.dashboardLbl.text = nextDoorNeighbor ?? ""
                 }
                 
-                if indexPath.row == 1{
+                if indexPath.row == 3{
                     cell?.dashboardLbl.text = destressRelieflbl ?? ""
                    
                 }
                 
-                if indexPath.row == 0{
+                if indexPath.row == 4{
                     cell?.dashboardLbl.text = "Give \(giftlbl ?? "")"
                     
                 }
                 
-                cell?.DashboardimageView.image = menuImage[indexPath.item]
+                cell?.DashboardimageView.image = menuModifyImage[indexPath.item]
                 return cell!
             }
             
@@ -1013,11 +1040,17 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 cell.omrLbl.text = "\(RaisedArray[indexPath.row]) OMR"
                 let url = URL(string: imgArray[indexPath.row])
                 cell.DashimageView.kf.setImage(with: url)
-                self.sliderCV.animateCell(cell)
+//                self.sliderCV.animateCell(cell)
                 cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 cell.percentageLbl.textColor = UIColor.blue
                 cell.shareBtn.addTarget(self, action: #selector(shareButton(_sender:)), for: .touchUpInside)
                 cell.shareBtn.tag = indexPath.row
+//                self.sliderCV.animateCell(cell)
+                if(percentageArray[indexPath.row] > 100) {
+                    cell.percentageLbl.text = "100%"
+                }else {
+                    cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
+                }
                 cell.donateBtn.setTitle("Donate", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
@@ -1108,7 +1141,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             else
             {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardSliderCVCell", for: indexPath) as! DashboardSliderCVCell
-                self.sliderCV.animateCell(cell)
+//                self.sliderCV.animateCell(cell)
                 return cell
             }
         }
@@ -1149,7 +1182,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
     {
         if let cell = cell as? DashboardSliderCVCell
         {
-            self.sliderCV.animateCell(cell)
+//            self.sliderCV.animateCell(cell)
         }
     }
 
@@ -1335,6 +1368,15 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 2{
+//                let vc = storyboard?.instantiateViewController(withIdentifier: "DashboardNextDoorViewController") as! DashboardNextDoorViewController
+//                print(foodBasketID!)
+////                vc.nextDoorId = 94
+////                vc.nextDoor = "fromDashboardNextDoor"
+//                self.definesPresentationContext = true
+//                vc.modalPresentationStyle = .overCurrentContext
+//                self.present(vc, animated: true, completion: nil)
+//
+//
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = "Neighbours in Village"

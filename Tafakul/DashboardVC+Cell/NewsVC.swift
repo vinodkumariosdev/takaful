@@ -26,18 +26,19 @@ class NewsVC: UIViewController
         super.viewDidLoad()
         newsTB.delegate = self
         newsTB.dataSource = self
+        backBtn.isHidden = true
         self.getNews()
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             newsLbl.text = "أخبار"
-            newsTxtLbl.text = "أخبار"
+            newsTxtLbl.text = ""
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             newsLbl.text = "News"
             backBtn.setImage(UIImage.init(named: "BackButton"), for: .normal)
-            newsTxtLbl.text = "News"
+            newsTxtLbl.text = ""
         }
     }
     
