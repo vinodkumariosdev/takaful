@@ -74,18 +74,23 @@ class LoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         registerBtnImg.addGestureRecognizer(tapGesture)
         loginMobileNumberBtn.addTarget(self, action: #selector(loginBtnNumber), for: .touchUpInside)
-//        registerBtnImg.isHidden = true
-//        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-
+        registerBtnImg.isHidden = true
+        loginMobileNumberBtn.isUserInteractionEnabled = true
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        newUserLbl.isUserInteractionEnabled = true
 //        registerText.addGestureRecognizer(tapGesture)
-//        newUserLbl.addGestureRecognizer(tapGesture2)
+        newUserLbl.addGestureRecognizer(tapGesture2)
     }
     
+    @objc
+    func moveToRegisterPage(sender:UITapGestureRecognizer){
+        print("I am the label")
+    }
     @objc func loginBtnNumber(){
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//        vc.modalPresentationStyle = .fullScreen
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+        vc.modalPresentationStyle = .fullScreen
 //        vc.isfromLogin = "IsLogIn"
-//        self.present(vc, animated: true)
+        self.present(vc, animated: true)
     }
     
     

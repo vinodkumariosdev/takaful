@@ -44,7 +44,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             loadingVieww.addSubview(imageView)
             if userid == nil{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                 UserDefaults.standard.removeObject(forKey: "id")
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
@@ -67,7 +67,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             loadingVieww.addSubview(imageView)
             if userid == nil{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                 UserDefaults.standard.removeObject(forKey: "id")
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)

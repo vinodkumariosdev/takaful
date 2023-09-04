@@ -112,7 +112,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func mobileNumberAct(_ sender: Any)
     {
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
 //        vc.modalPresentationStyle = .fullScreen
 //        self.present(vc, animated: true)
     }
@@ -167,7 +167,7 @@ class SignUpViewController: UIViewController {
                             let alert = UIAlertController(title: "", message:"سجل بنجاح".l10n(), preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "نعم".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                                let vc = storyboard.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                                      vc.modalPresentationStyle = .fullScreen
                                      self.present(vc, animated: true, completion: nil)
                             }))
@@ -238,7 +238,7 @@ class SignUpViewController: UIViewController {
                             let alert = UIAlertController(title: "", message:"Registration Successful".l10n(), preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                                let vc = storyboard.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                                      vc.modalPresentationStyle = .fullScreen
                                      self.present(vc, animated: true, completion: nil)
                             }))

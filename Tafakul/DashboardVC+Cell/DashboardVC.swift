@@ -756,7 +756,7 @@ class DashboardVC: UIViewController {
     @objc func logoutAction(){
         let alert = UIAlertController(title: "", message: "Are You Sure You Want To Logout", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
             UserDefaults.standard.removeObject(forKey: "id")
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)

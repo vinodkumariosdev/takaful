@@ -21,6 +21,11 @@ class PhoneSignUpViewController: UIViewController {
     @IBOutlet weak var signupBtn: UIButton!
     var activityView: UIActivityIndicatorView?
 
+    @IBOutlet weak var titleOTP: UILabel!
+    @IBOutlet weak var redirectToUser: UIButton!
+    
+    
+    
     var number : String = ""
     var otp : String = ""
     var isClick :Bool = false
@@ -36,21 +41,32 @@ class PhoneSignUpViewController: UIViewController {
         signupBtn.myViewCorners()
         
         self.hideKeyboardWhenTappedAround()
-        
-     /*   if(Constant.isQuickDonation){
-            signupBtn.setTitle("Login".l10n(), for: .normal)
-            signUpTitle.text = "Login with mobile".l10n()
-        }else{
-            signupBtn.setTitle("Signup".l10n(), for: .normal)
-            signUpTitle.text = "Signup with mobile".l10n()
-        }*/
+    
+        if LocalizationSystem.sharedInstance.getLanguage() != "ar"{
+            redirectToUser.setTitle("تسجيل الدخول عن طريق البريد الإلكتروني", for: .normal)
+            signupBtn.setTitle("إرسال الرقم المؤقت", for: .normal)
+            titleOTP.text = "التسجيل عن طريق رقم الهاتف"
+        }
+
 
       }
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         Constant.isQuickDonation = false
 
     }
+    
+    
+    @IBAction func loginClickUp(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        vc.modalPresentationStyle = .fullScreen
+//        vc.isfromLogin = "IsLogIn"
+        self.present(vc, animated: true)
+
+    }
+    
     @IBAction func signUpWithMobile(_ sender: Any) {
         if isClick {
    
@@ -120,43 +136,31 @@ class PhoneSignUpViewController: UIViewController {
                         let json = try JSONSerialization.jsonObject(with: data, options: [])
                         print(json)
 
+
                         let jsonArray = json as! [String:AnyObject]
                         let status = jsonArray["status"] as! String
                         let message = jsonArray["message"] as! String
+                        let model = try JSONDecoder().decode(JsonLogin.self, from: data)
+                        
 
                         DispatchQueue.main.async {
                         if status == "success"
                         {
-                            if ( Constant.isQuickDonation){
-
-                                UserDefaults.standard.setLoggedIn(value: true)
-                                
-                                let alert = UIAlertController(title: "", message:"Login Successful".l10n(), preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
-                                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                    let vc = storyboard.instantiateViewController(withIdentifier: "SWRevealViewController")
-                                         vc.modalPresentationStyle = .fullScreen
-                                         self.present(vc, animated: true, completion: nil)
-                                }))
-                                self.present(alert, animated: true, completion: nil)
-                            }else{
-                             
-                                    UserDefaults.standard.setLoggedIn(value: true)
+                            let id = model.id
+                            print(id)
+                            UserDefaults.standard.set(id, forKey: "id")
+                            UserDefaults.standard.setLoggedIn(value: true)
+                            UserDefaults.standard.setUserID(value: id ?? 0)
+                            self.loadinHubDismiss()
+                            let alert = UIAlertController(title: "", message:"Login Successful".l10n(), preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
+                                Constant.isLoginView = true
+                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                                vc.modalPresentationStyle = .fullScreen
+                                self.present(vc, animated: true)
+                            }))
                             
-                                let alert = UIAlertController(title: "", message:"Registration Successful".l10n(), preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
-                                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                    let vc = storyboard.instantiateViewController(withIdentifier: "SWRevealViewController")
-                                         vc.modalPresentationStyle = .fullScreen
-                                         self.present(vc, animated: true, completion: nil)
-                                }))
-                                self.present(alert, animated: true, completion: nil)
-                                
-                            }
-                           
-                           
-                            
-                         
+                            self.present(alert, animated: true, completion: nil)
 
                           
                         }
@@ -164,17 +168,13 @@ class PhoneSignUpViewController: UIViewController {
                         else
 
                         {
-
                             let alert = UIAlertController(title: "", message:message, preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                                 alert.dismiss(animated: true)
                             }))
-
                             self.present(alert, animated: true, completion: nil)
-
                         }
-
-                        }
+                    }
 
 
 
@@ -225,21 +225,29 @@ class PhoneSignUpViewController: UIViewController {
                         DispatchQueue.main.async {
                         if status == "success"
                         {
-                            self.signupBtn.setTitle("Verify".l10n(), for: .normal)
-                            self.mobileNumber.placeholder = "Enter OTP".l10n()
-                            self.signUpTitle.text = "OTP Verification".l10n()
+                            if LocalizationSystem.sharedInstance.getLanguage() != "ar"{
+                                
+                                self.signupBtn.setTitle("تأكيد", for: .normal)
+                                self.mobileNumber.placeholder = "ادخل الرقم المؤقت"
+                                self.signUpTitle.text = "التأكيد على عملية التسجيل"
+                            }else{
+                                
+                                self.signupBtn.setTitle("Verify".l10n(), for: .normal)
+                                self.mobileNumber.placeholder = "Enter OTP".l10n()
+                                self.signUpTitle.text = "OTP Verification".l10n()
+                            }
                             self.mobileNumber.text = ""
                             self.isClick = true
 
-                            if (Constant.isQuickDonation){
-                                let userId = jsonArray["userId"] as! Int
-                                    UserDefaults.standard.setUserID(value: userId)
-                                
-                            }else{
-                                let user_id = jsonArray["user_id"] as! Int
-                                UserDefaults.standard.setUserID(value: user_id)
-                                
-                            }
+//                            if (Constant.isQuickDonation){
+//                                let userId = jsonArray["userId"] as! Int
+//                                    UserDefaults.standard.setUserID(value: userId)
+//
+//                            }else{
+//                                let user_id = jsonArray["user_id"] as! Int
+//                                UserDefaults.standard.setUserID(value: user_id)
+//
+//                            }
                             let alert = UIAlertController(title: "", message: "OTP send to your number, please check".l10n(), preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(_ action: UIAlertAction) -> Void in
                                 alert.dismiss(animated: true)

@@ -45,7 +45,7 @@ class CartVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 let alert = UIAlertController(title: "", message:"Please Login For Access Profile".l10n(), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                     Constant.isLoginView = true
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }))
@@ -64,7 +64,7 @@ class CartVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 let alert = UIAlertController(title: "", message:"Please Login For Access Profile".l10n(), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                     Constant.isLoginView = true
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }))
@@ -84,16 +84,16 @@ class CartVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         if isbackCart == "backCart" {
-//            self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
-//            self.titleArray.append(titleCart)
-//            self.titleArrayElements = titleArray.uniquelements()
-//            self.amountArray.append(cartAmount)
-//            self.imgArray.append(cartIconImg)
-//            self.idArray.append(donateCartID)
-//            self.DonateamountArray.append(amountDonate)
-//            self.cartDonateTB.delegate = self
-//            self.cartDonateTB.dataSource = self
-//            self.cartDonateTB.reloadData()
+            self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
+            self.titleArray.append(titleCart)
+            self.titleArrayElements = titleArray.uniquelements()
+            self.amountArray.append(cartAmount)
+            self.imgArray.append(cartIconImg)
+            self.idArray.append(donateCartID)
+            self.DonateamountArray.append(amountDonate)
+            self.cartDonateTB.delegate = self
+            self.cartDonateTB.dataSource = self
+            self.cartDonateTB.reloadData()
         }else{
             if titleCart == nil{
                 if LocalizationSystem.sharedInstance.getLanguage() == "en"{

@@ -16,12 +16,14 @@ struct JsonLogin : Codable {
 	let status : String?
 	let message : String?
 	let userId : Int?
+    let id: Int?
 
 	enum CodingKeys: String, CodingKey {
 
 		case status = "status"
 		case message = "message"
 		case userId = "userId"
+        case id = "id"
 	}
 
 	init(from decoder: Decoder) throws {
@@ -29,6 +31,7 @@ struct JsonLogin : Codable {
 		status = try values.decodeIfPresent(String.self, forKey: .status)
 		message = try values.decodeIfPresent(String.self, forKey: .message)
 		userId = try values.decodeIfPresent(Int.self, forKey: .userId)
+        id = try values.decodeIfPresent(Int.self, forKey: .id)
 	}
 
 }

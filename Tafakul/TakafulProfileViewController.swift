@@ -38,6 +38,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
         self.tblView.delegate = self
         self.tblView.dataSource = self
         
+        
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
 //            backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
@@ -52,6 +53,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "تواصل مع الدعم", image: Constants.Account.ContactSupport))
                 loginLbl.text = "تسجيل الدخول"
                 usernameLbl.text = "اسم المستخدم"
+                loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
             }else{
@@ -64,6 +66,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "تسجيل الخروج", image: Constants.Account.signOut))
                 self.getArabicProfile()
                 loginLbl.text = "تعديل الملف الشخصي"
+                loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
             }
@@ -79,6 +82,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "Terms & Conditions", image: Constants.Account.TermsConditons))
                 profileInfo.append(profileList(name: "Contact Support", image: Constants.Account.ContactSupport))
                 loginLbl.text = "Login"
+                loginLbl.isUserInteractionEnabled = true
                 usernameLbl.text = "Username"
                 backVieww.isHidden = false
                 contentView.isHidden = true
@@ -92,6 +96,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "Sign Out", image: Constants.Account.signOut))
                 self.getProfileApi()
                 loginLbl.text = "Edit Profile"
+                loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
             }
@@ -131,7 +136,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
                 }
                 let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }
@@ -145,7 +150,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                     let cancelButton = UIAlertAction(title: "إلغاء", style: .cancel) { _ in
                     }
                     let confirmButton = UIAlertAction(title: "إكمال", style: .default) { _ in
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                         UserDefaults.standard.removeObject(forKey: "id")
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)
@@ -160,7 +165,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                     let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
                     }
                     let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                         UserDefaults.standard.removeObject(forKey: "id")
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)
@@ -186,7 +191,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                     let cancelButton = UIAlertAction(title: "إلغاء", style: .cancel) { _ in
                     }
                     let confirmButton = UIAlertAction(title: "إكمال", style: .default) { _ in
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)
                     }
@@ -206,7 +211,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                     let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
                     }
                     let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)
                     }

@@ -228,7 +228,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                 let alert = UIAlertController(title: "", message:"تحتاج إلى تسجيل الدخول لعرض تفاصيل التبرع.".l10n(), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "نعم".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                     Constant.isLoginView = true
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }))
@@ -264,7 +264,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                 let alert = UIAlertController(title: "", message:"Please Login For Accessing Donate".l10n(), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                     Constant.isLoginView = true
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }))
