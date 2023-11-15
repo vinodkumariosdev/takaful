@@ -56,6 +56,10 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:)))
+
+                loginLbl.addGestureRecognizer(tapGesture)
+
             }else{
                 profileInfo.append(profileList(name: "التبرعات", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "عن فريق تكافل صحار", image: Constants.Account.About))
@@ -64,11 +68,13 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "الشروط والأحكام", image: Constants.Account.TermsConditons))
                 profileInfo.append(profileList(name: "تواصل مع الدعم", image: Constants.Account.ContactSupport))
                 profileInfo.append(profileList(name: "تسجيل الخروج", image: Constants.Account.signOut))
+                profileInfo.append(profileList(name: "حذف الحساب", image: Constants.Account.delete))
                 self.getArabicProfile()
                 loginLbl.text = "تعديل الملف الشخصي"
                 loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
+                
             }
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -81,11 +87,17 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "Privacy Policy", image: Constants.Account.PrivacyPolicy))
                 profileInfo.append(profileList(name: "Terms & Conditions", image: Constants.Account.TermsConditons))
                 profileInfo.append(profileList(name: "Contact Support", image: Constants.Account.ContactSupport))
+                
                 loginLbl.text = "Login"
                 loginLbl.isUserInteractionEnabled = true
                 usernameLbl.text = "Username"
                 backVieww.isHidden = false
                 contentView.isHidden = true
+                
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:)))
+
+                loginLbl.addGestureRecognizer(tapGesture)
+
             }else{
                 profileInfo.append(profileList(name: "Donations", image: Constants.Account.Donate))
                 profileInfo.append(profileList(name: "About Takaful Sohar", image: Constants.Account.About))
@@ -94,6 +106,8 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "Terms & Conditions", image: Constants.Account.TermsConditons))
                 profileInfo.append(profileList(name: "Contact Support", image: Constants.Account.ContactSupport))
                 profileInfo.append(profileList(name: "Sign Out", image: Constants.Account.signOut))
+                profileInfo.append(profileList(name: "Delete Account", image: Constants.Account.delete))
+
                 self.getProfileApi()
                 loginLbl.text = "Edit Profile"
                 loginLbl.isUserInteractionEnabled = true
@@ -101,13 +115,18 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 contentView.isHidden = true
             }
         }
-       
-       
         
         
        
     }
-    
+    @objc func labelTapped(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+        UserDefaults.standard.removeObject(forKey: "id")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return profileInfo.count
@@ -130,7 +149,7 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 6{
+        if indexPath.row == 6 {
             if userid == nil{
                 let alertController = UIAlertController(title: "", message: "Please Login To Acess Profile.", preferredStyle: .alert)
                 let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
@@ -162,6 +181,54 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 {
                     UIView.appearance().semanticContentAttribute = .forceLeftToRight
                     let alertController = UIAlertController(title: "", message: "Are You Sure Want To Logout.", preferredStyle: .alert)
+                    let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+                    }
+                    let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+                        UserDefaults.standard.removeObject(forKey: "id")
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: true)
+                    }
+                    alertController.addAction(cancelButton)
+                    alertController.addAction(confirmButton)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+            }
+            
+        }
+        if indexPath.row == 7 {
+            if userid == nil{
+                let alertController = UIAlertController(title: "", message: "Please Login To Acess Profile.", preferredStyle: .alert)
+                let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+                }
+                let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
+                alertController.addAction(cancelButton)
+                alertController.addAction(confirmButton)
+                self.present(alertController, animated: true, completion: nil)
+            }else{
+                if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+                    UIView.appearance().semanticContentAttribute = .forceRightToLeft
+                    let alertController = UIAlertController(title: "", message: "هل ترغب بحذف الحساب؟", preferredStyle: .alert)
+                    let cancelButton = UIAlertAction(title: "إلغاء", style: .cancel) { _ in
+                    }
+                    let confirmButton = UIAlertAction(title: "إكمال", style: .default) { _ in
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+                        UserDefaults.standard.removeObject(forKey: "id")
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: true)
+                    }
+                    alertController.addAction(cancelButton)
+                    alertController.addAction(confirmButton)
+                    self.present(alertController, animated: true, completion: nil)
+                }else
+                {
+                    UIView.appearance().semanticContentAttribute = .forceLeftToRight
+                    let alertController = UIAlertController(title: "", message: "Are You Sure Want To Delete account?", preferredStyle: .alert)
                     let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
                     }
                     let confirmButton = UIAlertAction(title: "Continue", style: .default) { _ in

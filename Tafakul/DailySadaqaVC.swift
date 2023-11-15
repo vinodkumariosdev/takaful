@@ -57,7 +57,7 @@ class DailySadaqaVC: UIViewController {
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 self.titelLbl.text = "الصدقة اليومية"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (ما ينقص الصدقة في المال). رواه مسلم"
+                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -71,7 +71,7 @@ class DailySadaqaVC: UIViewController {
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 self.titelLbl.text = "صدقة الجمعة"
-                descriptionLbl.text = "عن عقبة عامر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (الرجل في ظل صدقته حتى يقرر بين الناس). رواه أحمد"
+                descriptionLbl.text = "عن عقبة بن عامر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : (الرجل في ظل صدقته حتى يقضى بين الناس ) رواه أحمد."
                 donateBtn.setTitle("تبرع الآن", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -84,7 +84,7 @@ class DailySadaqaVC: UIViewController {
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 self.titelLbl.text = "الجار الجنب"
-                descriptionLbl.text = "عن عبد الله بن عمر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال لي مازال جبريل يطلعني على الجار حتى ظننت أنه سيرثه. رواه البخاري"
+                descriptionLbl.text = "عن عبدالله بن عمر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال ما زالَ جِبْرِيلُ يُوصِينِي بالجارِ، حتّى ظَنَنْتُ أنَّه سَيُوَرِّثُه. رواه البخاري"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
@@ -98,7 +98,7 @@ class DailySadaqaVC: UIViewController {
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 titelLbl.text = "صدقة عامة"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (ما ينقص مال الصدقة) رواه مسلم."
+                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 donateBtn.setTitle("تبرع الآن", for: .normal)
@@ -128,8 +128,8 @@ class DailySadaqaVC: UIViewController {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                titelLbl.text = "تخفيف الضيق"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (ما ينقص الصدقة في المال). رواه مسلم"
+                titelLbl.text = "فك كربة"
+                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : ( من نفَّسَ عن مسلِمٍ كُربةً من كُرَبِ الدُّنيا نفَّسَ اللَّهُ عنهُ كُربةً من كُرَبِ الآخرةِ ومن سترَ على مسلمٍ سترَهُ اللَّهُ في الدُّنيا والآخرةِ واللَّهُ في عونِ العبدِ ما كانَ العبدُ في عونِ أخيهِ ) . رواه مسلم"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight

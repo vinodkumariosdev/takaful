@@ -30,6 +30,10 @@ class DashboardVC: UIViewController {
     
     @IBOutlet weak var initiative: UICollectionView!
     
+    
+    @IBOutlet weak var topNavbarImag: UIImageView!
+    
+    
     var percentageArray = [Int]()
     
     var sliderData = [[String:Any]]()
@@ -149,7 +153,18 @@ class DashboardVC: UIViewController {
         searchBarAction.addTarget(self, action: #selector(searchController), for: .touchUpInside)
         configureAnimation()
         self.langBtn.addTarget(self, action: #selector(languBtnAction), for: .touchUpInside)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(moveToTeamProfile))
+        topNavbarImag.isUserInteractionEnabled = true
+        topNavbarImag.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    @objc func moveToTeamProfile(){
+        print("This is image top")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AboutTakafulViewController") as! AboutTakafulViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
     
     @objc func languBtnAction(){
         if LocalizationSystem.sharedInstance.getLanguage() == "ar" {
@@ -405,7 +420,7 @@ class DashboardVC: UIViewController {
                                         self.destressId = id
                                     }
                                     if Artitle == "إرسال هدية" {
-                                        self.giftlbl = Artitle
+                                        self.giftlbl = "هدية"
                                     }
                                     if id == 81{
                                         self.giftID = id
@@ -423,13 +438,13 @@ class DashboardVC: UIViewController {
                                         self.nextDoorNeighborID = id
                                     }
                                     if Artitle == "أسرة معسرة"{
-                                        self.familyInNeedlbl = Artitle
+                                        self.familyInNeedlbl = "دعم استشارات أسرية"
                                     }
                                     if id == 74{
                                         self.familyInNeedId = id
                                     }
                                     if Artitle == "البرامج التوعوية والاجتماعية"{
-                                        self.awarenessSocialLbl = Artitle
+                                        self.awarenessSocialLbl = "دعم برامج توعوية واجتماعية"
                                     }
                                     if id == 91{
                                         self.awarenessSocialID = id
@@ -981,7 +996,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }
                 
                 if indexPath.row == 2{
-                    cell.initiativeLbl.text = "A \(giftlbl ?? "")"
+                    cell.initiativeLbl.text = "\(giftlbl ?? "")"
                 }
                 
                 if indexPath.row == 3{
@@ -1127,7 +1142,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }
                 
                 if indexPath.row == 2{
-                    cell.initiativeLbl.text = "A \(giftlbl ?? "")"
+                    cell.initiativeLbl.text = "\(giftlbl ?? "")"
                 }
                 
                 if indexPath.row == 3{

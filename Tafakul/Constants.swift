@@ -21,6 +21,7 @@ class Constants {
         static let TermsConditons = "terms"
         static let ContactSupport = "Support_New"
         static let signOut = "SignOut_New"
+        static let delete = ""
         static let dropdown = "drop-Down_New"
     }
 }

@@ -277,13 +277,13 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
                 cell?.nameLbl.text = "ذبيحة"
                 cell?.imgVieww.image = UIImage.init(named: "sacrifice")
             }else if indexPath.row == 2{
-                cell?.nameLbl.text = "فدية الصيام"
+                cell?.nameLbl.text = "فدية صيام"
                 cell?.imgVieww.image = UIImage.init(named: "masque")
             }else if indexPath.row == 3{
                 cell?.nameLbl.text = "صدقة الجمعة"
                 cell?.imgVieww.image = UIImage.init(named: "friday_charity")
             }else if indexPath.row == 4{
-                cell?.nameLbl.text =  "نذر"
+                cell?.nameLbl.text =  "النذر"
                 cell?.imgVieww.image = UIImage.init(named: "vow")
             }else if indexPath.row == 5{
                 cell?.nameLbl.text = "الأضاحي"
@@ -292,7 +292,7 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
                 cell?.nameLbl.text =  "دعم ذوي الإحتياجات الخاصة"
                 cell?.imgVieww.image = UIImage.init(named: "need")
             }else if indexPath.row == 7{
-                cell?.nameLbl.text = "طالب علم"
+                cell?.nameLbl.text = "دعم طالب علم"
                 cell?.imgVieww.image = UIImage.init(named: "student")
             }else if indexPath.row == 8{
                 cell?.nameLbl.text = "العقيقة"

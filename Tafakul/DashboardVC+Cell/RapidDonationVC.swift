@@ -245,9 +245,37 @@ class RapidDonationVC: UIViewController,UITextFieldDelegate
     
     var titleArray = ["Friday Charity","Aqiqah","Vow","Sacrifice","Orphan Charity","Fasting ransom","A gift","Condition & Electronics","Economic empowerment","House maintenance","Student support","Special needs","Family in need","Orphan","Expiation for a broken Oath","Clothing a poor","Food basket","Public sadaqat","Home for them","School bag project","Detress Relief","Housing Project"]
     
-    var titleArabciArray = ["صدقة الجمعة","العقيقة","نذر","تصحية","صدقة ليتيم","فدية صيام","إرسال هدية","الشروط والالكترونيات","التمكين الاقتصادي","صيانة المنزل","طالب علم","الاحتياجات الخاصة","عائلة محتاجة","يتيم","كفارة حنث اليمين","ملابس رديئة","سلة طعام","صدقات عامة","منزل يؤويهم","مشروع الحقيبة المدرسية","تخفيف الضيق","مشروع اسكان"]
+    var dtitleArabciArray = [
+        "صدقة الجمعة"
+        ,"العقيقة"
+        ,"نذر","تصحية","صدقة ليتيم","فدية صيام","إرسال هدية","الشروط والالكترونيات","التمكين الاقتصادي","صيانة المنزل","طالب علم","الاحتياجات الخاصة","عائلة محتاجة","يتيم","كفارة حنث اليمين","ملابس رديئة","سلة طعام","صدقات عامة","منزل يؤويهم","مشروع الحقيبة المدرسية","تخفيف الضيق","مشروع اسكان"
+    ]
+    var titleArabciArray = [
+        "صدقة الجمعة",
+        "العقيقة",
+        "النذر",
+        "ذبيحة",
+        "صدقة ليتيم",
+        "فدية صيام",
+        "إرسال هدية",
+        "مكيفات وإلكترونيات",
+        "مشاريع مدرة للدخل",
+        "صيانة منازل",
+        "دعم طالب علم",
+        "دعم ذوي الاحتياجات الخاصة",
+        "كفالة أسرة معسرة",
+        "كفالة يتيم",
+        "كفارة يمين",
+        "كسوة مسكين",
+        "السلة الغذائية",
+        "صدقات عامة",
+        "منزل يؤويهم",
+        "مشروع الحقيبة المدرسية",
+        "فك كربة",
+        "منزل يؤويهم"
+     ]
     
-    var imgArray = ["charity","aqiqah","vow","sacrifice","gift_s","electronics","economic","maintainence","house","student","need","family","hand","expiation","clothing","food","public","house","student","detress","house"]
+    var imgArray = ["charity","aqiqah","vow","sacrifice", "head", "masque" ,"gift_s","electronics","economic","maintainence","student","need","family","hand","expiation","clothing","food","public","house","student","detress","house"]
     
     override func viewDidLoad()
     {

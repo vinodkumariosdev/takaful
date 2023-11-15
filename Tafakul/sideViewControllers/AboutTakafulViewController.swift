@@ -38,7 +38,7 @@ class AboutTakafulViewController: UIViewController {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             aboutH1Lbl.text = "عن التكافل"
-            aboutTakafulLbl.text = "عن التكافل"
+            aboutTakafulLbl.text = "عن فريق تكافل صحار"
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             storyTxtLbl.text = "من قصة مجتمع يجمع بعضه البعض كهيكل متين ، بدأت فصول فريق صحار التكافل الاجتماعي الخيري في عام 2012 من بوابة المتطوعين ، رافعين شعار تضامننا من خلال سعادتنا لنمو الحلم إلى أجمل الواقع كفريق خيري يعمل تحت مظلة لجنة التنمية الاجتماعية بصحار لدعم الهيكل لبنة لبنة واستكمال الصورة المفقودة. لقد نما الشعور بالمسؤولية ، وبدعم من أيادي الخير الذي لا ينضب ، اكتمل الهيكل ، واتسعت آفاق العمل لتشمل جوانب وقطاعات مختلفة من الجوانب الخيرية التي تهدف إلى تمكين المحتاجين وتزويدهم بمزايا حياة كريمة من خلال مشاريع التنمية المستدامة من أجل مجتمع أكثر سعادة وعطاء وحب"
             whoH2Lbl.text = "من نحن"
@@ -48,7 +48,8 @@ class AboutTakafulViewController: UIViewController {
             visonHeadLbl.text = "رؤية"
             visonDescLbl.text = "الريادة في تقديم الخدمات الخيرية والبرامج الاجتماعية التي تعزز التكافل المجتمعي في الدولة"
             objectHeadLbl.text = "الأهداف"
-            pioneerDescLbl.text = "العمل الخيري المؤسسي الاحترافي الرائد العمل الخيري المؤسسي الاحترافي الرائد العمل الخيري المؤسسي الاحترافي الرائد العمل الخيري المؤسسي الاحترافي الرائد تقديم وتطوير البرامج التطوعية التي تعنى بالجانب الاجتماعي تقديم وتطوير البرامج التطوعية التي تعنى بالجانب الاجتماعي.تحقيق التميز والابتكار في الأداء وتطوير الكفاءات البشرية في الفريق"
+            
+            pioneerDescLbl.text = "ريادة العمل الخيري المؤسسي المهني\nتقديم وتطوير البرامج التطوعية التي تعنى بالجانب الاجتماع \n تحقيق التميز والابتكار في الأداء وتطوير الكفاءات البشرية في الفريق"
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             aboutH1Lbl.text = "About Takaful"

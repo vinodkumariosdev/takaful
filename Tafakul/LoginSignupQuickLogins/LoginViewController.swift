@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
 @IBOutlet weak var newAccountBtn: UIButton!
 @IBOutlet weak var quickBtn:      UIButton!
     
-    @IBOutlet weak var registerBtnImg: UIImageView!
+//    @IBOutlet weak var registerBtnImg: UIImageView!
     
     
     
@@ -70,11 +70,11 @@ class LoginViewController: UIViewController {
         passwordTF.borderStyle = .none
         passwordTF.layer.addSublayer(bottomLine1)
         
-        registerBtnImg.isUserInteractionEnabled = true
+//        registerBtnImg.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        registerBtnImg.addGestureRecognizer(tapGesture)
+//        registerBtnImg.addGestureRecognizer(tapGesture)
         loginMobileNumberBtn.addTarget(self, action: #selector(loginBtnNumber), for: .touchUpInside)
-        registerBtnImg.isHidden = true
+//        registerBtnImg.isHidden = true
         loginMobileNumberBtn.isUserInteractionEnabled = true
         let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         newUserLbl.isUserInteractionEnabled = true
