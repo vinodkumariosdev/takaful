@@ -115,5 +115,131 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BE7FBDA-81DD-48F4-8721-431DBB215B87"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1210"
+            endingLineNumber = "1210"
+            landmarkName = "DonateBtn(_sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C79DD3A0-3AFB-4FB8-B658-108C989EB27A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
+            landmarkName = "getSlider()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B16B6C2D-661B-41CD-BCA4-106D2DE62B91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "getArabicSlider()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "getArabicSlider()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  moduleName = "Tafakul"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "4858">
+               </Location>
+               <Location
+                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  moduleName = "Tafakul"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "4993">
+               </Location>
+               <Location
+                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  moduleName = "Tafakul"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "4837">
+               </Location>
+               <Location
+                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  moduleName = "Tafakul"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "4972">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

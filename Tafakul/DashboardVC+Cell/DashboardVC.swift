@@ -35,6 +35,7 @@ class DashboardVC: UIViewController {
     
     
     var percentageArray = [Int]()
+//    var descriptionArray = [String]()
     
     var sliderData = [[String:Any]]()
     
@@ -259,6 +260,7 @@ class DashboardVC: UIViewController {
                                 self.RaisedArray.removeAll()
                                 self.totalAmountArray.removeAll()
                                 self.percentageArray.removeAll()
+                                self.sliderData.removeAll()
                                 self.idArray.removeAll()
                                 let data = response["data"] as! Array<Any>
                                 for i in 0..<data.count{
@@ -267,11 +269,15 @@ class DashboardVC: UIViewController {
                                     self.imgArray.append(image)
                                     let other_details = x["other_details"] as! Array<Any>
                                     for i in 0..<other_details.count{
-                                        let dict = other_details[i] as! [String:AnyObject]
+                                        var dict = other_details[i] as! [String:AnyObject]
                                         let title = dict["ar_title"] as? String ?? ""
                                         let amount = dict["amount"] as? String ?? ""
                                         var raised = dict["raised"] as? String ?? ""
                                         let id = dict["id"] as? Int ?? 0
+                                        dict["description"] = x["description_ar"]
+                                        dict["image"] = x["image"]
+
+                                        
                                         self.idArray.append(id)
                                         let value = Double(raised)! / Double(amount)! * 100
                                         let IntValue = Int(value)
@@ -280,6 +286,7 @@ class DashboardVC: UIViewController {
                                         print(self.titleArray)
                                         self.totalAmountArray.append(amount)
                                         self.RaisedArray.append(raised)
+                                        self.sliderData.append(dict)
                                         self.sliderCV.reloadData()
                                         
                                     }
@@ -341,11 +348,14 @@ class DashboardVC: UIViewController {
                                     self.imgArray.append(image)
                                     let other_details = x["other_details"] as! Array<Any>
                                     for i in 0..<other_details.count{
-                                        let dict = other_details[i] as! [String:AnyObject]
+                                        var dict = other_details[i] as! [String:AnyObject]
                                         let title = dict["title"] as? String ?? ""
                                         let amount = dict["amount"] as? String ?? ""
                                         var raised = dict["raised"] as? String ?? ""
                                         let id = dict["id"] as? Int ?? 0
+                                        
+                                        dict["description"] = x["description_en"]
+                                        dict["image"] = x["image"]
                                         self.idArray.append(id)
                                         let value = Double(raised)! / Double(amount)! * 100
                                         let IntValue = Int(value)
@@ -353,6 +363,8 @@ class DashboardVC: UIViewController {
                                         self.titleArray.append(title)
                                         self.totalAmountArray.append(amount)
                                         self.RaisedArray.append(raised)
+                                        self.sliderData.append(dict)
+
                                         self.sliderCV.reloadData()
                                     }
                                    
@@ -1066,6 +1078,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }else {
                     cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 }
+                
                 cell.donateBtn.setTitle("Donate", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
@@ -1180,12 +1193,25 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
     @objc func DonateBtn(_sender:UIButton){
         let index = _sender.tag
         let title = titleArray[index]
+        let data = sliderData[index]
         let id = idArray[index]
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
+//        vc.modalTransitionStyle = .coverVertical
+//        vc.titleText = title
+//        vc.id = idArray[index]
+//        self.present(vc, animated: true)
+        
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ProjectDetailsVC") as! ProjectDetailsVC
         vc.modalTransitionStyle = .coverVertical
         vc.titleText = title
-        vc.id = idArray[index]
-        self.present(vc, animated: true)
+        vc.imgView = "daily_sadqa"
+        vc.sadaquId = "\(id)"
+        vc.dataObj = data
+        present(vc, animated: true,completion: nil)
+
+        
+        
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView)
