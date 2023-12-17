@@ -16,9 +16,6 @@
         <array key="Tajawal-Bold.ttf">
             <string>Tajawal-Bold</string>
         </array>
-        <array key="Tajawal-ExtraBold.ttf">
-            <string>Tajawal-ExtraBold</string>
-        </array>
         <array key="Tajawal-Regular.ttf">
             <string>Tajawal-Regular</string>
         </array>
@@ -184,17 +181,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-KS-mbO">
-                                <rect key="frame" x="20" y="110" width="374" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-KS-mbO">
+                                <rect key="frame" x="20" y="110" width="374" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3R3-kG-gFx"/>
+                                    <constraint firstAttribute="height" id="3R3-kG-gFx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" weight="semibold" name="Tajawal-Regular" family="Tajawal" pointSize="20"/>
                                 <color key="textColor" red="0.22166523339999999" green="0.32078310850000002" blue="0.63655394320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-Yf-70D">
-                                <rect key="frame" x="0.0" y="165" width="414" height="648"/>
+                                <rect key="frame" x="0.0" y="115" width="414" height="698"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsTVCell" rowHeight="135" id="KEz-Fh-5hf" customClass="NewsTVCell" customModule="Tafakul" customModuleProvider="target">
@@ -363,7 +360,6 @@
                         <outlet property="backBtn" destination="JVN-zi-oBi" id="oQz-kh-QTC"/>
                         <outlet property="newsLbl" destination="6XK-xx-Amh" id="7hv-hd-UmT"/>
                         <outlet property="newsTB" destination="wUl-Yf-70D" id="K5l-0l-FPa"/>
-                        <outlet property="newsTxtLbl" destination="hVd-KS-mbO" id="Z66-gt-oXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWV-Id-jk4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -14036,11 +14032,11 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-Tf-IGs">
-                                        <rect key="frame" x="10" y="445" width="354" height="45"/>
+                                        <rect key="frame" x="10" y="449" width="354" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-K9-Qoa">
                                                 <rect key="frame" x="10" y="8" width="334" height="30"/>
-                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <menu key="menu" id="xdP-fn-nTJ">
                                                     <children>
                                                         <command title="Item 1" id="JwG-Af-ttB"/>
@@ -14059,8 +14055,8 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp5-5Y-4ie">
-                                        <rect key="frame" x="10" y="418" width="354" height="17"/>
-                                        <fontDescription key="fontDescription" name="Tajawal-ExtraBold" family="Tajawal" pointSize="17"/>
+                                        <rect key="frame" x="10" y="418" width="354" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>

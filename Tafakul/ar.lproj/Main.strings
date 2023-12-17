@@ -72,7 +72,7 @@
 "6ED-M5-FLU.text" = "تفاصيل شخصية";
 
 /* Class = "UILabel"; text = "Expiation for a broken Oath"; ObjectID = "6Fi-0a-lA4"; */
-"6Fi-0a-lA4.text" = "كفارة حنث اليمين";
+"6Fi-0a-lA4.text" = "كفارة اليمين";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6IQ-Qc-ztP"; */
 "6IQ-Qc-ztP.normalTitle" = "Button";
@@ -786,7 +786,7 @@
 "ito-mW-mrp.text" = "سلة طعام";
 
 /* Class = "UILabel"; text = "Expiation for a broken Oath"; ObjectID = "ixi-HH-c6U"; */
-"ixi-HH-c6U.text" = "كفارة حنث اليمين";
+"ixi-HH-c6U.text" = "كفارة اليمين";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "j0r-5k-zyu"; */
 "j0r-5k-zyu.normalTitle" = "Button";

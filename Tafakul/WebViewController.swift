@@ -25,6 +25,12 @@ class WebViewController: UIViewController,WKNavigationDelegate {
     
     var area:String = ""
     
+    
+    var giftMessage = ""
+    var giftName = ""
+    var giftPhone = ""
+    
+    
     @IBOutlet weak var donationDetailsLbl: UILabel!
     
     @IBOutlet weak var webVieww: WKWebView!
@@ -57,6 +63,13 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 if self.area != "" {
                     urlStr = urlStr + "&area=\(self.area)"
                 }
+                
+                //             webView.loadUrl(WebPageUrl + DonationId + "?donation_amt=" + Amount + "&uid=" + UserId + "&isGift=true" +  "&name=" + name  +"&number=" + phone + "&hide=" + hide + "&msg=" + message);
+
+                if self.giftMessage != "" {
+                    urlStr = urlStr + "&isGift=true&name=\(self.giftName)&number=\(self.giftPhone)&hide=\(true)&msg=\(self.giftMessage)"
+                }
+                
                 urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
 
                 let url = URL(string: urlStr)

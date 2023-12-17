@@ -82,7 +82,7 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             BackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
-            completionDetailsLbl.text = "تفاصيل الإنجاز"
+            completionDetailsLbl.text = "اكمال بيانات"
             senderDetailsLbl.text = "تفاصيل المرسل"
             personalDetailsLbl.text = "تفاصيل شخصية"
             donateNowBtn.setTitle("تبرع الآن", for: .normal)
@@ -99,12 +99,13 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
             personalNumebrTF.textAlignment = .right
             textVieww.textAlignment = .right
             textVieww.delegate = self
-            textVieww.text = "70 حرفًا .."
-            messageLbl.text = "اكتب رسالة"
+            textVieww.text = "او اكتب رسالة مكونة من 70 حرف أو أقل..."
+            messageLbl.text = "اسم المهدى له. لان الحب عطاء ليس له حدود اسم المتبرع.. تبرع/ت عنك بصدقة يبقى اثرها"
             textVieww.textColor = UIColor.lightGray
             textVieww.layer.borderWidth = 1
             textVieww.layer.cornerRadius = 10
             textVieww.layer.borderColor = UIColor.lightGray.cgColor
+            
             self.checkBoxBtn.addTarget(self, action: #selector(checkBoxselecting(_sender:)), for: .touchUpInside)
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -115,12 +116,12 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
             receipentNameLbl.text = "Gift receipent name"
             receipentMobileLbl.text = "receipent's mobile"
             nameLbl.text = "Name"
-            messageLbl.text = "Write a message"
+            messageLbl.text = "Because love is a gift that knows no bounds (Donor’s name) Donate on your behalf in a charity that will keep its impact"
             phoneNumberLbl.text = "Phone Number"
             giftLbl.text = "Hide gift's value Choose if you do not want to show the gift's value"
             donateNowBtn.setTitle("Donate Now", for: .normal)
             textVieww.delegate = self
-            textVieww.text = "70 Letters"
+            textVieww.text = "Or write here message no more 70 letters.."
             receipentMobileLbl.textAlignment = .left
             receipentNameTF.textAlignment = .left
             personalNameTF.textAlignment = .left
@@ -164,10 +165,35 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
                 }))
                 self.present(alert, animated: true, completion: nil)
             }else{
+                var message = ""
+                if(["او اكتب رسالة مكونة من 70 حرف أو أقل...", "", "Or write here message no more 70 letters.."].contains(self.textVieww.text!) ) {
+                    message = "\(self.receipentNameTF.text!):"
+                    message = message + "لان الحب عطاء ليس له حدود, "
+                    message = message + "\(self.personalNameTF.text!)"
+                    message = message + "تبرع عنك بصدقة يبقى اثرها"
+                    if !self.checkBoxBtn.isEnabled  {
+                        message = message + "- قيمة التبرع: \(self.amount) ريال عماني"
+                    }
+                }else {
+                    message = self.textVieww.text
+                }
+                
+                
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                 vc.modalPresentationStyle = .fullScreen
+                let numberStr = self.receipentMobileTF.text!
+                let formatter: NumberFormatter = NumberFormatter()
+                formatter.locale = NSLocale(localeIdentifier: "EN") as Locale?
+                let finalPhoneNumber = formatter.number(from: numberStr)
+//                let doubleNumber = Double(final!)
+
+               
                 vc.amount = "\(amount ?? "")"
                 vc.cartID = id ?? 0
+                vc.giftMessage = message
+                vc.giftName = self.receipentNameTF.text!
+                vc.giftPhone = "\(finalPhoneNumber!)"
+                
                 self.present(vc, animated: true)
             }
         }else{
@@ -183,10 +209,35 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
                 }))
                 self.present(alert, animated: true, completion: nil)
             }else{
+                var message = ""
+                if(["او اكتب رسالة مكونة من 70 حرف أو أقل...", "", "Or write here message no more 70 letters.."].contains(self.textVieww.text!) ) {
+                    message = "\(self.receipentNameTF.text):"
+                    message = message + "لان الحب عطاء ليس له حدود, "
+                    message = message + "\(self.personalNameTF.text!)"
+                    message = message + "تبرع عنك بصدقة يبقى اثرها"
+                    if !self.checkBoxBtn.isEnabled  {
+                        message = message + "- قيمة التبرع: \(self.amount) ريال عماني"
+                    }
+                }else {
+                    message = self.textVieww.text
+                }
+                
+                let numberStr = self.receipentMobileTF.text!
+                let formatter: NumberFormatter = NumberFormatter()
+                formatter.locale = NSLocale(localeIdentifier: "EN") as Locale?
+                let finalPhoneNumber = formatter.number(from: numberStr)
+//                let doubleNumber = Double(final!)
+
+               
+              
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                 vc.modalPresentationStyle = .fullScreen
                 vc.amount = "\(amount ?? "")"
                 vc.cartID = id ?? 0
+                vc.giftMessage = message
+                vc.giftName = self.receipentNameTF.text!
+                vc.giftPhone = "\(finalPhoneNumber!)"
+
                 self.present(vc, animated: true)
             }
         }
@@ -213,7 +264,7 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textVieww.text == "" {
-            textVieww.text = "70 Letters"
+            textVieww.text = ""
             textVieww.textColor = UIColor.lightGray
         }
         

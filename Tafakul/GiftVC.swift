@@ -414,7 +414,7 @@ class GiftVC: UIViewController,UITextViewDelegate,UITableViewDelegate,UITableVie
                 cell.donateGiftLbl.text = "تبرع كهدية"
                 cell.donateImg.image = UIImage.init(named: "gift_4")
             }else{
-                cell.donationNameLbl.text = "منزل يؤويهم"
+                cell.donationNameLbl.text = "المشاريع الإسكانية"
                 cell.donateGiftLbl.text = "تبرع كهدية"
                 cell.donateImg.image = UIImage.init(named: "house")
             }
@@ -502,7 +502,7 @@ class GiftVC: UIViewController,UITextViewDelegate,UITableViewDelegate,UITableVie
                 vc.modalTransitionStyle = .coverVertical
                 self.definesPresentationContext = true
                 vc.modalPresentationStyle = .overCurrentContext
-                vc.headTextlbl = "منزل يؤويهم"
+                vc.headTextlbl = "المشاريع الإسكانية"
                 vc.isOtherCharity = ""
                 vc.id = 63
                 self.present(vc, animated: true, completion: nil)

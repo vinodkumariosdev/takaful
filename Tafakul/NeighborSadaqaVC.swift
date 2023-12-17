@@ -45,6 +45,7 @@ class NeighborSadaqaVC: UIViewController {
     
     var userid:String!
     
+    @IBOutlet weak var chooseCityString: UILabel!
     var descriptionString:String!
     @IBOutlet weak var selectAreaToDonateButton: UIButton!
     
@@ -134,6 +135,8 @@ class NeighborSadaqaVC: UIViewController {
                 self.titelLbl.text = "الصدقة اليومية"
                 descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
                 donateBtn.setTitle("تبرع الآن", for: .normal)
+                
+                chooseCityString.text = "اختر المنطقة"
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 sadaqImg.image = UIImage.init(named: imgView)

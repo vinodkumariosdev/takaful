@@ -361,7 +361,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             let totalAmounts = "المبلغ الإجمالي"
             self.expitationLbl.text = "\(totalAmounts) 15 ر.ع"
             Food1myValue = "1"
-            self.expitationBackLbl.text = "كفارة حنث اليمين"
+            self.expitationBackLbl.text = "كفارة اليمين"
             donateExpitationBtn.setTitle("تبرع الآن", for: .normal)
             cartAddedBtn.setTitle("اضافة للعربة", for: .normal)
             expitationBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)

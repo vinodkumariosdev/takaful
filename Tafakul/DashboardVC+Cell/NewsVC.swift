@@ -17,7 +17,6 @@ class NewsVC: UIViewController
     
     @IBOutlet weak var newsTB: UITableView!
     
-    @IBOutlet weak var newsTxtLbl: UILabel!
     
     var newsData = [[String:Any]]()
     
@@ -31,14 +30,12 @@ class NewsVC: UIViewController
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             newsLbl.text = "أخبار"
-            newsTxtLbl.text = ""
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
             newsLbl.text = "News"
             backBtn.setImage(UIImage.init(named: "BackButton"), for: .normal)
-            newsTxtLbl.text = ""
         }
     }
     
