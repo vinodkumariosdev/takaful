@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		10F8E4E796DF5A54AA48AC36 /* Pods_Tafakul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9FD6D2B7B5773771F6975 /* Pods_Tafakul.framework */; };
 		133910E42B283A2C0022B173 /* ProjectDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */; };
+		133910E62B297DFB0022B173 /* NeighborSadaqaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */; };
 		139BEF222AA47DF000741B02 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */; };
 		139BEF242AA47E5C00741B02 /* AStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */; };
 		139BEF282AA4904700741B02 /* DashboardNextDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */; };
@@ -163,6 +164,7 @@
 /* Begin PBXFileReference section */
 		0B7A605E81120F53CB50B8DA /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
 		133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsVC.swift; sourceTree = "<group>"; };
+		133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborSadaqaVC.swift; sourceTree = "<group>"; };
 		139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
 		139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AStoryboard.storyboard; sourceTree = "<group>"; };
 		139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNextDoorViewController.swift; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */,
 				139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */,
 				133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */,
+				133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */,
 			);
 			path = Tafakul;
 			sourceTree = "<group>";
@@ -1077,6 +1080,7 @@
 				188892BF2959AB0E0080C768 /* DonateFieldsViewController.swift in Sources */,
 				188F0F2F296461EA00A93873 /* DashboardFoodBasketViewController.swift in Sources */,
 				1871EB422952FA0100884829 /* RapidDonationVC.swift in Sources */,
+				133910E62B297DFB0022B173 /* NeighborSadaqaVC.swift in Sources */,
 				B85382CC28E0B7D700A83BFB /* Colors+extension.swift in Sources */,
 				88DA35E3282574DB005A14CA /* FridaySadaqaViewController.swift in Sources */,
 				133910E42B283A2C0022B173 /* ProjectDetailsVC.swift in Sources */,

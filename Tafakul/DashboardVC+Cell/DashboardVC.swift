@@ -1418,7 +1418,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
 //                self.present(vc, animated: true, completion: nil)
 //
 //
-                let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
+                let vc = storyboard?.instantiateViewController(withIdentifier: "NeighborSadaqaVC") as! NeighborSadaqaVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = "Neighbours in Village"
                 vc.imgView = "neighbours"

@@ -12,7 +12,7 @@ target 'Tafakul' do
   pod 'Alamofire'
   pod 'Gemini'
   pod 'IQKeyboardManagerSwift'
-
+  pod 'SwiftyMenu', '~> 0.4.7'
   # Pods for Tafakuo
 
   target 'TafakulTests' do

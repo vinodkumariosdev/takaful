@@ -44,6 +44,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
     var amount:String!
     
     var userid:String!
+    var areaLocation: String = ""
     
     @IBOutlet weak var donationAmtlbl: UILabel!
     
@@ -239,6 +240,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amount
+                    vc.area = self.areaLocation
                     print(amount)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
@@ -246,6 +248,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amount
+                    vc.area = self.areaLocation
                     print(amount)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
@@ -253,6 +256,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amountValue ?? ""
+                    vc.area = self.areaLocation
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }
@@ -275,6 +279,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amount
+                    vc.area = self.areaLocation
                     print(amount)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
@@ -282,6 +287,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amount
+                    vc.area = self.areaLocation
                     print(amount)
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
@@ -289,6 +295,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
                     vc.cartID = id
                     vc.amount = amountValue ?? ""
+                    vc.area = self.areaLocation
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 }

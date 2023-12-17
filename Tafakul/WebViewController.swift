@@ -23,6 +23,8 @@ class WebViewController: UIViewController,WKNavigationDelegate {
     
     var webviewBlock:Double!
     
+    var area:String = ""
+    
     @IBOutlet weak var donationDetailsLbl: UILabel!
     
     @IBOutlet weak var webVieww: WKWebView!
@@ -50,7 +52,14 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 self.present(vc, animated: true)
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
-                let url = URL(string: "https://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)")
+                
+                var urlStr = "https://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                if self.area != "" {
+                    urlStr = urlStr + "&area=\(self.area)"
+                }
+                urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+
+                let url = URL(string: urlStr)
                 print(url!)
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
@@ -73,8 +82,16 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 self.present(vc, animated: true)
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
-                let url = URL(string: "https://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)")
-                print(url!)
+                
+                var urlStr = "https://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                if self.area != "" {
+                    urlStr = urlStr + "&area=\(self.area)"
+                }
+                
+                urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                let url = URL(string: urlStr)
+
+                
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
                 webVieww.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)

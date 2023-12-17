@@ -7,7 +7,10 @@ PODS:
   - IQKeyboardManagerSwift (6.5.12)
   - Kingfisher (7.9.1)
   - ObjectMapper (3.5.3)
+  - SnapKit (4.2.0)
   - SwiftyJSON (4.3.0)
+  - SwiftyMenu (0.4.9):
+    - SnapKit (~> 4.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - Kingfisher (~> 7.0)
   - SwiftyJSON
   - SwiftyJSON (~> 4.0)
+  - SwiftyMenu (~> 0.4.7)
 
 SPEC REPOS:
   trunk:
@@ -26,7 +30,9 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - ObjectMapper
+    - SnapKit
     - SwiftyJSON
+    - SwiftyMenu
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
@@ -35,8 +41,10 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwiftyMenu: 01385bbe40a8ad19123f98bf3d463d9e36c2e710
 
-PODFILE CHECKSUM: fc5465353378d4f6cfde1e59a527989035d5b293
+PODFILE CHECKSUM: d740b7c2bbc353672b6d3565b4b8c56e13ee6f96
 
 COCOAPODS: 1.11.3
