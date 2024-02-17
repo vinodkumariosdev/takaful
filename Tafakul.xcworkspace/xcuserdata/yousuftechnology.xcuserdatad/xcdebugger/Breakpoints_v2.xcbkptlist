@@ -102,22 +102,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D8B02BD8-6658-4D2B-876B-9A159EBB2DFA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tafakul/CartVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6BE7FBDA-81DD-48F4-8721-431DBB215B87"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -125,8 +109,8 @@
             filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1210"
-            endingLineNumber = "1210"
+            startingLineNumber = "1300"
+            endingLineNumber = "1300"
             landmarkName = "DonateBtn(_sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -141,8 +125,8 @@
             filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "356"
-            endingLineNumber = "356"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
             landmarkName = "getSlider()"
             landmarkType = "7">
          </BreakpointContent>
@@ -150,95 +134,239 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B16B6C2D-661B-41CD-BCA4-106D2DE62B91"
+            uuid = "64894729-1887-4B1F-BB08-EEEB21DF1D71"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            filePath = "Tafakul/ProjectDetailsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
-            landmarkName = "getArabicSlider()"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "donateAction()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2"
+            uuid = "B99E0BE5-999D-47C9-BF84-63D03BB1C7A6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
+            filePath = "Tafakul/NeighborSadaqaVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
-            landmarkName = "getArabicSlider()"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D44798CD-4AFC-49C6-A846-EDC3E4E4763A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/NeighborSadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32B215AD-532B-478C-A0C2-286153AFA13E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/NeighborSadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2C1E3EE-E000-4D0D-AC91-D9D7A95C503A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/NeighborSadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53AE1DBC-671E-4A5A-9819-6A4E419590A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/NeighborSadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CE75739-DEAB-4F0B-89CE-A33CBD94D8F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/WebViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "ArabicSignUp()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
                   moduleName = "Tafakul"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "276"
-                  endingLineNumber = "276"
-                  offsetFromSymbolStart = "4858">
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "323">
                </Location>
                <Location
-                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
                   moduleName = "Tafakul"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "276"
-                  endingLineNumber = "276"
-                  offsetFromSymbolStart = "4993">
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "358">
                </Location>
                <Location
-                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
                   moduleName = "Tafakul"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "276"
-                  endingLineNumber = "276"
-                  offsetFromSymbolStart = "4837">
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "373">
                </Location>
                <Location
-                  uuid = "931C7BDE-342D-492E-8902-B811AFD55FE2 - 700fa4929bf05d3a"
+                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Tafakul.DashboardVC.getArabicSlider() -&gt; ()"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
                   moduleName = "Tafakul"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/Downloads/takaful_sohar_ios-main/Tafakul/DashboardVC+Cell/DashboardVC.swift"
+                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "276"
-                  endingLineNumber = "276"
-                  offsetFromSymbolStart = "4972">
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "434">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9159225-4A87-437B-9A07-686E035150FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09680970-A965-4925-8CA5-007479527DA8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DailySadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8A17990-EA0D-4243-9906-FFB26253B351"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafakul/DailySadaqaVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
+            landmarkName = "donateAction()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

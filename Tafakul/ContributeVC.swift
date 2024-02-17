@@ -60,7 +60,7 @@ class ContributeVC: UIViewController,UITextFieldDelegate {
             amountlbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
             donationAmtlbl.text = "اختر مبلغ التبرع"
             self.titleLbl.text = titleText
-            self.DonateNowBtn.setTitle("تبرع الآن", for: .normal)
+            self.DonateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             RupeeBtn.addTarget(self, action: #selector(RupeeAction), for: .touchUpInside)
             tenRupeeBtn.addTarget(self, action: #selector(tenAction), for: .touchUpInside)
             fiveRupeeBtn.addTarget(self, action: #selector(fiveAction), for: .touchUpInside)

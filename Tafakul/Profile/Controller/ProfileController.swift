@@ -9,7 +9,7 @@ import Foundation
 extension ProfileViewController{
     func useProfileData(completion: @escaping ([UserProfileData]) -> Void) {
 
-        NetworkManager.shared.dataTaskWithGetRequest(urlrequest: "https://takafulsuhar.om/api/get-user?api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5&user_id=\(UserDefaults.standard.getUserID())") { (result, status) in
+        NetworkManager.shared.dataTaskWithGetRequest(urlrequest: "http://takafulsuhar.om/api/get-user?api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5&user_id=\(UserDefaults.standard.getUserID())") { (result, status) in
             DispatchQueue.main.async {
                 print("status:   useProfileData \(status) \(result)")
 
@@ -38,7 +38,7 @@ extension ProfileViewController{
     
     func useProfileUpdate(name: String,email:String, phone:String,city:String, country:String, completion: @escaping (UserProfileUpdateModel) -> Void) {
 
-        let url = "https://takafulsuhar.om/api/update-user?name=\(name)&email=\(email)&phone=\(phone)&state=&api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5&city=\(city)&country=\(country)&zipcode=krjf&address=Main%20Road&id=\(UserDefaults.standard.getUserID())"
+        let url = "http://takafulsuhar.om/api/update-user?name=\(name)&email=\(email)&phone=\(phone)&state=&api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5&city=\(city)&country=\(country)&zipcode=krjf&address=Main%20Road&id=\(UserDefaults.standard.getUserID())"
         NetworkManager.shared.dataTaskWithGetRequest(urlrequest: url.replacingOccurrences(of: " ", with: "%20")) { (result, status) in
             DispatchQueue.main.async {
                 print("status:   useProfileData \(status) \(result)")

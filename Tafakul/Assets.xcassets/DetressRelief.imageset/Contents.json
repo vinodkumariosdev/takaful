@@ -1,27 +1,27 @@
 {
   "images" : [
     {
-      "filename" : "detress_img@1x.png",
+      "filename" : "DetressRelief~iphone.png",
       "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "filename" : "detress_img@2x.png",
+      "filename" : "DetressRelief@2x~iphone.png",
       "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "filename" : "detress_img@3x.png",
+      "filename" : "DetressRelief@3x~iphone.png",
       "idiom" : "iphone",
       "scale" : "3x"
     },
     {
-      "filename" : "detress_img@1x 1.png",
+      "filename" : "DetressRelief~ipad.png",
       "idiom" : "ipad",
       "scale" : "1x"
     },
     {
-      "filename" : "detress_img@2x 1.png",
+      "filename" : "DetressRelief@2x~ipad.png",
       "idiom" : "ipad",
       "scale" : "2x"
     }

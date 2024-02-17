@@ -32,4 +32,13 @@ class HomeViewController: UITabBarController,UITabBarControllerDelegate {
                 self.present(vc, animated: true)
             }
         }
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+      // you need a reference to your nav controller
+      if let navController = tabBarController.selectedViewController as? UINavigationController {
+        navController.popToRootViewController(animated: false)
+      }
+
+      return true
+    }
+
 }

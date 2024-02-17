@@ -40,17 +40,27 @@ class GiftDonateViewController: UIViewController {
     
     @IBOutlet weak var clotingDonateBtn: UIButton!
     
+    @IBOutlet weak var anotherTitleLabel: UILabel!
     var clothinAmount:Int?
     
     @IBOutlet weak var chooseGiftAmtLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        chooseGiftAmtLbl.text = "اختر مبلغ الهدية"
+//        donateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
+//        
+
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             backBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
+            
             chooseGiftAmtLbl.text = "اختر مبلغ الهدية"
-            donateNowBtn.setTitle("تبرع الآن", for: .normal)
+            anotherTitleLabel.text = "اختر مبلغ الهدية"
+            donateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
+            clotingDonateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
+
+
             if isOtherCharity == "OtherCharity"{
                 clotingView.isHidden = false
                 headingLb.text = headTextlbl ?? ""
@@ -60,6 +70,8 @@ class GiftDonateViewController: UIViewController {
                 donate30Btn.addTarget(self, action: #selector(thirtyBtn), for: .touchUpInside)
                 donate360Btn.addTarget(self, action: #selector(thirtysixBtn), for: .touchUpInside)
                 clotingDonateBtn.addTarget(self, action: #selector(clotinDonateNowBtn), for: .touchUpInside)
+                
+
             }else{
                 clotingView.isHidden = true
                 headingLb.text = headTextlbl ?? ""

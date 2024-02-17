@@ -58,7 +58,7 @@ class DailySadaqaVC: UIViewController {
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 self.titelLbl.text = "الصدقة اليومية"
                 descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 sadaqImg.image = UIImage.init(named: imgView)
@@ -72,7 +72,7 @@ class DailySadaqaVC: UIViewController {
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 self.titelLbl.text = "صدقة الجمعة"
                 descriptionLbl.text = "عن عقبة بن عامر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : (الرجل في ظل صدقته حتى يقضى بين الناس ) رواه أحمد."
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 donateBtn.setTitle("Donate Now", for: .normal)
@@ -85,7 +85,7 @@ class DailySadaqaVC: UIViewController {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 self.titelLbl.text = "الجار الجنب"
                 descriptionLbl.text = "عن عبدالله بن عمر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال ما زالَ جِبْرِيلُ يُوصِينِي بالجارِ، حتّى ظَنَنْتُ أنَّه سَيُوَرِّثُه. رواه البخاري"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
             }else{
@@ -101,7 +101,7 @@ class DailySadaqaVC: UIViewController {
                 descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             }else{
                 donateBtn.setTitle("Donate Now", for: .normal)
                 sadaqImg.image = UIImage.init(named: imgView)
@@ -111,11 +111,26 @@ class DailySadaqaVC: UIViewController {
         }else if titleText == "Housing Project"{
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                titelLbl.text = ""
+                titelLbl.text = "منزل يؤويهم"
                 descriptionLbl.text = "لا شيء يضاهي الملاذ الآمن لأسرة سعيدة ، بهدف تحسين مستوى معيشة الأسر وتحقيق الاستقرار الاجتماعي. ويسعى الفريق بالشراكة مع مختلف الجهات والأفراد لبناء مشاريع سكنية للأسر المشردة ذات الدخل المحدود وتوفير المتطلبات الأساسية لسكن آمن ومريح. عن طريق بناء وصيانة وحدات سكنية لذوي الدخل المحدود تتوفر فيها المرافق والخدمات الأساسية مع مراعاة عدد أفراد الأسرة."
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
+            }else{
+                donateBtn.setTitle("Donate Now", for: .normal)
+                sadaqImg.image = UIImage.init(named: imgView)
+                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
+            }
+            
+        }
+        else if titleText == "Takaful Foundation"{
+            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+                titelLbl.text = "مؤسسة تكافل"
+                descriptionLbl.text = "﴿ لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ وَمَا تُنْفِقُوا مِنْ شَيْءٍ فَإِنَّ اللَّهَ بِهِ عَلِيمٌ ﴾  [آل عمران:92]. استثمر لآخرتك ودع أثرك في دنياك يبقى "
+                sadaqImg.image = UIImage.init(named: imgView)
+                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             }else{
                 donateBtn.setTitle("Donate Now", for: .normal)
                 sadaqImg.image = UIImage.init(named: imgView)
@@ -130,7 +145,7 @@ class DailySadaqaVC: UIViewController {
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
                 titelLbl.text = "فك كربة"
                 descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : ( من نفَّسَ عن مسلِمٍ كُربةً من كُرَبِ الدُّنيا نفَّسَ اللَّهُ عنهُ كُربةً من كُرَبِ الآخرةِ ومن سترَ على مسلمٍ سترَهُ اللَّهُ في الدُّنيا والآخرةِ واللَّهُ في عونِ العبدِ ما كانَ العبدُ في عونِ أخيهِ ) . رواه مسلم"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 sadaqImg.image = UIImage.init(named: imgView)
@@ -165,7 +180,7 @@ class DailySadaqaVC: UIViewController {
         if titleText == "Daily Sadaqa"{
             let text = "Daily Sadaqa"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -173,7 +188,7 @@ class DailySadaqaVC: UIViewController {
         }else if titleText == "Friday Charity"{
             let text = "Friday Charity"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -181,7 +196,7 @@ class DailySadaqaVC: UIViewController {
         }else if titleText == "Neighbours in Village"{
             let text = "Neighbours in Village"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -189,7 +204,7 @@ class DailySadaqaVC: UIViewController {
         }else if titleText == "Public Charity"{
             let text = "Public Charity"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -198,7 +213,7 @@ class DailySadaqaVC: UIViewController {
         else{
             let text = "Distress Relief"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -231,7 +246,7 @@ class DailySadaqaVC: UIViewController {
                     cartAmount = "5 OMR"
                     cartIconImg = "sadqa"
                     donateCartID = Int(self.sadaquId)
-                    donateAmountBtnTitle = "Donate"
+                    donateAmountBtnTitle = "SMS Generation"
                     amountDonate = "5"
                 }))
                 
@@ -246,7 +261,7 @@ class DailySadaqaVC: UIViewController {
                     cartIconImg = "sadqa"
                     donateCartID = Int(self.sadaquId)
                     amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
+                    donateAmountBtnTitle = "SMS Generation"
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
@@ -260,7 +275,7 @@ class DailySadaqaVC: UIViewController {
                     cartIconImg = "sadqa"
                     donateCartID = Int(self.sadaquId)
                     amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
+                    donateAmountBtnTitle = "SMS Generation"
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
@@ -274,7 +289,7 @@ class DailySadaqaVC: UIViewController {
                     cartIconImg = "sadqa"
                     donateCartID = Int(self.sadaquId)
                     amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
+                    donateAmountBtnTitle = "SMS Generation"
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
@@ -299,7 +314,7 @@ class DailySadaqaVC: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.id = Int(sadaquId!)
-                vc.titleText = titleText
+                vc.titleText = self.titelLbl.text
                 self.present(vc, animated: true)
                 
             }
@@ -319,7 +334,7 @@ class DailySadaqaVC: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
                 vc.modalTransitionStyle = .coverVertical
                 vc.id = Int(sadaquId!)
-                vc.titleText = titleText
+                vc.titleText = self.titelLbl.text
                 self.present(vc, animated: true)
                 
             }

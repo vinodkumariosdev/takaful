@@ -121,7 +121,7 @@ class SponserShipVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSourc
             amount = "25"
             let totalAmounts = "المبلغ الإجمالي"
             amountLbl.text = "\(totalAmounts) \(amount ?? "") ر.ع"
-            donateBtn.setTitle("تبرع الآن", for: .normal)
+            donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             sponsorShipLbl.text = "فترة الكفالة"
             donationLbl.text = "اختر مبلغ التبرع"
             self.titelLbl.text = titleText

@@ -10,7 +10,7 @@ import Foundation
 
 struct APIURL
 {
-    static let baseUrl = "https://takafulsuhar.om/api/"
+    static let baseUrl = "http://takafulsuhar.om/api/"
     static var login = baseUrl + "login"
     static var phoneLogin = baseUrl + "otp-login-check"
     static var sendOTPphone = baseUrl + "otp-login"

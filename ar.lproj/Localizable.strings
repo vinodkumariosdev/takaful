@@ -34,7 +34,7 @@
 "About Takaful" = "عن التكافل";
 "Donation Details" = "تفاصيل التبرع";
 "Logout" = "تسجيل خروج";
-"Donate Now" = "تبرع الآن";
+"Donate Now" = "الحصول على رابط التبرع";
 "Public Sadaqa" = "صدقات عامة";
 "Clothing A Poor" = "ملابس رديئة";
 "Expiation for a broken Oath" = "كفارة اليمين";
@@ -131,6 +131,6 @@
 "Recipient name is required" = "اسم المستلم مطلوب";
 "Recipient mobile number is required" = "مطلوب رقم هاتف المستلم";
 "Recipient amount is required" = "المبلغ المستلم مطلوب";
-"Donate" = "تبرع الان";
+"Donate" = "الحصول على رابط التبرع";
 "News" = "أخبار";
 "No Data Found" = "لاتوجد بيانات";

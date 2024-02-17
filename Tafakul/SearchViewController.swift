@@ -633,7 +633,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
             let parameters = [
                 "api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
             print(parameters)
-            let url = "https://takafulsuhar.om/api/all-causes"
+            let url = "http://takafulsuhar.om/api/all-causes"
             print(url)
             AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON {
                         response in

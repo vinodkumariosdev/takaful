@@ -42,7 +42,7 @@
 "3qF-fJ-SRO.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "4mG-ix-6TM"; */
-"4mG-ix-6TM.configuration.title" = "تبرع الآن";
+"4mG-ix-6TM.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4mG-ix-6TM"; */
 "4mG-ix-6TM.normalTitle" = "Button";
@@ -105,7 +105,7 @@
 "78O-YG-iWo.text" = "المبلغ الإجمالي";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "7Qu-qB-FBe"; */
-"7Qu-qB-FBe.configuration.title" = "تبرع الآن";
+"7Qu-qB-FBe.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Qu-qB-FBe"; */
 "7Qu-qB-FBe.normalTitle" = "Button";
@@ -162,7 +162,7 @@
 "ARt-io-RGy.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "Ag7-WL-RKm"; */
-"Ag7-WL-RKm.configuration.title" = "تبرع الآن";
+"Ag7-WL-RKm.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ag7-WL-RKm"; */
 "Ag7-WL-RKm.normalTitle" = "Button";
@@ -174,7 +174,7 @@
 "Arn-Vm-fva.placeholder" = "اسم المستخدم";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "B8Z-9p-lOg"; */
-"B8Z-9p-lOg.configuration.title" = "تبرع الآن";
+"B8Z-9p-lOg.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B8Z-9p-lOg"; */
 "B8Z-9p-lOg.normalTitle" = "Button";
@@ -240,7 +240,7 @@
 "E77-6Q-k2J.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "EKb-me-65R"; */
-"EKb-me-65R.configuration.title" = "تبرع الآن";
+"EKb-me-65R.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EKb-me-65R"; */
 "EKb-me-65R.normalTitle" = "Button";
@@ -273,7 +273,7 @@
 "Fhw-F1-27t.title" = "Item";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "G3G-2L-NQT"; */
-"G3G-2L-NQT.configuration.title" = "تبرع الآن";
+"G3G-2L-NQT.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "G3G-2L-NQT"; */
 "G3G-2L-NQT.normalTitle" = "Button";
@@ -402,7 +402,7 @@
 "NGN-hF-MWY.text" = "تبرع كهدية";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "NXj-rE-ByC"; */
-"NXj-rE-ByC.configuration.title" = "تبرع الآن";
+"NXj-rE-ByC.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NXj-rE-ByC"; */
 "NXj-rE-ByC.normalTitle" = "Button";
@@ -540,7 +540,7 @@
 "VkW-g2-PFh.text" = "الصوم التعويضي";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "Vzg-gn-xXS"; */
-"Vzg-gn-xXS.configuration.title" = "تبرع الآن";
+"Vzg-gn-xXS.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Vzg-gn-xXS"; */
 "Vzg-gn-xXS.normalTitle" = "Button";
@@ -627,7 +627,7 @@
 "bn0-28-LGq.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "bvo-Ut-HDQ"; */
-"bvo-Ut-HDQ.configuration.title" = "تبرع الآن";
+"bvo-Ut-HDQ.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bvo-Ut-HDQ"; */
 "bvo-Ut-HDQ.normalTitle" = "Button";
@@ -645,7 +645,7 @@
 "cF4-wf-OqU.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "cNN-oD-BYC"; */
-"cNN-oD-BYC.configuration.title" = "تبرع الآن";
+"cNN-oD-BYC.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cNN-oD-BYC"; */
 "cNN-oD-BYC.normalTitle" = "Button";
@@ -711,13 +711,13 @@
 "ebt-OP-KOQ.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "ee9-fj-Cfc"; */
-"ee9-fj-Cfc.configuration.title" = "تبرع الآن";
+"ee9-fj-Cfc.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ee9-fj-Cfc"; */
 "ee9-fj-Cfc.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "eyF-V1-E0t"; */
-"eyF-V1-E0t.configuration.title" = "تبرع الآن";
+"eyF-V1-E0t.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eyF-V1-E0t"; */
 "eyF-V1-E0t.normalTitle" = "Button";
@@ -840,7 +840,7 @@
 "lVO-9b-amO.text" = "0.0M";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "lij-7h-yrZ"; */
-"lij-7h-yrZ.configuration.title" = "تبرع الآن";
+"lij-7h-yrZ.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lij-7h-yrZ"; */
 "lij-7h-yrZ.normalTitle" = "Button";
@@ -930,7 +930,7 @@
 "qXT-Sa-CcT.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Sponsership family in need"; ObjectID = "qcG-zu-Flx"; */
-"qcG-zu-Flx.text" = "كفالة أسرة محتاجة";
+"qcG-zu-Flx.text" = "أسر معسرة";
 
 /* Class = "UIBarButtonItem"; title = "تكافل"; ObjectID = "qdx-ba-K28"; */
 "qdx-ba-K28.title" = "تكافل";
@@ -969,7 +969,7 @@
 "sJQ-3w-Hk3.text" = "طالب علم";
 
 /* Class = "UILabel"; text = "family in need"; ObjectID = "sSQ-oT-ViL"; */
-"sSQ-oT-ViL.text" = "أسرة محتاجة";
+"sSQ-oT-ViL.text" = "أسرة معسرة";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sX2-ns-q3C"; */
 "sX2-ns-q3C.normalTitle" = "Button";
@@ -1050,7 +1050,7 @@
 "xw0-OR-wE0.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Donate Now"; ObjectID = "xwt-aq-zXN"; */
-"xwt-aq-zXN.configuration.title" = "تبرع الآن";
+"xwt-aq-zXN.configuration.title" = "الحصول على رابط التبرع";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xwt-aq-zXN"; */
 "xwt-aq-zXN.normalTitle" = "Button";

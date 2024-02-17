@@ -200,7 +200,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             let parameters = [
                 "api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
             print(parameters)
-            let url = "https://takafulsuhar.om/api/all-causes"
+            let url = "http://takafulsuhar.om/api/all-causes"
             print(url)
             AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON {
                         response in
@@ -425,7 +425,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             let parameters = [
                 "api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
             print(parameters)
-            let url = "https://takafulsuhar.om/api/all-causes"
+            let url = "http://takafulsuhar.om/api/all-causes"
             print(url)
             AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON {
                         response in
@@ -496,7 +496,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                                     if id == 82{
                                         self.helpInId = id
                                     }
-                                    if Artitle == "مشاريع مدرة للدخل"{
+                                    if Artitle == "المشاريع الوقفية"{
                                         self.EconmimcEmpowermentLbl = Artitle
                                     }
                                     if id == 79{

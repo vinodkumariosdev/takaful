@@ -84,7 +84,10 @@ class CartVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         if isbackCart == "backCart" {
-            self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
+            if(donateAmountBtnTitle != nil) {
+                self.donateAmountBtnTitleArray.append(donateAmountBtnTitle)
+            }
+            
             self.titleArray.append(titleCart)
             self.titleArrayElements = titleArray.uniquelements()
             self.amountArray.append(cartAmount)

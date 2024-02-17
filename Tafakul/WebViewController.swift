@@ -41,6 +41,16 @@ class WebViewController: UIViewController,WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(amount == "" || amount == "0") {
+            amount = "1"
+        }
+        let numberStr: String = amount
+        let formatter: NumberFormatter = NumberFormatter()
+        formatter.locale = NSLocale(localeIdentifier: "EN") as Locale?
+        let final = formatter.number(from: numberStr)
+//        let doubleNumber = Double(final!)
+        amount = final?.stringValue
+
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             donationDetailsLbl.text = "تفاصيل التبرع"
             userid = UserDefaults.standard.string(forKey: "id")
@@ -59,12 +69,10 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
                 
-                var urlStr = "https://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                var urlStr = "http://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
                 if self.area != "" {
                     urlStr = urlStr + "&area=\(self.area)"
                 }
-                
-                //             webView.loadUrl(WebPageUrl + DonationId + "?donation_amt=" + Amount + "&uid=" + UserId + "&isGift=true" +  "&name=" + name  +"&number=" + phone + "&hide=" + hide + "&msg=" + message);
 
                 if self.giftMessage != "" {
                     urlStr = urlStr + "&isGift=true&name=\(self.giftName)&number=\(self.giftPhone)&hide=\(true)&msg=\(self.giftMessage)"
@@ -73,10 +81,11 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
 
                 let url = URL(string: urlStr)
-                print(url!)
+                print(urlStr)
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
-                webVieww.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
+                webVieww.allowsBackForwardNavigationGestures = true
+                webVieww.navigationDelegate = self
             }
         }else{
             donationDetailsLbl.text = "Donation"
@@ -96,18 +105,26 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
                 
-                var urlStr = "https://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                var urlStr = "http://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
                 if self.area != "" {
                     urlStr = urlStr + "&area=\(self.area)"
                 }
+                if self.giftMessage != "" {
+                    urlStr = urlStr + "&isGift=true&name=\(self.giftName)&number=\(self.giftPhone)&hide=\(true)&msg=\(self.giftMessage)"
+                }
                 
+
                 urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                print(urlStr)
                 let url = URL(string: urlStr)
 
                 
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
-                webVieww.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
+                webVieww.allowsBackForwardNavigationGestures = true
+                webVieww.navigationDelegate = self
+
+//                webVieww.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
             }
         }
     }
@@ -152,6 +169,24 @@ class WebViewController: UIViewController,WKNavigationDelegate {
     func webViewDidFinishLoad(_ : WKWebView) {
         self.loadinHubDismiss()
     }
+    
+    
+func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated  {
+            if let url = navigationAction.request.url,
+                UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url)
+                    decisionHandler(.cancel)
+            } else {
+                // Open in web view
+                decisionHandler(.allow)
+            }
+        } else {
+            // other navigation type, such as reload, back or forward buttons
+            decisionHandler(.allow)
+        }
+    }
+
 
 }
 

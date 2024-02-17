@@ -17,9 +17,9 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
     
     @IBOutlet weak var charityCollVC: UICollectionView!
     
-    var CharityPaysArray = ["Orphan charity","Sacrifice","Fasting ransom","Friday Sadaqa","Vow","Sacrifice","Special Needs","Student Support","Aqiqah"]
+    var CharityPaysArray = ["Orphan charity","Sacrifice","Fasting ransom","Friday Sadaqa","Vow","Sacrifice","Special Needs","Student Support","Aqiqah", "Next Door Neighbour"]
     
-    var charityPaysImages = ["head","sacrifice","masque","friday_charity","vow","goat","need","student","aqiqah"]
+    var charityPaysImages = ["head","sacrifice","masque","friday_charity","vow","goat","need","student","aqiqah", "neighbor"]
     
     var titleArray = [String]()
     var idArray = [Int]()
@@ -42,6 +42,9 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
     var Aquiah:String?
     var AquiahId:Int?
     
+    var NextDoor:String?
+    var NextDoorId:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         charityCollVC.delegate = self
@@ -63,7 +66,7 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
     }
     
     @IBAction func backDismissAct(_ sender: Any) {
-        self.dismiss(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func getArabicCauses(){
@@ -136,6 +139,9 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
                                     }
                                     if id == 87{
                                         self.AquiahId = id
+                                    }
+                                    if id == 94 {
+                                        self.NextDoorId = id
                                     }
                                     
                                 }
@@ -231,6 +237,9 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
                                     if id == 87{
                                         self.AquiahId = id
                                     }
+                                    if id == 94 {
+                                        self.NextDoorId = id
+                                    }
                                     
                                 }
                                 self.charityCollVC.reloadData()
@@ -257,7 +266,7 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-           return 9
+           return CharityPaysArray.count
         }
         else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -297,6 +306,10 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
             }else if indexPath.row == 8{
                 cell?.nameLbl.text = "العقيقة"
                 cell?.imgVieww.image = UIImage.init(named: "aqiqah")
+            }
+            else if indexPath.row == 9{
+                cell?.nameLbl.text = "الجار الجنب"
+                cell?.imgVieww.image = UIImage.init(named: "neighbor")
             }
             return cell!
         }
@@ -402,6 +415,21 @@ class CharityPayMoreViewController: UIViewController,UICollectionViewDelegate,UI
             vc.isAquiuah = "Aqiuah"
            vc.modalTransitionStyle = .coverVertical
            present(vc, animated: true,completion: nil)
+        }
+        if indexPath.row == 9{
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "DashboardFoodBasketViewController") as! DashboardFoodBasketViewController
+//            vc.expirationId = AquiahId
+//            vc.isAquiuah = "Aqiuah"
+//           vc.modalTransitionStyle = .coverVertical
+//           present(vc, animated: true,completion: nil)
+            let vc = storyboard?.instantiateViewController(withIdentifier: "NeighborSadaqaVC") as! NeighborSadaqaVC
+            vc.modalTransitionStyle = .coverVertical
+            vc.titleText = "Neighbours in Village"
+            vc.imgView = "neighbours"
+            vc.sadaquId = "\(self.NextDoorId!)"
+            vc.descriptionString = "On the authority of Abdulla bin Omar, may God be pleased with him, that the Messenger of God, may God's prayers and peace be upon him, said Gabriel still advised me about the neighbour, until I thought that he would inherit it. Narrated by Al-Bukhari"
+            present(vc, animated: true,completion: nil)
+
         }
     }
 

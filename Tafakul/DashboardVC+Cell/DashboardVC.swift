@@ -20,7 +20,7 @@ class DashboardVC: UIViewController {
     
     @IBOutlet weak var SponsershipsCV: UICollectionView!
     
-    @IBOutlet weak var sliderCV: GeminiCollectionView!
+    @IBOutlet weak var sliderCV: UICollectionView!
     
     @IBOutlet weak var charityPaysCV: UICollectionView!
     
@@ -33,6 +33,7 @@ class DashboardVC: UIViewController {
     
     @IBOutlet weak var topNavbarImag: UIImageView!
     
+    @IBOutlet weak var teamTitleHomePage: UILabel!
     
     var percentageArray = [Int]()
 //    var descriptionArray = [String]()
@@ -54,8 +55,8 @@ class DashboardVC: UIViewController {
     var giftID:Int!
     var dailySadaqu:String!
     var dailysadaquID:Int!
-    var nextDoorNeighbor:String!
-    var nextDoorNeighborID:Int!
+    var takafulInstitution:String!
+    var takafulInstituteID:Int!
     var awarenessSocialLbl:String!
     var awarenessSocialID:Int!
     var helpInLbl:String!
@@ -91,9 +92,9 @@ class DashboardVC: UIViewController {
     var FastingId:Int!
     var Fastingransomlbl:String!
     
-    var TopCVitems = ["Give Gift","Distress Relief","Next door neighbor","Friday Charity","Daily Sadaqa"]
+    var TopCVitems = ["Give Gift","Distress Relief","Takaful Foundation","Friday Charity","Daily Sadaqa"]
     
-    var TopCvArabicItems = ["الهدية","فك كربة","الجار المجاور","صدقة الجمعة","الصدقة اليومية"]
+    var TopCvArabicItems = ["الهدية","فك كربة","مؤسسة تكافل","صدقة الجمعة","الصدقة اليومية"]
     
     @IBOutlet weak var charityPayLbl: UILabel!
     
@@ -104,6 +105,8 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var contributeLbl: UILabel!
     
     @IBOutlet weak var sponsorshipLbl: UILabel!
+    
+    
     
     var CharityPaysArray = ["Clothing a poor","Food Basket","Public sadaqat","Expiration for a broken Oath"]
     
@@ -128,7 +131,7 @@ class DashboardVC: UIViewController {
     var menuImage: [UIImage?] = [
         UIImage(named: "gift"),
         UIImage(named: "detress"),
-        UIImage(named: "neighbor"),
+        UIImage(named: "takaful-instu-logo"),
         UIImage(named: "friday_charity"),
         UIImage(named: "sadqa")
       ]
@@ -138,7 +141,7 @@ class DashboardVC: UIViewController {
         UIImage(named: "sadqa"),
         UIImage(named: "friday_charity"),
 
-        UIImage(named: "neighbor"),
+        UIImage(named: "takaful-instu-logo"),
 
         UIImage(named: "detress"),
 
@@ -157,6 +160,13 @@ class DashboardVC: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(moveToTeamProfile))
         topNavbarImag.isUserInteractionEnabled = true
         topNavbarImag.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        if LocalizationSystem.sharedInstance.getLanguage() != "ar" {
+            self.teamTitleHomePage.text = "فريق تكافل صحار الخيري"
+        }else {
+            self.teamTitleHomePage.text = "Takaful Sohar Charity Team"
+        }
     }
     
     @objc func moveToTeamProfile(){
@@ -225,7 +235,29 @@ class DashboardVC: UIViewController {
             langBtn.setImage(en, for: .normal)
             self.getCauses()
             self.getSlider()
+            
         }
+        self.charityId = 89
+        self.destressId = 64
+        self.giftID = 81
+        self.dailysadaquID = 93
+        self.takafulInstituteID = 96
+//        self./*takafulInstituteID*/ = 94
+        self.familyInNeedId = 74
+        self.awarenessSocialID = 91
+        self.helpInId = 82
+        self.EconmimcEmpowermentId = 79
+        self.houseMaintenanceId = 78
+        self.HousingProjectId = 77
+        self.conditionsElectroincsID = 80
+        self.specialNeedsId = 75
+        self.orphanID = 73
+        self.studentsID = 76
+        self.clothingAPoorId = 71
+        self.SacrificeId = 85
+        self.vowId = 86
+        self.FastingId = 83
+
         charityMoreLbl.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:)))
         charityMoreLbl.addGestureRecognizer(tapGesture)
@@ -276,8 +308,6 @@ class DashboardVC: UIViewController {
                                         let id = dict["id"] as? Int ?? 0
                                         dict["description"] = x["description_ar"]
                                         dict["image"] = x["image"]
-
-                                        
                                         self.idArray.append(id)
                                         let value = Double(raised)! / Double(amount)! * 100
                                         let IntValue = Int(value)
@@ -288,15 +318,9 @@ class DashboardVC: UIViewController {
                                         self.RaisedArray.append(raised)
                                         self.sliderData.append(dict)
                                         self.sliderCV.reloadData()
-                                        
                                     }
                                    
                                 }
-//                                self.sliderCV.gemini.circleRotationAnimation()
-//                                let indexPath = IndexPath(item: 0, section: 0)
-//
-//                                self.sliderCV.collectionViewLayout.collectionView?.scrollToItem(at: indexPath,  at: [.centeredVertically, .centeredHorizontally], animated: true)
-
                                 
                             }
                            // self.loadinHubDismiss()
@@ -366,9 +390,15 @@ class DashboardVC: UIViewController {
                                         self.sliderData.append(dict)
 
                                         self.sliderCV.reloadData()
+                                        
+                                        guard self.sliderCV.numberOfItems(inSection: 0) > 0 else { return }
+                                        let indexPath = IndexPath(item: 0, section: 0)
+                                        self.sliderCV.scrollToItem(at: indexPath, at: .right, animated: false)
+
                                     }
                                    
                                 }
+                                
                                 
                             }
                            // self.loadinHubDismiss()
@@ -418,100 +448,152 @@ class DashboardVC: UIViewController {
                                     self.idArray.append(id)
                                     self.titleArray.append(title)
                                     print(self.titleArray)
+                                    self.charityId = 89
+                                    self.destressId = 64
+                                    self.giftID = 81
+                                    self.dailysadaquID = 93
+                                    self.takafulInstituteID = 96
+                                    self.familyInNeedId = 74
+                                    self.awarenessSocialID = 91
+                                    self.helpInId = 82
+                                    self.EconmimcEmpowermentId = 79
+                                    self.houseMaintenanceId = 78
+                                    self.HousingProjectId = 77
+                                    self.conditionsElectroincsID = 80
+                                    self.specialNeedsId = 75
+                                    self.orphanID = 73
+                                    self.studentsID = 76
+                                    self.clothingAPoorId = 71
+                                    self.SacrificeId = 85
+                                    self.vowId = 86
+                                    self.FastingId = 83
+                                    
+                                    
                                     
                                     if Artitle == "صدقة الجمعة"{
                                         self.charitylbl = Artitle
                                     }
-                                    if id == 89{
-                                        self.charityId = id
-                                    }
+                                    self.charityId = 89
+
+//                                    if id == 89{
+//                                        self.charityId = id
+//                                    }
                                     if Artitle == "فك كربة"{
                                         self.destressRelieflbl = Artitle
                                     }
-                                    if id == 64{
-                                        self.destressId = id
-                                    }
+                                    self.destressId = 64
+//                                    if id == 64{
+//                                        self.destressId = id
+//                                    }
                                     if Artitle == "إرسال هدية" {
                                         self.giftlbl = "هدية"
                                     }
-                                    if id == 81{
-                                        self.giftID = id
-                                    }
+                                    
+                                    self.giftID = 81
+//                                    if id == 81{
+//                                        self.giftID = id
+//                                    }
                                     if Artitle == "الصدقة اليومية"{
                                         self.dailySadaqu = Artitle
                                     }
-                                    if id == 93{
-                                        self.dailysadaquID = id
+                                    self.dailysadaquID = 93
+//                                    if id == 93{
+//                                        self.dailysadaquID = id
+//                                    }
+                                    if Artitle == "مؤسسة تكافل"{
+                                        self.takafulInstitution = Artitle
                                     }
-                                    if Artitle == "الجار الجنب"{
-                                        self.nextDoorNeighbor = Artitle
+                                    
+                                    self.takafulInstituteID = 96
+//                                    if id == 94{
+//                                        self.takafulInstituteID = id
+//                                    }
+                                    if Artitle == "أسر معسرة"{
+                                        self.familyInNeedlbl = Artitle
                                     }
-                                    if id == 94{
-                                        self.nextDoorNeighborID = id
-                                    }
-                                    if Artitle == "أسرة معسرة"{
-                                        self.familyInNeedlbl = "دعم استشارات أسرية"
-                                    }
-                                    if id == 74{
-                                        self.familyInNeedId = id
-                                    }
+                                    
+                                    self.familyInNeedId = 74
+//                                    if id == 74{
+//                                        self.familyInNeedId = id
+//                                    }
                                     if Artitle == "البرامج التوعوية والاجتماعية"{
                                         self.awarenessSocialLbl = "دعم برامج توعوية واجتماعية"
                                     }
-                                    if id == 91{
-                                        self.awarenessSocialID = id
-                                    }
+                                    
+                                    self.awarenessSocialID = 91
+//                                    if id == 91{
+//                                        self.awarenessSocialID = id
+//                                    }
                                     if Artitle == "تزويج شاب معسر"{
                                         self.helpInLbl = Artitle
                                     }
+                                    self.helpInId = 82
                                     if id == 82{
                                         self.helpInId = id
                                     }
-                                    if Artitle == "مشاريع مدرة للدخل"{
+                                    if Artitle == "المشاريع الوقفية"{
                                         self.EconmimcEmpowermentLbl = Artitle
                                     }
+                                    self.EconmimcEmpowermentId = 79
+
                                     if id == 79{
                                         self.EconmimcEmpowermentId = id
                                     }
                                     if Artitle == "صيانة منازل"{
                                         self.houseMaintenanceLbl = Artitle
                                     }
+                                    
+                                    self.houseMaintenanceId = 78
+
                                     if id == 78{
                                         self.houseMaintenanceId = id
                                     }
                                     if Artitle == "منزل يؤويهم"{
                                         self.HousingProject = Artitle
                                     }
+                                    self.HousingProjectId = 77
+
                                     if id == 77{
                                         self.HousingProjectId = id
                                     }
                                     if Artitle == "مكيفات وإلكترونيات"{
                                         self.conditionsElectroincs = Artitle
                                     }
+                                    
+                                    self.conditionsElectroincsID = 80
+
                                     if id == 80{
                                         self.conditionsElectroincsID = id
                                     }
                                     if Artitle == "دعم ذوي الإحتياجات الخاصة"{
                                         self.specialNeedslbl = Artitle
                                     }
+                                    self.specialNeedsId = 75
                                     if id == 75{
                                         self.specialNeedsId = id
                                     }
                                     if Artitle == "كفالة يتيم" {
                                         self.orphanLbl = Artitle
                                     }
+                                    self.orphanID = 73
+
                                     if id == 73{
                                         self.orphanID = id
                                     }
                                     if Artitle == "طالب علم"{
                                         self.StudentsLbl = Artitle
                                     }
+                                    self.studentsID = 76
+                                    
                                     if id == 76{
                                         self.studentsID = id
                                     }
                                     if Artitle == "كسوة مسكين"{
                                         self.ClothingAPoor = Artitle
                                     }
+                                    
+                                    self.clothingAPoorId = 71
+                                    
                                     if id == 71{
                                         self.clothingAPoorId = id
                                     }
@@ -521,11 +603,12 @@ class DashboardVC: UIViewController {
                                     if id == 70{
                                         self.foodBasketID = id
                                     }
-                                    if Artitle == "صدقات عامة"{
+                                    if Artitle == "الصدقات العامة"{
                                         self.Publicsadaqat = Artitle
                                     }
+                                    self.publicSadaqatId = 69
                                     if id == 69{
-                                        self.publicSadaqatId = id
+                                        self.publicSadaqatId = 69
                                     }
                                     if Artitle == "كفارة يمين"{
                                         self.expirationAuth = Artitle
@@ -533,7 +616,7 @@ class DashboardVC: UIViewController {
                                     if id == 72{
                                         self.expirationAuthId = id
                                     }
-                                    if title == "Aqiqah"{
+                                    if title == "العقيقة"{
                                         self.Aqiqah = title
                                     }
                                     if id == 87{
@@ -543,6 +626,11 @@ class DashboardVC: UIViewController {
                                     if title == "Sacrifice"{
                                         self.Sacrificelbl = title
                                     }
+                                    
+                                    self.SacrificeId = 85
+                                    self.vowId = 86
+                                    self.FastingId = 83
+                                    
                                     
                                     if id == 85{
                                         self.SacrificeId = id
@@ -635,11 +723,11 @@ class DashboardVC: UIViewController {
                                     if id == 93{
                                         self.dailysadaquID = id
                                     }
-                                    if title == "Next Door Neighbor"{
-                                        self.nextDoorNeighbor = title
+                                    if title == "Takaful Foundation"{
+                                        self.takafulInstitution = title
                                     }
-                                    if id == 94{
-                                        self.nextDoorNeighborID = id
+                                    if id == 96{
+                                        self.takafulInstituteID = id
                                     }
                                     if title == "Family in Need"{
                                         self.familyInNeedlbl = title
@@ -794,10 +882,10 @@ class DashboardVC: UIViewController {
     
     func configureAnimation()
     {
-             sliderCV.gemini
-            .scaleAnimation()
-            .scale(0.60)
-            .scaleEffect(.scaleUp)
+//             sliderCV.gemini
+//            .scaleAnimation()
+//            .scale(0.60)
+//            .scaleEffect(.scaleUp)
     }
     
 
@@ -888,7 +976,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 }
                 
                 if indexPath.row == 2{
-                    cell?.dashboardLbl.text = nextDoorNeighbor ?? ""
+                    cell?.dashboardLbl.text = takafulInstitution ?? ""
                 }
                 
                 if indexPath.row == 1{
@@ -922,11 +1010,13 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 cell.DashimageView.kf.setImage(with: url)
                 cell.progressBar.progress = Float(percentageArray[indexPath.row] / 100)
 //                self.sliderCV.animateCell(cell)
+                
                 if(percentageArray[indexPath.row] > 100) {
                     cell.percentageLbl.text = "100%"
                 }else {
                     cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 }
+//                cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
 //                cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 cell.percentageLbl.textColor = UIColor.blue
                 cell.shareBtn.addTarget(self, action: #selector(shareButton(_sender:)), for: .touchUpInside)
@@ -1042,7 +1132,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 
                 
                 if indexPath.row == 2{
-                    cell?.dashboardLbl.text = nextDoorNeighbor ?? ""
+                    cell?.dashboardLbl.text = takafulInstitution ?? ""
                 }
                 
                 if indexPath.row == 3{
@@ -1079,7 +1169,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                     cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 }
                 
-                cell.donateBtn.setTitle("Donate", for: .normal)
+                cell.donateBtn.setTitle("SMS Generation", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
                 return cell
@@ -1183,7 +1273,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
         let index = _sender.tag
         let title = titleArray[index]
         let amount = "\(totalAmountArray[index])OMR"
-        let link = "https://takafulsuhar.om/projects"
+        let link = "http://takafulsuhar.om/projects"
         let textShare = [title,amount,link ]
         let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
@@ -1216,7 +1306,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView)
     {
-        sliderCV.animateVisibleCells()
+//        sliderCV.animateVisibleCells()
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
@@ -1281,11 +1371,11 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
 
             let totalSpace = flowLayout.sectionInset.left
                 + flowLayout.sectionInset.right
-                + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
+                + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow ))
 
-            let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
-
-            return CGSize(width: size, height: size)
+            let width = collectionView.bounds.width
+            let size = Int(( width - 25) / CGFloat(noOfCellsInRow))
+            return CGSize(width: size, height: 100)
         }
         
         else if collectionView == charityPaysCV
@@ -1418,12 +1508,12 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
 //                self.present(vc, animated: true, completion: nil)
 //
 //
-                let vc = storyboard?.instantiateViewController(withIdentifier: "NeighborSadaqaVC") as! NeighborSadaqaVC
+                let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "Neighbours in Village"
-                vc.imgView = "neighbours"
-                vc.sadaquId = "\(nextDoorNeighborID!)"
-                vc.descriptionString = "On the authority of Abdulla bin Omar, may God be pleased with him, that the Messenger of God, may God's prayers and peace be upon him, said Gabriel still advised me about the neighbour, until I thought that he would inherit it. Narrated by Al-Bukhari"
+                vc.titleText = "Takaful Foundation"
+                vc.imgView = "takaful-instu-logo"
+                vc.sadaquId = "\(self.takafulInstituteID!)"
+                vc.descriptionString = "“You will not attain righteousness until you spend of what you love and whatever you spend of anything, for God is All-Knowing of it” [Al Imran: 92].Invest for your afterlife and let your impact on this world remain."
                 present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 1{
@@ -1453,7 +1543,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                vc.modalTransitionStyle = .coverVertical
                 vc.titleText = familyInNeedlbl
                 vc.id = familyInNeedId
-               present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 1
             {
@@ -1461,7 +1551,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = awarenessSocialLbl
                 vc.id = awarenessSocialID
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 2
             {
@@ -1477,7 +1567,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = helpInLbl
                 vc.id = helpInId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             
@@ -1492,7 +1582,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                vc.modalTransitionStyle = .coverVertical
                 vc.titleText = EconmimcEmpowermentLbl
                 vc.id = EconmimcEmpowermentId
-               present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 1
             {
@@ -1500,7 +1590,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = houseMaintenanceLbl
                 vc.id = houseMaintenanceId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 2
             {
@@ -1508,7 +1598,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = HousingProject
                 vc.id = HousingProjectId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 3
             {
@@ -1516,7 +1606,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = conditionsElectroincs
                 vc.id = conditionsElectroincsID
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             
@@ -1530,7 +1620,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                vc.modalTransitionStyle = .coverVertical
                 vc.titleText = specialNeedslbl
                 vc.id = specialNeedsId
-               present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 1
             {
@@ -1538,7 +1628,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = familyInNeedlbl
                 vc.id = familyInNeedId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 2
             {
@@ -1546,7 +1636,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = orphanLbl
                 vc.id = orphanID
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 3
@@ -1555,7 +1645,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = StudentsLbl
                 vc.id = studentsID
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
         }
@@ -1566,7 +1656,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                vc.modalTransitionStyle = .coverVertical
                 vc.titleText = ClothingAPoor
                 vc.id = clothingAPoorId
-               present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 1{
@@ -1609,7 +1699,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.expirationId = AqiqahId
                 vc.isAquiuah = "Aqiuah"
                vc.modalTransitionStyle = .coverVertical
-               present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 11{
@@ -1617,7 +1707,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = StudentsLbl
                 vc.id = studentsID
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 10{
@@ -1625,14 +1715,14 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.titleText = specialNeedslbl
                 vc.id = specialNeedsId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 9{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DashboardFoodBasketViewController") as! DashboardFoodBasketViewController
                 vc.modalTransitionStyle = .coverVertical
                 vc.isSacrifice = "Sacrifice"
                 vc.sacrificeId = SacrificeId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 8{
@@ -1640,7 +1730,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.isVow = "Vow"
                 vc.sacrificeId = vowId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 7{
@@ -1650,7 +1740,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.imgView = "FridayCharity"
                 vc.descriptionString = "On the authority of Uqbah Aamer, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (A man is in the shade of his charity until it is decided betweeen the people). narrated by Ahmed"
                 vc.sadaquId = "\(charityId!)"
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 6{
@@ -1658,7 +1748,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.isFastingRansom = "IsFastingRansom"
                 vc.sacrificeId = FastingId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
             
             if indexPath.row == 4{
@@ -1666,7 +1756,7 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
                 vc.modalTransitionStyle = .coverVertical
                 vc.isSacrificeMore = "isSacrificeMore"
                 vc.sacrificeId = SacrificeId
-                present(vc, animated: true,completion: nil)
+                self.present(vc, animated: true,completion: nil)
             }
         }
     }
@@ -1674,4 +1764,12 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
 
    
     
+}
+
+extension UICollectionViewFlowLayout {
+
+    open override var flipsHorizontallyInOppositeLayoutDirection: Bool {
+        return true
+    }
+
 }

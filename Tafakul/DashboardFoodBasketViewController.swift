@@ -362,7 +362,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
             self.expitationLbl.text = "\(totalAmounts) 15 ر.ع"
             Food1myValue = "1"
             self.expitationBackLbl.text = "كفارة اليمين"
-            donateExpitationBtn.setTitle("تبرع الآن", for: .normal)
+            donateExpitationBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             cartAddedBtn.setTitle("اضافة للعربة", for: .normal)
             expitationBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             numberOathExpitationsTF.textAlignment = .center
@@ -411,7 +411,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 otherAmountTF.textAlignment = .right
                 foodbsktLbl.numberOfLines = 5
                 otherAmountTF.placeholder = "عدد السلّات"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 addcartBtn.setTitle("اضافة للعربة", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -452,7 +452,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 foodbsktLbl.text = "سلة طعام"
                 otherAmountTF.textAlignment = .right
                 otherAmountTF.placeholder = "عدد السلّات"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 addcartBtn.setTitle("اضافة للعربة", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -489,7 +489,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 sacrifice45AmtValue = 45
                 let totalAmounts = "المبلغ الإجمالي"
                 self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.ع"
-                DonateSacBtn.setTitle("تبرع الآن", for: .normal)
+                DonateSacBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sacrificeAddCartBtn.setTitle("اضافة للعربة", for: .normal)
                 sacrificeCattleLbl.text = "ماشية"
                 sacrificeSheepLbl.text = "خروف"
@@ -542,7 +542,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 ransomADayLbl.text = "يوم"
                 ransomTF.textAlignment = .center
                 ransomTF.placeholder = "عدد الأيام"
-                DonaterRansomBtnn.setTitle("تبرع الآن", for: .normal)
+                DonaterRansomBtnn.setTitle("الحصول على رابط التبرع", for: .normal)
                 ransomAddCartBtn.setTitle("اضافة للعربة", for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -574,7 +574,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 vowSheepLbl.text = "خروف"
                 vowCashLbl.text = "مبالغ نقدية"
                 vowCattleLbl.text = "ماشية"
-                vowDonateNowBtn.setTitle("تبرع الآن", for: .normal)
+                vowDonateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 vowAddCartBtn.setTitle("اضافة للعربة", for: .normal)
                 vowNumebrTF.delegate = self
                 self.vowVieww.isHidden = false
@@ -625,7 +625,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 AquiahSheepLbl.text = "خروف"
                 aqiqahNumberTF.textAlignment = .center
                 aqiqahNumberTF.placeholder = "رقم"
-                AquiuahDonateBtn.setTitle("تبرع الآن", for: .normal)
+                AquiuahDonateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 AquiahSheepAddcartBtn.setTitle("اضافة للعربة", for: .normal)
                 self.aqiqahNumberTF.delegate = self
                 self.vowVieww.isHidden = true
@@ -670,7 +670,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 moreSacrificecattleLbl.text = "ماشية"
                 moreSacCattlesLbl.text = "ماشية"
                 moreSacSheepLbl.text = "خروف"
-                DonateSacrificeMoreDonateBtn.setTitle("تبرع الآن", for: .normal)
+                DonateSacrificeMoreDonateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sacrificeMoreCartAddedBtn.setTitle("اضافة للعربة", for: .normal)
                 self.aqiqahNumberTF.delegate = self
                 self.vowVieww.isHidden = true

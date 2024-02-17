@@ -17,7 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
+//        UINavigationBar.automaticallyAdjustsScrollViewInsets = false
         IQKeyboardManager.shared.enable = true
+        
+//        UILabel.appearance().font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: "Tajawal"))
+        UILabel.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
+        UITextView.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
+        UITextField.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
+
         return true
     }
 
@@ -73,4 +80,70 @@ extension UIApplication {
         return viewController
     }
     
+}
+
+extension UILabel {
+    @objc var substituteFontName : String {
+        get {
+            return self.font.fontName;
+        }
+        set {
+            let fontNameToTest = self.font.fontName.lowercased();
+            var fontName = newValue;
+            if fontNameToTest.range(of: "bold") != nil {
+                fontName += "-Bold";
+            } else if fontNameToTest.range(of: "medium") != nil {
+                fontName += "-Medium";
+            } else if fontNameToTest.range(of: "light") != nil {
+                fontName += "-Light";
+            } else if fontNameToTest.range(of: "ultralight") != nil {
+                fontName += "-UltraLight";
+            }
+            self.font = UIFont(name: fontName, size: self.font.pointSize)
+        }
+    }
+}
+
+extension UITextView {
+    @objc var substituteFontName : String {
+        get {
+            return self.font?.fontName ?? "";
+        }
+        set {
+            let fontNameToTest = self.font?.fontName.lowercased() ?? "";
+            var fontName = newValue;
+            if fontNameToTest.range(of: "bold") != nil {
+                fontName += "-Bold";
+            } else if fontNameToTest.range(of: "medium") != nil {
+                fontName += "-Medium";
+            } else if fontNameToTest.range(of: "light") != nil {
+                fontName += "-Light";
+            } else if fontNameToTest.range(of: "ultralight") != nil {
+                fontName += "-UltraLight";
+            }
+            self.font = UIFont(name: fontName, size: self.font?.pointSize ?? 17)
+        }
+    }
+}
+
+extension UITextField {
+    @objc var substituteFontName : String {
+        get {
+            return self.font?.fontName ?? "";
+        }
+        set {
+            let fontNameToTest = self.font?.fontName.lowercased() ?? "";
+            var fontName = newValue;
+            if fontNameToTest.range(of: "bold") != nil {
+                fontName += "-Bold";
+            } else if fontNameToTest.range(of: "medium") != nil {
+                fontName += "-Medium";
+            } else if fontNameToTest.range(of: "light") != nil {
+                fontName += "-Light";
+            } else if fontNameToTest.range(of: "ultralight") != nil {
+                fontName += "-UltraLight";
+            }
+            self.font = UIFont(name: fontName, size: self.font?.pointSize ?? 17)
+        }
+    }
 }

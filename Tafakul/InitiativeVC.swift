@@ -53,7 +53,7 @@ class InitiativeVC: UIViewController,UITextFieldDelegate {
             tenBtn.addTarget(self, action: #selector(tenAction), for: .touchUpInside)
             fiveBtn.addTarget(self, action: #selector(fiveAction), for: .touchUpInside)
             twentyBtn.addTarget(self, action: #selector(TwentyAction), for: .touchUpInside)
-            self.donateNowBtn.setTitle("تبرع الآن", for: .normal)
+            self.donateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             selectDonationAmtLbl.text = "اختر مبلغ التبرع"
             self.totalAmtTF.isUserInteractionEnabled = false
             amountTF.textAlignment = .right

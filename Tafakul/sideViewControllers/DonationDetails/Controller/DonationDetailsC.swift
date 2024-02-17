@@ -13,7 +13,7 @@ extension DonationDetailsViewController{
 
         //Provide your request 'body' here in Dictionary format
         let parameterDictionary = ["api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
-        NetworkManager.shared.dataTaskWithPostRequest(urlrequest: "https://takafulsuhar.om/api/get-payment/\(UserDefaults.standard.getUserID())",
+        NetworkManager.shared.dataTaskWithPostRequest(urlrequest: "http://takafulsuhar.om/api/get-payment/\(UserDefaults.standard.getUserID())",
                                                       params: parameterDictionary) { (result, status) in
             DispatchQueue.main.async {
                 print("status:   getDonationDetails \(status) \(result)")

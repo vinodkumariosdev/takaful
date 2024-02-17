@@ -79,13 +79,15 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             BackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             completionDetailsLbl.text = "اكمال بيانات"
             senderDetailsLbl.text = "تفاصيل المرسل"
             personalDetailsLbl.text = "تفاصيل شخصية"
-            donateNowBtn.setTitle("تبرع الآن", for: .normal)
+            donateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
             receipentNameLbl.text = "اسم مستلم الهدية"
             receipentMobileLbl.text = "هاتف المستلم"
             nameLbl.text = "اسم"
@@ -246,21 +248,30 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if(text == "\n") {
-            textView.resignFirstResponder()
-            return false
+        var newText = textView.text!
+        newText.removeAll { (character) -> Bool in
+            return character == " " || character == "\n"
         }
-        return true
+
+        return (newText.count + text.count) <= 70
     }
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
 
         if textVieww.textColor == UIColor.lightGray {
             textVieww.text = ""
+
             textVieww.textColor = UIColor.black
             
         }
         
     }
+    
+    
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//    }
+
+
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textVieww.text == "" {
@@ -270,3 +281,5 @@ class DonateGiftDetailsViewController: UIViewController,UITextViewDelegate {
         
     }
 }
+
+

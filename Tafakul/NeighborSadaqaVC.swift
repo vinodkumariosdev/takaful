@@ -127,96 +127,23 @@ class NeighborSadaqaVC: UIViewController {
         sadaqImg.layer.masksToBounds = true
         self.titelLbl.text = titleText!
         sadaqImg.contentMode = .scaleAspectFill
-        if titleText == "Daily Sadaqa"{
-            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                self.titelLbl.text = "الصدقة اليومية"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
-                
-                chooseCityString.text = "اختر المنطقة"
-            }else{
-                UIView.appearance().semanticContentAttribute = .forceLeftToRight
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-            }
-            
-        }else if titleText == "Friday Charity"{
-            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                self.titelLbl.text = "صدقة الجمعة"
-                descriptionLbl.text = "عن عقبة بن عامر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : (الرجل في ظل صدقته حتى يقضى بين الناس ) رواه أحمد."
-                donateBtn.setTitle("تبرع الآن", for: .normal)
-            }else{
-                UIView.appearance().semanticContentAttribute = .forceLeftToRight
-                donateBtn.setTitle("Donate Now", for: .normal)
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-            }
-            
-        }else if titleText == "Neighbours in Village"{
+        
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 self.titelLbl.text = "الجار الجنب"
                 descriptionLbl.text = "عن عبدالله بن عمر رضي الله عنه أن رسول الله صلى الله عليه وسلم قال ما زالَ جِبْرِيلُ يُوصِينِي بالجارِ، حتّى ظَنَنْتُ أنَّه سَيُوَرِّثُه. رواه البخاري"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
+                donateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
+                
+                chooseCityString.text = "اختر المنطقة"
+
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
             }
             
-        }else if titleText == "Public Charity"{
-            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                titelLbl.text = "صدقة عامة"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال (  ما نقصت صدقة من مال  ) . رواه مسلم"
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                donateBtn.setTitle("تبرع الآن", for: .normal)
-            }else{
-                donateBtn.setTitle("Donate Now", for: .normal)
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-            }
-            
-        }else if titleText == "Housing Project"{
-            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                titelLbl.text = ""
-                descriptionLbl.text = "لا شيء يضاهي الملاذ الآمن لأسرة سعيدة ، بهدف تحسين مستوى معيشة الأسر وتحقيق الاستقرار الاجتماعي. ويسعى الفريق بالشراكة مع مختلف الجهات والأفراد لبناء مشاريع سكنية للأسر المشردة ذات الدخل المحدود وتوفير المتطلبات الأساسية لسكن آمن ومريح. عن طريق بناء وصيانة وحدات سكنية لذوي الدخل المحدود تتوفر فيها المرافق والخدمات الأساسية مع مراعاة عدد أفراد الأسرة."
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                donateBtn.setTitle("تبرع الآن", for: .normal)
-            }else{
-                donateBtn.setTitle("Donate Now", for: .normal)
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-            }
-            
-        }
-        else{
-            if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                titelLbl.text = "فك كربة"
-                descriptionLbl.text = "عن أبي هريرة رضي الله عنه أن رسول الله صلى الله عليه وسلم قال : ( من نفَّسَ عن مسلِمٍ كُربةً من كُرَبِ الدُّنيا نفَّسَ اللَّهُ عنهُ كُربةً من كُرَبِ الآخرةِ ومن سترَ على مسلمٍ سترَهُ اللَّهُ في الدُّنيا والآخرةِ واللَّهُ في عونِ العبدِ ما كانَ العبدُ في عونِ أخيهِ ) . رواه مسلم"
-                donateBtn.setTitle("تبرع الآن", for: .normal)
-            }else{
-                UIView.appearance().semanticContentAttribute = .forceLeftToRight
-                sadaqImg.image = UIImage.init(named: imgView)
-                self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
-                donateBtn.setTitle("Donate Now", for: .normal)
-            }
-            
-        }
         
         self.cartImg.addTarget(self, action: #selector(cartAdded), for: .touchUpInside)
         self.shareBtn.addTarget(self, action: #selector(shareBtnOption), for: .touchUpInside)
@@ -243,7 +170,7 @@ class NeighborSadaqaVC: UIViewController {
         if titleText == "Daily Sadaqa"{
             let text = "Daily Sadaqa"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -251,7 +178,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Friday Charity"{
             let text = "Friday Charity"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -259,7 +186,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Neighbours in Village"{
             let text = "Neighbours in Village"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -267,7 +194,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Public Charity"{
             let text = "Public Charity"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -276,7 +203,7 @@ class NeighborSadaqaVC: UIViewController {
         else{
             let text = "Distress Relief"
             let description = descriptionString
-            let link = URL(string: "https://takafulsuhar.om/projects")!
+            let link = URL(string: "http://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -300,35 +227,7 @@ class NeighborSadaqaVC: UIViewController {
             
             self.present(alert, animated: true, completion: nil)
         }else{
-            if titleText == "Daily Sadaqa"{
-                let alert = UIAlertController(title: "", message:"Cart Added Sucessfully".l10n(), preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
-                    Constant.isLoginView = true
-                    self.tabBarController?.selectedIndex = 0
-                    titleCart = "Daily Sadaqa"
-                    cartAmount = "5 OMR"
-                    cartIconImg = "sadqa"
-                    donateCartID = Int(self.sadaquId)
-                    donateAmountBtnTitle = "Donate"
-                    amountDonate = "5"
-                }))
-                
-                self.present(alert, animated: true, completion: nil)
-            }else if titleText == "Friday Charity"{
-                let alert = UIAlertController(title: "", message:"Cart Added Sucessfully".l10n(), preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
-                    Constant.isLoginView = true
-                    self.tabBarController?.selectedIndex = 0
-                    titleCart = "Friday Charity"
-                    cartAmount = "5 OMR"
-                    cartIconImg = "sadqa"
-                    donateCartID = Int(self.sadaquId)
-                    amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
-                }))
-                
-                self.present(alert, animated: true, completion: nil)
-            }else if titleText == "Neighbours in Village"{
+            
                 let alert = UIAlertController(title: "", message:"Cart Added Sucessfully".l10n(), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
                     Constant.isLoginView = true
@@ -338,24 +237,11 @@ class NeighborSadaqaVC: UIViewController {
                     cartIconImg = "sadqa"
                     donateCartID = Int(self.sadaquId)
                     amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
+                    donateAmountBtnTitle = "SMS Generation"
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
-            }else if titleText == "Detress Relief"{
-                let alert = UIAlertController(title: "", message:"Cart Added Sucessfully".l10n(), preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
-                    Constant.isLoginView = true
-                    self.tabBarController?.selectedIndex = 0
-                    titleCart = "Detress Relief"
-                    cartAmount = "5 OMR"
-                    cartIconImg = "sadqa"
-                    donateCartID = Int(self.sadaquId)
-                    amountDonate = "5"
-                    donateAmountBtnTitle = "Donate"
-                }))
-                self.present(alert, animated: true, completion: nil)
-            }
+            
             
         }
     }

@@ -299,8 +299,7 @@ class LoginViewController: UIViewController {
          } catch let error {
              print("Error : \(error.localizedDescription)")
          }
-        AF.request(urlString
-                   , method: .post, parameters:paramtersArray, encoding: URLEncoding.default, headers: nil).responseJSON { [self] (response:AFDataResponse<Any>) in
+        AF.request(urlString, method: .post, parameters:paramtersArray, encoding: URLEncoding.default, headers: nil).responseJSON { [self] (response:AFDataResponse<Any>) in
             switch(response.result) {
             case .success(_):
                 do{
