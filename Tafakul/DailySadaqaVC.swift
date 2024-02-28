@@ -126,7 +126,7 @@ class DailySadaqaVC: UIViewController {
         else if titleText == "Takaful Foundation"{
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
-                titelLbl.text = "مؤسسة تكافل"
+                titelLbl.text = "مؤسسة تكافل الوقفية"
                 descriptionLbl.text = "﴿ لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ وَمَا تُنْفِقُوا مِنْ شَيْءٍ فَإِنَّ اللَّهَ بِهِ عَلِيمٌ ﴾  [آل عمران:92]. استثمر لآخرتك ودع أثرك في دنياك يبقى "
                 sadaqImg.image = UIImage.init(named: imgView)
                 self.donateBtn.addTarget(self, action: #selector(donateAction), for: .touchUpInside)
@@ -154,7 +154,7 @@ class DailySadaqaVC: UIViewController {
             }
             
         }
-        
+        self.cartImg.contentMode = .scaleAspectFill
         self.cartImg.addTarget(self, action: #selector(cartAdded), for: .touchUpInside)
         self.shareBtn.addTarget(self, action: #selector(shareBtnOption), for: .touchUpInside)
         

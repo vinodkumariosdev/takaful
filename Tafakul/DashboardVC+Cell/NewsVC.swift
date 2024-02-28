@@ -8,23 +8,25 @@
 import UIKit
 import Alamofire
 import Kingfisher
+private let reuseIdentifier = "NewsPostCell"
 
 class NewsVC: UIViewController
 {
-
+//
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var newsLbl: UILabel!
     
-    @IBOutlet weak var newsTB: UITableView!
-    
-    
+    @IBOutlet weak var newsGridView: UICollectionView!
+//    @IBOutlet weak var newsTB: UITableView!
+//    
+//    
     var newsData = [[String:Any]]()
-    
+//    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        newsTB.delegate = self
-        newsTB.dataSource = self
+        newsGridView.delegate = self
+        newsGridView.dataSource = self
         backBtn.isHidden = true
         self.getNews()
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
@@ -39,6 +41,7 @@ class NewsVC: UIViewController
         }
     }
     
+
     
     func getNews(){
         self.loadinHubShow()
@@ -54,7 +57,7 @@ class NewsVC: UIViewController
                             }
                             DispatchQueue.main.async {
                                 self.loadinHubDismiss()
-                                self.newsTB.reloadData()
+                                self.newsGridView.reloadData()
                             }
                         case .failure(let error):
                             print(error)
@@ -76,40 +79,39 @@ class NewsVC: UIViewController
     
 
 }
-
-extension NewsVC: UITableViewDelegate,UITableViewDataSource
+//
+extension NewsVC: UICollectionViewDelegate, UICollectionViewDataSource
 {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsData.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTVCell", for: indexPath) as! NewsTVCell
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        self.newsData.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! NewsPost
         let dict = newsData[indexPath.row]
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            cell.nameLbl.text = dict["ar_name"] as? String ?? ""
-            cell.descriptionLbl.text = dict["ar_description"] as? String ?? ""
+            cell.title.text =  dict["ar_name"] as? String ?? ""
+//            cell.descriptionNews.text =  "اقرأ المزيد"
             let image = dict["image"] as! [String:AnyObject]
             let img_url = image["img_url"] as! String
             let url = URL(string: img_url)
-            cell.newsImg.kf.setImage(with: url)
-            cell.selectionStyle = .none
+            cell.image.kf.setImage(with: url)
             
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
-            cell.nameLbl.text = dict["name"] as? String ?? ""
-            cell.descriptionLbl.text = dict["description"] as? String ?? ""
+            cell.title.text = dict["name"] as? String ?? ""
+//            cell.descriptionNews.text = "Read More"
             let image = dict["image"] as! [String:AnyObject]
             let img_url = image["img_url"] as! String
             let url = URL(string: img_url)
-            cell.newsImg.kf.setImage(with: url)
-            cell.selectionStyle = .none
+            cell.image.kf.setImage(with: url)
         }
         
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "NewsDetailsVC") as! NewsDetailsVC
         vc.modalPresentationStyle = .fullScreen
         let dict = newsData[indexPath.row]
@@ -131,8 +133,21 @@ extension NewsVC: UITableViewDelegate,UITableViewDataSource
             self.present(vc, animated: true)
         }
         
-       
+
     }
     
-  
+}
+
+class NewsPost: UICollectionViewCell {
+    @IBOutlet weak var background: UIView!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var title: UILabel!
+//    @IBOutlet weak var descriptionNews: UILabel!
+    
+    override func awakeFromNib() {
+        background.layer.cornerRadius = 10
+        background.layer.borderWidth = 1
+        background.layer.borderColor = UIColor.gray.cgColor
+        image.layer.cornerRadius = 10
+    }
 }

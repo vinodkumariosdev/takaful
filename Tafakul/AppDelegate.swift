@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UILabel.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
         UITextView.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
         UITextField.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
+        UIButton.appearance().substituteFontName = "Tajawal"; // USE YOUR FONT NAME INSTEAD
+        var config = UIButton.Configuration.plain()
 
         return true
     }
@@ -35,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
 
-
+    
 }
 
 extension UIApplication {
@@ -147,3 +149,30 @@ extension UITextField {
         }
     }
 }
+
+extension UIButton {
+    func setText(_ text: String) {
+        
+    }
+
+    @objc var substituteFontName : String {
+        get {
+            return self.titleLabel?.font?.fontName ?? "";
+        }
+        set {
+            let fontName = "Tajawal-Regular"
+            // let text = /*self.titleLabel?.text ?*/? ""
+            
+            if let font = UIFont(name: fontName, size: self.titleLabel?.font?.pointSize ?? 14) {
+                self.titleLabel?.font = font
+//                let attributes: [NSAttributedString.Key: Any] = [
+//                    .font: font
+//                ]
+//                let attributedTitle = NSAttributedString(string: self.titleLabel?.text ?? "", attributes: attributes)
+//                
+//                setAttributedTitle(attributedTitle, for: .normal)
+            }
+        }
+    }
+}
+

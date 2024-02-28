@@ -21,6 +21,8 @@
 		139BEF352AA4965B00741B02 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2E2AA4965B00741B02 /* Tajawal-Regular.ttf */; };
 		139BEF362AA4965B00741B02 /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF2F2AA4965B00741B02 /* Tajawal-ExtraBold.ttf */; };
 		139BEF372AA4965B00741B02 /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF302AA4965B00741B02 /* Tajawal-Light.ttf */; };
+		13C8B3992B887096007E776C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8B3982B887096007E776C /* NewsViewController.swift */; };
+		13D7A8702B8B66D80053FF2A /* NewsV2CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D7A86F2B8B66D80053FF2A /* NewsV2CollectionViewController.swift */; };
 		18001FD12953449100D7C884 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD02953449100D7C884 /* Reachability.swift */; };
 		18001FD32954441300D7C884 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18001FD22954441300D7C884 /* Constants.swift */; };
 		18001FD52954611500D7C884 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 18001FD42954611500D7C884 /* L10n-swift */; };
@@ -177,6 +179,8 @@
 		139BEF2E2AA4965B00741B02 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		139BEF2F2AA4965B00741B02 /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		139BEF302AA4965B00741B02 /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
+		13C8B3982B887096007E776C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		13D7A86F2B8B66D80053FF2A /* NewsV2CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsV2CollectionViewController.swift; sourceTree = "<group>"; };
 		18001FD02953449100D7C884 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		18001FD22954441300D7C884 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18001FD629546C1600D7C884 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -377,6 +381,7 @@
 				1871EB3F2952F43600884829 /* NewsTVCell.swift */,
 				1871EB412952FA0100884829 /* RapidDonationVC.swift */,
 				1871EB432952FA3B00884829 /* RapidDonationTVCell.swift */,
+				13C8B3982B887096007E776C /* NewsViewController.swift */,
 			);
 			path = "DashboardVC+Cell";
 			sourceTree = "<group>";
@@ -515,6 +520,7 @@
 				139BEF272AA4904700741B02 /* DashboardNextDoorViewController.swift */,
 				133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */,
 				133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */,
+				13D7A86F2B8B66D80053FF2A /* NewsV2CollectionViewController.swift */,
 			);
 			path = Tafakul;
 			sourceTree = "<group>";
@@ -1085,6 +1091,7 @@
 				188F0F2F296461EA00A93873 /* DashboardFoodBasketViewController.swift in Sources */,
 				1871EB422952FA0100884829 /* RapidDonationVC.swift in Sources */,
 				133910E62B297DFB0022B173 /* NeighborSadaqaVC.swift in Sources */,
+				13C8B3992B887096007E776C /* NewsViewController.swift in Sources */,
 				B85382CC28E0B7D700A83BFB /* Colors+extension.swift in Sources */,
 				88DA35E3282574DB005A14CA /* FridaySadaqaViewController.swift in Sources */,
 				133910E42B283A2C0022B173 /* ProjectDetailsVC.swift in Sources */,
@@ -1095,6 +1102,7 @@
 				18843DEB2A208F9E003A81F5 /* SearchCharityViewController.swift in Sources */,
 				B8F48CB428F612CF0040CCAA /* DonationDetailsViewController.swift in Sources */,
 				B8D4260828EDA233004A44FB /* UserProfileModel.swift in Sources */,
+				13D7A8702B8B66D80053FF2A /* NewsV2CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,7 +1294,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.92;
+				CURRENT_PROJECT_VERSION = 1.94;
 				DEVELOPMENT_TEAM = B2G686DPR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1305,7 +1313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.92;
+				MARKETING_VERSION = 1.94;
 				PRODUCT_BUNDLE_IDENTIFIER = om.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1327,7 +1335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.92;
+				CURRENT_PROJECT_VERSION = 1.94;
 				DEVELOPMENT_TEAM = B2G686DPR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1346,7 +1354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.92;
+				MARKETING_VERSION = 1.94;
 				PRODUCT_BUNDLE_IDENTIFIER = om.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

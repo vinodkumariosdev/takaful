@@ -1043,6 +1043,10 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var title = self.titleArray[indexPath.row]
+        if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+            title = self.titleArabciArray[indexPath.row]
+        }
         if indexPath.row == 0{
             let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
             vc.modalTransitionStyle = .coverVertical
@@ -1111,7 +1115,7 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
         if indexPath.row == 4{
             let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
            vc.modalTransitionStyle = .coverVertical
-            vc.titleText = "\(orphanLbl!) charity"
+            vc.titleText = title
             vc.id = orphanID
            present(vc, animated: true,completion: nil)
         }
@@ -1144,49 +1148,49 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
         if indexPath.row == 7{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = conditionsElectroincs
+            vc.titleText = title
             vc.id = conditionsElectroincsID
             self.present(vc, animated: true)
         }
         if indexPath.row == 8{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = EconmimcEmpowermentLbl
+            vc.titleText = title
             vc.id = EconmimcEmpowermentId
             self.present(vc, animated: true)
         }
         if indexPath.row == 9{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = houseMaintenanceLbl
+            vc.titleText = title
             vc.id = houseMaintenanceId
             self.present(vc, animated: true)
         }
         if indexPath.row == 10{
             let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
            vc.modalTransitionStyle = .coverVertical
-            vc.titleText = "\(StudentsLbl!) support"
+            vc.titleText = title
             vc.id = studentsID
            present(vc, animated: true,completion: nil)
         }
         if indexPath.row == 11{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = specialNeedslbl
+            vc.titleText = title
             vc.id = specialNeedsId
             self.present(vc, animated: true)
         }
         if indexPath.row == 12{
             let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
            vc.modalTransitionStyle = .coverVertical
-            vc.titleText = familyInNeedlbl
+            vc.titleText = title
             vc.id = familyInNeedId
            present(vc, animated: true,completion: nil)
         }
         if indexPath.row == 13{
             let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = orphanLbl
+            vc.titleText = title
             vc.id = orphanID
             present(vc, animated: true,completion: nil)
         }
@@ -1213,7 +1217,7 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
         if indexPath.row == 15{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = clothingAPoorlbl
+            vc.titleText = title
             vc.id = clothingApoorId
             self.present(vc, animated: true)
         }
@@ -1233,7 +1237,7 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
         if indexPath.row == 17{
             let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = "Public Charity"
+            vc.titleText = title
             vc.imgView = "PublicCharity"
             vc.sadaquId = "\(publicSadaqatID!)"
             vc.descriptionString = "On the authority of Abu Hurairah, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (What charity lacks in money). narrated by Muslim"
@@ -1242,28 +1246,28 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
         if indexPath.row == 18{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = HomeforThemLbl
+            vc.titleText = title
             vc.id = HomeforID
             self.present(vc, animated: true)
         }
         if indexPath.row == 19{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = schoolBagProject
+            vc.titleText = title
             vc.id = schoolBagProjectID
             self.present(vc, animated: true)
         }
         if indexPath.row == 20{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = destressRelieflbl
+            vc.titleText = title
             vc.id = destressId
             self.present(vc, animated: true)
         }
         if indexPath.row == 21{
             let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
             vc.modalTransitionStyle = .coverVertical
-            vc.titleText = "Housing Project"
+            vc.titleText = title
             vc.imgView = "housingProjects"
             vc.sadaquId = "\(HousingProjectId!)"
             vc.descriptionString = "nothing compares to a safe haven for a happy family with the aim of improving the standard of living for families and achieving social stability the team seeks in partnership with various agencies and individuals to build housing projects for homeless families with limited income and to provide the basic requirements for safe and comfortable housing by building and maintaining housing units for low income citizens in which basic facilities and services are available taking into account the number of family members"

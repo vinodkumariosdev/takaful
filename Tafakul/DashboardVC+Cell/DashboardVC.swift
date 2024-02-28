@@ -59,6 +59,9 @@ class DashboardVC: UIViewController {
     var takafulInstituteID:Int!
     var awarenessSocialLbl:String!
     var awarenessSocialID:Int!
+    var familyTamkeenLbl:String!
+    var familyTamkeenID:Int!
+
     var helpInLbl:String!
     var helpInId:Int!
     var EconmimcEmpowermentLbl:String!
@@ -292,7 +295,7 @@ class DashboardVC: UIViewController {
                                 self.RaisedArray.removeAll()
                                 self.totalAmountArray.removeAll()
                                 self.percentageArray.removeAll()
-                                self.sliderData.removeAll()
+//                                self.sliderData.removeAll()
                                 self.idArray.removeAll()
                                 let data = response["data"] as! Array<Any>
                                 for i in 0..<data.count{
@@ -454,6 +457,7 @@ class DashboardVC: UIViewController {
                                     self.dailysadaquID = 93
                                     self.takafulInstituteID = 96
                                     self.familyInNeedId = 74
+                                    self.familyInNeedId = 92
                                     self.awarenessSocialID = 91
                                     self.helpInId = 82
                                     self.EconmimcEmpowermentId = 79
@@ -519,8 +523,10 @@ class DashboardVC: UIViewController {
                                     if Artitle == "البرامج التوعوية والاجتماعية"{
                                         self.awarenessSocialLbl = "دعم برامج توعوية واجتماعية"
                                     }
+                                    self.familyTamkeenLbl = "تمكين أسرة"
                                     
                                     self.awarenessSocialID = 91
+                                    self.familyTamkeenID = 92
 //                                    if id == 91{
 //                                        self.awarenessSocialID = id
 //                                    }
@@ -738,8 +744,13 @@ class DashboardVC: UIViewController {
                                     if title == "Awareness & Social Programs"{
                                         self.awarenessSocialLbl = title
                                     }
+                                    
+                                    self.familyTamkeenLbl = "Family Help"
                                     if id == 91{
                                         self.awarenessSocialID = id
+                                    }
+                                    if id == 92 {
+                                        self.familyTamkeenID = 92
                                     }
                                     if title == "Help in Married"{
                                         self.helpInLbl = title
@@ -902,7 +913,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             }
             else if collectionView == sliderCV
             {
-                return totalAmountArray.count
+                return titleArray.count
             }
             else if collectionView == charityPaysCV
             {
@@ -932,7 +943,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             }
             else if collectionView == sliderCV
             {
-                return totalAmountArray.count
+                return titleArray.count
             }
             else if collectionView == charityPaysCV
             {
@@ -1021,7 +1032,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 cell.percentageLbl.textColor = UIColor.blue
                 cell.shareBtn.addTarget(self, action: #selector(shareButton(_sender:)), for: .touchUpInside)
                 cell.shareBtn.tag = indexPath.row
-                cell.donateBtn.setTitle("تبرع الان", for: .normal)
+                cell.donateBtn.setTitle("", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
                 
@@ -1090,7 +1101,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InitiativeCVCell", for: indexPath) as! InitiativeCVCell
                 if indexPath.row == 0{
-                    cell.initiativeLbl.text = familyInNeedlbl ?? ""
+                    cell.initiativeLbl.text = "تمكين أسرة"
                 }
                 
                 if indexPath.row == 1{
@@ -1169,7 +1180,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                     cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
                 }
                 
-                cell.donateBtn.setTitle("SMS Generation", for: .normal)
+                cell.donateBtn.setTitle("", for: .normal)
                 cell.donateBtn.addTarget(self, action: #selector(DonateBtn(_sender:)), for: .touchUpInside)
                 cell.donateBtn.tag = indexPath.row
                 return cell
@@ -1541,8 +1552,8 @@ extension DashboardVC: UICollectionViewDelegateFlowLayout {
             {
                 let vc = storyboard?.instantiateViewController(withIdentifier: "InitiativeVC") as! InitiativeVC
                vc.modalTransitionStyle = .coverVertical
-                vc.titleText = familyInNeedlbl
-                vc.id = familyInNeedId
+                vc.titleText = self.familyTamkeenLbl
+                vc.id = self.familyTamkeenID
                 self.present(vc, animated: true,completion: nil)
             }
             if indexPath.row == 1
