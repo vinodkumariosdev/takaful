@@ -86,6 +86,8 @@ class ProjectDetailsVC: UIViewController {
         }
         self.progressBar.progress = Float(IntValue / 100)
         
+        self.progressBar.transform = CGAffineTransformMakeScale(1, 1)
+
         self.collectedAmount.text = "\(raised) OMR"
         self.remainingAmount.text = "\(remaing) OMR"
         self.cartImg.addTarget(self, action: #selector(cartAdded), for: .touchUpInside)
@@ -127,7 +129,7 @@ class ProjectDetailsVC: UIViewController {
         let title = self.titleText
         let amountS = self.dataObj!["amount"] as? String ?? "0"
         let amount = "\(amountS) OMR"
-        let link = "http://takafulsuhar.om/projects"
+        let link = "https://takafulsuhar.om/projects"
         let textShare = [title,amount,link ]
         let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view

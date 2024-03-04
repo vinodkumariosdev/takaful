@@ -70,11 +70,12 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "تسجيل الخروج", image: Constants.Account.signOut))
                 profileInfo.append(profileList(name: "حذف الحساب", image: Constants.Account.delete))
                 self.getArabicProfile()
-                loginLbl.text = "تعديل الملف الشخصي"
+                loginLbl.text = ""
                 loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
-                
+//                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(editProfileTapped(_:)))
+//                loginLbl.addGestureRecognizer(tapGesture)
             }
         }else{
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -109,10 +110,14 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
                 profileInfo.append(profileList(name: "Delete Account", image: Constants.Account.delete))
 
                 self.getProfileApi()
-                loginLbl.text = "Edit Profile"
+                loginLbl.text = ""
                 loginLbl.isUserInteractionEnabled = true
                 backVieww.isHidden = false
                 contentView.isHidden = true
+                
+//                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(editProfileTapped(_:)))
+//                loginLbl.addGestureRecognizer(tapGesture)
+
             }
         }
         
@@ -122,6 +127,14 @@ class TakafulProfileViewController: UIViewController,UITextFieldDelegate,UITable
     @objc func labelTapped(_ sender: UITapGestureRecognizer) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
         UserDefaults.standard.removeObject(forKey: "id")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+
+    }
+    
+    @objc func editProfileTapped(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileUpdateViewController") as! ProfileUpdateViewController
+//        UserDefaults.standard.removeObject(forKey: "id")
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
 

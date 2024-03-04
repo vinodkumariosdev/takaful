@@ -99,7 +99,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             searchTF.delegate = self
             items = [
                 Item(name: "الصدقة اليومية", image: UIImage(named: "sadqa")!),
-                Item(name: "الجار المجاور", image: UIImage(named: "neighbor")!),
+//                Item(name: "الجار الجنب", image: UIImage(named: "neighbor")!),
                 Item(name: "فك كربة", image: UIImage(named: "detress")!),
                 Item(name: "سهم وقف", image: UIImage(named: "house")!),
                 Item(name: "صدقة عامة", image: UIImage(named: "food")!),
@@ -200,7 +200,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             let parameters = [
                 "api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
             print(parameters)
-            let url = "http://takafulsuhar.om/api/all-causes"
+            let url = "https://takafulsuhar.om/api/all-causes"
             print(url)
             AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON {
                         response in
@@ -425,7 +425,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             let parameters = [
                 "api_token": "WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5"]
             print(parameters)
-            let url = "http://takafulsuhar.om/api/all-causes"
+            let url = "https://takafulsuhar.om/api/all-causes"
             print(url)
             AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON {
                         response in
@@ -669,23 +669,24 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             if item.name == "الصدقة اليومية"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "الصدقة اليومية"
+                vc.titleText = "Daily Sadaqa"
                 vc.imgView = "daily_sadqa"
                 vc.sadaquId = String(dailysadaquID)
                 vc.descriptionString = "On the authority of Abu Hurairah, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (What charity lacks in money). narrated by Muslim"
                 present(vc, animated: true,completion: nil)
-            }else if item.name == "الجار المجاور"{
-                let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
+            }else if item.name == "الجار الجنب"{
+                let vc = storyboard?.instantiateViewController(withIdentifier: "DashboardNextDoorViewController") as! DashboardNextDoorViewController
+//                vc.nextDoorId = 94
+//                vc.nextDoor = "fromDashboardNextDoor"
+                self.definesPresentationContext = true
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "الجار المجاور"
-                vc.imgView = "neighbours"
-                vc.sadaquId = String(nextDoorNeighborID)
-                vc.descriptionString = "On the authority of Abdulla bin Omar, may God be pleased with him, that the Messenger of God, may God's prayers and peace be upon him, said Gabriel still advised me about the neighbour, until I thought that he would inherit it. Narrated by Al-Bukhari"
-                present(vc, animated: true,completion: nil)
+
+                self.present(vc, animated: true, completion: nil)
+                
             }else if item.name == "فك كربة"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "فك كربة"
+                vc.titleText = "Detress Relief"
                 vc.imgView = "DetressRelief"
                 vc.sadaquId = String(destressId)
                 vc.descriptionString = "On the authority of Uqbah Aamer, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (A man is in the shade of his charity until it is decided betweeen the people). narrated by Ahmed"
@@ -693,7 +694,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
             }else if item.name == "صدقة\n الجمعة"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC
                 vc.modalTransitionStyle = .coverVertical
-                vc.titleText = "صدقة\n الجمعة"
+                vc.titleText = "Friday Charity"
                 vc.imgView = "FridayCharity"
                 vc.sadaquId = String(charityId)
                 vc.descriptionString = "On the authority of Uqbah Aamer, may God be pleased with him, that the Messenger of God, may God bless him and grant him peace He said (A man is in the shade of his charity until it is decided betweeen the people). narrated by Ahmed"
@@ -703,7 +704,7 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                 vc.expirationId = AqiqahId
                 vc.isAquiuah = "Aqiuah"
                vc.modalTransitionStyle = .coverVertical
-               present(vc, animated: true,completion: nil)
+                present(vc, animated: true,completion: nil)
             }
             else if item.name == "نذر"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DashboardFoodBasketViewController") as! DashboardFoodBasketViewController
@@ -886,7 +887,11 @@ class SearchCharityViewController: UIViewController,UITableViewDelegate,UITableV
                 
             }
             else if item.name == "Clothing a Family For one year"{
-                
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContributeVC") as! ContributeVC
+                vc.modalTransitionStyle = .coverVertical
+                vc.titleText = "Clothing a Family For one year"
+                vc.id = clothingAPoorId
+                self.present(vc, animated: true)
             }
             else if item.name == "Friday Charity"{
                 let vc = storyboard?.instantiateViewController(withIdentifier: "DailySadaqaVC") as! DailySadaqaVC

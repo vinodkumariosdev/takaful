@@ -21,7 +21,7 @@ class PaymentWebView: UIViewController, WKUIDelegate, WKNavigationDelegate {
     var donationAmount: String = ""
     var donationType: String?
     var categoryId: Int?
-   // var myURL = URL(string: "http://takafulsuhar.om")
+   // var myURL = URL(string: "https://takafulsuhar.om")
 
     
     
@@ -38,7 +38,7 @@ class PaymentWebView: UIViewController, WKUIDelegate, WKNavigationDelegate {
             print("donation \(donationAmount)  \(donationType)")
             DispatchQueue.main.async {
                 
-                var myURL = URL(string:  (LocalizationSystem.sharedInstance.getLanguage() == "ar") ? "http://takafulsuhar.om/mobile/ar/donation-cart/\(self.categoryId ?? 71)?donation_amt=\(self.donationAmount.replacingOccurrences(of: " \(Constant.paymentMethod)", with: ""))&uid=\(UserDefaults.standard.getUserID())":"http://takafulsuhar.om/mobile/en/donation-cart/\(self.categoryId ?? 71)?donation_amt=\(self.donationAmount.replacingOccurrences(of: " \(Constant.paymentMethod)", with: ""))&uid=\(UserDefaults.standard.getUserID())")
+                var myURL = URL(string:  (LocalizationSystem.sharedInstance.getLanguage() == "ar") ? "https://takafulsuhar.om/mobile/ar/donation-cart/\(self.categoryId ?? 71)?donation_amt=\(self.donationAmount.replacingOccurrences(of: " \(Constant.paymentMethod)", with: ""))&uid=\(UserDefaults.standard.getUserID())":"https://takafulsuhar.om/mobile/en/donation-cart/\(self.categoryId ?? 71)?donation_amt=\(self.donationAmount.replacingOccurrences(of: " \(Constant.paymentMethod)", with: ""))&uid=\(UserDefaults.standard.getUserID())")
                 
                 let myRequest = URLRequest(url: myURL!)
                 self.webView.load(myRequest)

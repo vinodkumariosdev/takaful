@@ -9,7 +9,7 @@ import Foundation
 
 class Constants {
     struct Common {
-           static let finalURL = "http://takafulsuhar.om/api/"
+           static let finalURL = "https://takafulsuhar.om/api/"
     }
     
     struct Account {

@@ -243,7 +243,7 @@ class RapidDonationVC: UIViewController,UITextFieldDelegate
         }
     }
     
-    var titleArray = ["Friday Charity","Aqiqah","Vow","Sacrifice","Orphan Charity","Fasting ransom","A gift","Condition & Electronics","Economic empowerment","House maintenance","Student support","Special needs","Family in need","Orphan","Expiation for a broken Oath","Clothing a poor","Food basket","Public sadaqat","Home for them","School bag project","Detress Relief","Housing Project"]
+    var titleArray = ["Friday Charity","Aqiqah","Vow","Sacrifice","Orphan Charity","Fasting ransom","A gift","Condition & Electronics","Economic empowerment","House maintenance","Student support","Special needs","Family in need","Orphan","Expiation for a broken Oath","Clothing a poor","Food basket","Public sadaqat","Home for them","School bag project","Detress Relief"]
     
     var dtitleArabciArray = [
         "صدقة الجمعة"
@@ -273,11 +273,10 @@ class RapidDonationVC: UIViewController,UITextFieldDelegate
         "صدقات عامة",
         "منزل يؤويهم",
         "مشروع الحقيبة المدرسية",
-        "فك كربة",
-        "منزل يؤويهم"
+        "فك كربة"
      ]
     
-    var imgArray = ["charity","aqiqah","vow","sacrifice", "head", "masque" ,"gift_s","electronics","economic","maintainence","student","need","family","hand","expiation","clothing","food","public","house","student","detress","house"]
+    var imgArray = ["charity","aqiqah","vow","sacrifice", "head", "masque" ,"gift_s","electronics","economic","maintainence","student","need","family","hand","expiation","clothing","food","public","house","student","detress"]
     
     override func viewDidLoad()
     {
@@ -1113,11 +1112,14 @@ extension RapidDonationVC:UITableViewDelegate,UITableViewDataSource
             present(vc, animated: true,completion: nil)
         }
         if indexPath.row == 4{
-            let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
-           vc.modalTransitionStyle = .coverVertical
-            vc.titleText = title
-            vc.id = orphanID
-           present(vc, animated: true,completion: nil)
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "SponserShipVC") as! SponserShipVC
+//           vc.modalTransitionStyle = .coverVertical
+//            vc.titleText = title
+//            vc.id = orphanID
+//           present(vc, animated: true,completion: nil)
+//            
+            
+            
         }
         if indexPath.row == 5{
            /* self.customVieww.isHidden = false

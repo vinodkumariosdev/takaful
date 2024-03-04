@@ -170,6 +170,8 @@ class DashboardVC: UIViewController {
         }else {
             self.teamTitleHomePage.text = "Takaful Sohar Charity Team"
         }
+        
+        self.searchBarAction.isHidden = true
     }
     
     @objc func moveToTeamProfile(){
@@ -1013,19 +1015,23 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
             
             else if (collectionView == self.sliderCV)
             {
+                if(indexPath.row < self.RaisedArray.count) {
+                    
+                }
+                
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardSliderCVCell", for: indexPath) as! DashboardSliderCVCell
                 cell.ProjectNameLbl.text = titleArray[indexPath.row]
                 cell.tragetLbl.text = "المتبقي"
-                cell.omrLbl.text = "\(RaisedArray[indexPath.row]) OMR"
-                let url = URL(string: imgArray[indexPath.row])
+                cell.omrLbl.text = indexPath.row < self.RaisedArray.count ? "\(RaisedArray[indexPath.row]) OMR" : "OMR"
+                let url = URL(string: indexPath.row < self.RaisedArray.count ?  imgArray[indexPath.row] : "")
                 cell.DashimageView.kf.setImage(with: url)
-                cell.progressBar.progress = Float(percentageArray[indexPath.row] / 100)
+                cell.progressBar.progress = Float( indexPath.row < self.RaisedArray.count ?  percentageArray[indexPath.row] : 100 / 100)
 //                self.sliderCV.animateCell(cell)
                 
                 if(percentageArray[indexPath.row] > 100) {
                     cell.percentageLbl.text = "100%"
                 }else {
-                    cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
+                    cell.percentageLbl.text = "\( indexPath.row < self.RaisedArray.count ?   percentageArray[indexPath.row] : 100)%"
                 }
 //                cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
 //                cell.percentageLbl.text = "\(percentageArray[indexPath.row])%"
@@ -1082,7 +1088,6 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
                 
                 if indexPath.row == 3{
                     cell.contributeLbl.text = conditionsElectroincs ?? ""
-                   
                 }
                 
                 /*if indexPath.row == 4{
@@ -1284,7 +1289,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource {
         let index = _sender.tag
         let title = titleArray[index]
         let amount = "\(totalAmountArray[index])OMR"
-        let link = "http://takafulsuhar.om/projects"
+        let link = "https://takafulsuhar.om/projects"
         let textShare = [title,amount,link ]
         let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view

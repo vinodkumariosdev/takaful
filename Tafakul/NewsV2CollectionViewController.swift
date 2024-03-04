@@ -57,7 +57,7 @@ class NewsV2CollectionViewController: UIViewController, UICollectionViewDelegate
     func getNews(){
         self.loadinHubShow()
         if Reachability.isConnectedToNetwork(){
-            AF.request("http://takafulsuhar.om/api/news?api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5", method: .get, encoding: JSONEncoding.default)
+            AF.request("https://takafulsuhar.om/api/news?api_token=WNi3oumvqu8ADhvWLqhPN18FhGplwwYgVYuWaHfrFInZcgI2J7o0obuWIIO5", method: .get, encoding: JSONEncoding.default)
                 .responseJSON { [self] response in
                         switch response.result {
                         case .success(let json):

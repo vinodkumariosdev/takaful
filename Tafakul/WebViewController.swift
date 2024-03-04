@@ -51,6 +51,23 @@ class WebViewController: UIViewController,WKNavigationDelegate {
 //        let doubleNumber = Double(final!)
         amount = final?.stringValue
 
+        userid = UserDefaults.standard.string(forKey: "id")
+        self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
+
+        
+        if userid == nil{
+            webVieww.isHidden = true
+            let alert = UIAlertController(title: "", message:"Please Login For Accessing Donate".l10n(), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok".l10n(), style: .default, handler: {(_ action: UIAlertAction) -> Void in
+                Constant.isLoginView = true
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             donationDetailsLbl.text = "تفاصيل التبرع"
             userid = UserDefaults.standard.string(forKey: "id")
@@ -60,7 +77,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             let imageView = UIImageView(image: jeremyGif)
             imageView.frame = CGRect(x: 160.0, y: 270.0, width: 60, height: 60)
             loadingVieww.addSubview(imageView)
-            if userid == nil{
+            if userid == nil {
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
                 UserDefaults.standard.removeObject(forKey: "id")
@@ -69,7 +86,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
                 
-                var urlStr = "http://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                var urlStr = "https://takafulsuhar.om/mobile/ar/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
                 if self.area != "" {
                     urlStr = urlStr + "&area=\(self.area)"
                 }
@@ -81,6 +98,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
 
                 let url = URL(string: urlStr)
+                print("i am printing the link")
                 print(urlStr)
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
@@ -105,7 +123,7 @@ class WebViewController: UIViewController,WKNavigationDelegate {
             }else{
                 self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
                 
-                var urlStr = "http://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
+                var urlStr = "https://takafulsuhar.om/mobile/en/donation-cart/\(cartID!)?donation_amt=\(amount!)&uid=\(userid!)"
                 if self.area != "" {
                     urlStr = urlStr + "&area=\(self.area)"
                 }
@@ -115,10 +133,9 @@ class WebViewController: UIViewController,WKNavigationDelegate {
                 
 
                 urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                print("i am printing the link")
                 print(urlStr)
                 let url = URL(string: urlStr)
-
-                
                 let requestObj = URLRequest(url: url! as URL)
                 webVieww.load(requestObj)
                 webVieww.allowsBackForwardNavigationGestures = true

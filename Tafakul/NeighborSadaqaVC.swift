@@ -170,7 +170,7 @@ class NeighborSadaqaVC: UIViewController {
         if titleText == "Daily Sadaqa"{
             let text = "Daily Sadaqa"
             let description = descriptionString
-            let link = URL(string: "http://takafulsuhar.om/projects")!
+            let link = URL(string: "https://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -178,7 +178,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Friday Charity"{
             let text = "Friday Charity"
             let description = descriptionString
-            let link = URL(string: "http://takafulsuhar.om/projects")!
+            let link = URL(string: "https://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -186,7 +186,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Neighbours in Village"{
             let text = "Neighbours in Village"
             let description = descriptionString
-            let link = URL(string: "http://takafulsuhar.om/projects")!
+            let link = URL(string: "https://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -194,7 +194,7 @@ class NeighborSadaqaVC: UIViewController {
         }else if titleText == "Public Charity"{
             let text = "Public Charity"
             let description = descriptionString
-            let link = URL(string: "http://takafulsuhar.om/projects")!
+            let link = URL(string: "https://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView
@@ -203,7 +203,7 @@ class NeighborSadaqaVC: UIViewController {
         else{
             let text = "Distress Relief"
             let description = descriptionString
-            let link = URL(string: "http://takafulsuhar.om/projects")!
+            let link = URL(string: "https://takafulsuhar.om/projects")!
             let objectsToShare: [Any] = [text,description ?? "",link]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender as! UIView

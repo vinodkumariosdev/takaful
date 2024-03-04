@@ -185,7 +185,8 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     var vowAmt:Int?
     var aqiqahAmt:Int?
     var sacrificeMoreAmt:Int?
-    
+    var userid:String!
+
     @IBOutlet weak var ransomTF: UITextField!
     
     @IBOutlet weak var sacrifice250Btn: UIButton!
@@ -351,6 +352,15 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var AquiuahDonateBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        userid = UserDefaults.standard.string(forKey: "id")
+        if userid == nil {
+//            self.backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "PhoneSignUpViewController") as! PhoneSignUpViewController
+            UserDefaults.standard.removeObject(forKey: "id")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+        }
+        
         if LocalizationSystem.sharedInstance.getLanguage() == "en"{
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
             otherAmountTF.delegate = self
@@ -475,7 +485,7 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
         }
         if isSacrifice == "Sacrifice"{
             if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+//                UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 self.foodBasketVieww.isHidden = true
                 self.expitationOathVieww.isHidden = true
                 self.sacrificeVieww.isHidden = false
@@ -491,11 +501,11 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 self.sacrificeAmtLbl.text = "\(totalAmounts) 45 ر.ع"
                 DonateSacBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sacrificeAddCartBtn.setTitle("اضافة للعربة", for: .normal)
-                sacrificeCattleLbl.text = "ماشية"
-                sacrificeSheepLbl.text = "خروف"
+                sacrificeCattleLbl.text = "بقر"
+                sacrificeSheepLbl.text = "غنم"
                 sacrificeNumberTF.textAlignment = .center
                 sacrificeNumberTF.placeholder = "رقم"
-                sacrificeLbl.text = "الأضاحي"
+                sacrificeLbl.text = "ذبيحة"
                 sacrificeBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
             }else{
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
@@ -571,9 +581,9 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 vowBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
                 vowLbl.text = "نذر"
-                vowSheepLbl.text = "خروف"
+                vowSheepLbl.text = "غنم"
                 vowCashLbl.text = "مبالغ نقدية"
-                vowCattleLbl.text = "ماشية"
+                vowCattleLbl.text = "بقر"
                 vowDonateNowBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 vowAddCartBtn.setTitle("اضافة للعربة", for: .normal)
                 vowNumebrTF.delegate = self
@@ -667,9 +677,9 @@ class DashboardFoodBasketViewController: UIViewController,UITextFieldDelegate {
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 sacrificeMoreBackBtn.setImage(UIImage.init(named: "ArabicBackIcon"), for: .normal)
                 moreSacLbl.text = "الأضاحي"
-                moreSacrificecattleLbl.text = "ماشية"
-                moreSacCattlesLbl.text = "ماشية"
-                moreSacSheepLbl.text = "خروف"
+                moreSacrificecattleLbl.text = "بقر/كامل"
+                moreSacCattlesLbl.text = "بقر/سبع"
+                moreSacSheepLbl.text = "ماشية"
                 DonateSacrificeMoreDonateBtn.setTitle("الحصول على رابط التبرع", for: .normal)
                 sacrificeMoreCartAddedBtn.setTitle("اضافة للعربة", for: .normal)
                 self.aqiqahNumberTF.delegate = self
