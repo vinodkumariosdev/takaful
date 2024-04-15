@@ -18,53 +18,6 @@
             endingLineNumber = "144"
             landmarkName = "signUp()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0F0F6824-6A0F-4A47-B3E9-1444462E6C47 - 3c66897ee8696d02"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.PhoneSignUpViewController.signUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/adventz/takaful_sohar_ios-main/Tafakul/LoginSignupQuickLogins/PhoneSignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "1892">
-               </Location>
-               <Location
-                  uuid = "0F0F6824-6A0F-4A47-B3E9-1444462E6C47 - 3c66897ee8696d02"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.PhoneSignUpViewController.signUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/adventz/takaful_sohar_ios-main/Tafakul/LoginSignupQuickLogins/PhoneSignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "1896">
-               </Location>
-               <Location
-                  uuid = "0F0F6824-6A0F-4A47-B3E9-1444462E6C47 - 3c66897ee8696d02"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.PhoneSignUpViewController.signUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/adventz/takaful_sohar_ios-main/Tafakul/LoginSignupQuickLogins/PhoneSignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "1952">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -109,8 +62,8 @@
             filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1316"
-            endingLineNumber = "1316"
+            startingLineNumber = "1317"
+            endingLineNumber = "1317"
             landmarkName = "DonateBtn(_sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -125,8 +78,8 @@
             filePath = "Tafakul/DashboardVC+Cell/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "getSlider()"
             landmarkType = "7">
          </BreakpointContent>
@@ -257,68 +210,6 @@
             endingLineNumber = "160"
             landmarkName = "ArabicSignUp()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "323">
-               </Location>
-               <Location
-                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "358">
-               </Location>
-               <Location
-                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "373">
-               </Location>
-               <Location
-                  uuid = "D3B7B016-699C-4339-9B74-FEC86FF33A84 - c5167a5716ed13a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tafakul.LoginViewController.ArabicSignUp() -&gt; ()"
-                  moduleName = "Tafakul"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yousuftechnology/BSS_PROJECTS/takaful_sohar_ios/Tafakul/LoginSignupQuickLogins/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "434">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

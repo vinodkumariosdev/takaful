@@ -10,6 +10,7 @@
 		10F8E4E796DF5A54AA48AC36 /* Pods_Tafakul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9FD6D2B7B5773771F6975 /* Pods_Tafakul.framework */; };
 		133910E42B283A2C0022B173 /* ProjectDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */; };
 		133910E62B297DFB0022B173 /* NeighborSadaqaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */; };
+		1348EB252B9F887B00333649 /* AboutTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348EB242B9F887B00333649 /* AboutTeamViewController.swift */; };
 		135D29922B80B17B00FB8CB9 /* Tajawal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 135D29912B80B17B00FB8CB9 /* Tajawal.ttf */; };
 		139BEF222AA47DF000741B02 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */; };
 		139BEF242AA47E5C00741B02 /* AStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */; };
@@ -168,6 +169,7 @@
 		0B7A605E81120F53CB50B8DA /* Pods-Tafakul-TafakulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tafakul-TafakulUITests.release.xcconfig"; path = "Target Support Files/Pods-Tafakul-TafakulUITests/Pods-Tafakul-TafakulUITests.release.xcconfig"; sourceTree = "<group>"; };
 		133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsVC.swift; sourceTree = "<group>"; };
 		133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborSadaqaVC.swift; sourceTree = "<group>"; };
+		1348EB242B9F887B00333649 /* AboutTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTeamViewController.swift; sourceTree = "<group>"; };
 		135D29912B80B17B00FB8CB9 /* Tajawal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tajawal.ttf; sourceTree = "<group>"; };
 		139BEF212AA47DF000741B02 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
 		139BEF232AA47E5C00741B02 /* AStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AStoryboard.storyboard; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 				133910E32B283A2C0022B173 /* ProjectDetailsVC.swift */,
 				133910E52B297DFB0022B173 /* NeighborSadaqaVC.swift */,
 				13D7A86F2B8B66D80053FF2A /* NewsV2CollectionViewController.swift */,
+				1348EB242B9F887B00333649 /* AboutTeamViewController.swift */,
 			);
 			path = Tafakul;
 			sourceTree = "<group>";
@@ -1007,6 +1010,7 @@
 				883FD5C62811543B00DB2B61 /* ViewController.swift in Sources */,
 				B82095BD28E22AF40092D4C1 /* SliderCollectionViewCell.swift in Sources */,
 				883FD5C22811543B00DB2B61 /* AppDelegate.swift in Sources */,
+				1348EB252B9F887B00333649 /* AboutTeamViewController.swift in Sources */,
 				88FB385E2862C28A00289779 /* HousingProjectsViewController.swift in Sources */,
 				1871EB442952FA3B00884829 /* RapidDonationTVCell.swift in Sources */,
 				883FD5F428115B1100DB2B61 /* SignUpViewController.swift in Sources */,
@@ -1294,7 +1298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.97;
+				CURRENT_PROJECT_VERSION = 1.99;
 				DEVELOPMENT_TEAM = B2G686DPR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1313,7 +1317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.97;
+				MARKETING_VERSION = 1.99;
 				PRODUCT_BUNDLE_IDENTIFIER = om.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1335,7 +1339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.97;
+				CURRENT_PROJECT_VERSION = 1.99;
 				DEVELOPMENT_TEAM = B2G686DPR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tafakul/Info.plist;
@@ -1354,7 +1358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.97;
+				MARKETING_VERSION = 1.99;
 				PRODUCT_BUNDLE_IDENTIFIER = om.adventz.Tafakul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
